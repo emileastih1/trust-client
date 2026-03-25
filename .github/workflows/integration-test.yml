@@ -1,0 +1,54 @@
+name: Go
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths-ignore:
+      - '**.md'
+
+jobs:
+  integration-test:
+    name: Integration Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Go
+        uses: actions/setup-go@v3
+        with:
+          go-version: '1.20'
+      - name: Checkout Client Libraries
+        uses: actions/checkout@v3
+        with:
+          path: bulletin-board-api
+      - name: System Dependencies
+        run: |
+          VERSION="2.12.2" && \
+          BIN="/usr/local/bin" && \
+          BINARY_NAME="docker-compose" && \
+            sudo curl -sSL \
+              "https://github.com/docker/compose/releases/download/v${VERSION}/docker-compose-linux-x86_64" \
+              -o "${BIN}/${BINARY_NAME}" && \
+            sudo chmod +x "${BIN}/${BINARY_NAME}"
+          sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+          docker-compose --version
+      - name: Docker Build
+        working-directory: bulletin-board-api
+        run: docker build -t local-bbapi .
+      - name: Run Service
+        working-directory: bulletin-board-api
+        run: |
+          docker-compose -f docker-compose.local.yaml up -d
+          docker ps
+          echo "=================================="
+          docker logs bulletin-board-api-local-postgres-1 -n 100
+          echo "=================================="
+          docker logs bulletin-board-api-local-bulletin-board-api-1 -n 100
+      - name: Run Integration Test
+        working-directory: bulletin-board-api
+        run: |
+          cd test/integration_test
+          python3 -m venv env
+          source env/bin/activate
+          pip3 install wheel
+          pip3 install -r requirements.txt
+          cd ../..
+          make integration-test && make load-test-ci

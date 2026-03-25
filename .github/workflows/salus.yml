@@ -1,0 +1,15 @@
+name: Run Salus scans
+
+on: push
+
+jobs:
+  deploy:
+    name: Run Salus scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Run Salus scan
+        run: docker run --rm -t -v $(pwd):/home/repo coinbase/salus

@@ -1,0 +1,12 @@
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: bbapisvc
+spec:
+  maxReplicas: {{ $.Values.services.bbapisvc.scaling.max }}
+  minReplicas: {{ $.Values.services.bbapisvc.scaling.min }}
+  scaleTargetRef:
+    apiVersion: argoproj.io/v1alpha1
+    kind: Rollout
+    name: bbapisvc
+  targetCPUUtilizationPercentage: {{ $.Values.services.bbapisvc.scaling.targetcpu }}

@@ -1,0 +1,1668 @@
+vasps:
+  dfac8d66-a881-434c-ace1-8c28086fd952:
+    name: Gemini Trust Company
+    payload_endpoint: "https://travelrule.sandbox.gemini.com/travelrule/pii"
+    domain: travelrule.sandbox.gemini.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAylI/u8GtUgCAk5CStJXi
+      dfgr+0p24THyG+mx0kXryrIbN6pJqZmahbs8pyEop8Cq2GSSOiYu6ssNE9AdT2Sp
+      UNTVCSU0uvAjo4KqlSvABoQ9mBi5Mh7BO3+/H0+dpMlIEdQLDWZP3KDAx48GA7uA
+      758ksCTFLfhsFJrCYCUktgCs8LiLWzqbCGdTLWgIjV2GL6Kr4iFiNiMnT0LqsRVH
+      o5hhgQ2UEESVJqeBL5FfX8dutxzfKeZUSq+IboRhkmjf7JCg8fPqvg20HnWHaIF8
+      bkl3AwNJlsRB/JXuFcZu0jprXjULcPJIb+E6CFwHIVhz1BOS9cF68oIK9gWcQ4Au
+      cQIDAQAB
+      -----END PUBLIC KEY-----
+    lei: 254900GBN2V33HKLXO71
+  29e095c2-bd70-403c-bd6f-4ac66b05e1b8:
+    name: BitGo Trust Company, Inc.
+    payload_endpoint: "https://tr.bitgo-test.com/payload"
+    domain: tr.bitgo-test.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA07tc+yZe1RlhGSwSziDX
+      xQ9kJqKghc70wHrkzYE0WguiWaZYQMpzHHgNR542y0J4GswERZgNystD5DzL6hm1
+      UKTTV0iDWlyKf2A06PVJhh0FDz74Tf5xc6Re0xyDrsoB9OlHRceamPwo79Yn5N7K
+      Bv/r37epVj0+uIedIFmaMNBblokmYDiHsSuxao36eKBzZJCOaHbexh4iOZtKYQ9e
+      x8vYTYWUCXlXT8n4fNdUaVLKMq8kvLwl3jEKIO0VF6FLZSLVqHhn5svJgIs8p1h0
+      0BzeZv9yiG97+gLtDQVE0PXk73cNKi8l7+7C06T4FcEEvUQjD5um8bzpXwKihOyu
+      QQIDAQAB
+      -----END PUBLIC KEY-----
+    lei: 254900QXDWGM1T0HGF47
+  fa8c3493-0b91-4d03-b5c8-9e34f73ca8ce:
+    name: Circle Internet Financial, LLC
+    payload_endpoint: "https://api-sandbox.circle.com/v1/travelrule/vasp/pii"
+    domain: api-sandbox.circle.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAxBke/26xEVN45SoMgi72
+      QUShFdot74ZerG10H3kKqp2+rsO84R7+g5UWEV66OIEnROz1JeJp38qGkdryhuzh
+      OuYliEkYyXsZDYPTk+W/xOHcsfOJ2q4MQXOrWwPFGOsAUUWsDpAvrxL9E95cxARM
+      c2sgr26KGFqbzKZTFVE6fUSklLD4mBCeDOdV08/tjTKkTpNWsEn7gQgz8jS7EWUL
+      FD7EN0wEXk93vX0WwF2DcZPllK3vsjTlOxgJhk4JT0UFgfJNYsSviSCKtqowj8Cp
+      xq4rNV+kF7HcNQe6FzC6mQcNvgo2cD9/GVbLIS2JM8Yo7RHY8mrlpsXMTQLkwOTI
+      x+PlsJc//Xbe5Ko+RnC7M7qt9cUdsmvDLy74yVgFGVCufjkwwkztAjHbiZ9rce2o
+      IZvvJHLqBWgHVhSMgEcjTyOuh6Xls945eqH3sIXKOGNGhcH2i4WzqdriKIInL2aV
+      nAPWu4jEtWqPijelS4J+wwlVjNzl3bvWtIN8OG9Zmwi63JZn3MFqoFeqPMUuC5Y7
+      CFmvJ1V3OytXr48/6A53DK4n9mStrBh432TfameGSQhACYkHjARPgWQobSAsLBJZ
+      ulF2CcHipIcZODFMSW7StJAFfuBweEOIN7TYOtdaQt96ZqdX9ssgEZ00heQ4cYfo
+      v84M/Hw4cb4lCdhaVgXFG7sCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 549300UHJLR6LBGAFV55
+  a2a7ce44-800a-452a-a0ee-3ac0e4f16389:
+    name: Circle Internet Financial, LLC
+    payload_endpoint: "https://api-smokebox.circle.com/v1/travelrule/vasp/pii"
+    domain: api-smokebox.circle.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAu3UU/2qnuqDnaP9N3CXW
+      1AU3ym3XBbgH8U+NCdFyVH09Uu5ppf+bDgNkUBHmoRr3svgbaStt9kOt+9qnb1F0
+      g6SR89XXjuKRn5lPl/SEwFZ8H1CeJqERqsGeE4Kp01I/OA5taFlhCxwBSPXC5H2k
+      2501EyV+Y+6swJ5ubSIGBs5SQX1ntKWzd4qb4A87rrgahSC123hKIOY97poGi+xt
+      2EZaBXcp1ALNDEM4FLR3tmbb9BNu01uwcMFwSZBByi6dyhG3v60xUbv9tJue4E5r
+      C5Q6LkRLMWgG+ZoW78+dMfOtbGJlDo4a1TzSDjOOzqrrsF+r1gPUMSjVs74/2auE
+      +B8od7Fhci+D6sxCm1MW9SHV2wjo6jvkt7I4Z1DQo1sln8uAFSw31mNMWNp0Nrp4
+      0DT5VkyfMJohRAXfzaGv7ANiVAnClF+GCBBj+sU5QoUGkHOAVZCRvdfD+eCNRkGq
+      qRA92xDq6WoPmlwoJ+hR27h7D8knSlVCXuCaNLvScTuI030ReV0BJZfDVRsBI2hc
+      kB+fFl5JM9+fYGZN+jIBG3fshV58tUMk2tqvdrZ6CVtibzm2U4PRLRg3edveGFIP
+      0AqGpx8A9DidZTmWVH6OSrBCleNi8uhqKUk4xt97EuS5eo6VBg8/b9pfYFF1tMtH
+      eFZ6u3u/OZvwB/ErEkrFuLkCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 549300UHJLR6LBGAFV55
+  47b91635-fd03-471b-824f-b100f464a369:
+    name: Paxos PTC
+    payload_endpoint: "https://account.sandbox.paxos.com/travelrule/pii"
+    domain: sandbox.paxos.com
+    public_key_version: 2
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAvbsPE0Exm8idpNBaXl4a
+      MPWcFI1SghQGSkD6OOz7eg/MzcoAcNcsQpuDngI9V3sBBON/0S+1H0hJMYBFQpVN
+      /ilazchs2GWGLb+qU4+nwV6Qa4D8+ub5kkVlcg0BuklQ0HVe7ZKv3nNpA/jC3iYq
+      nPMbNmJpp0em9bnzz/5tR20mV/3XJQ5yV5DD+BpaSpzQnIbVoJFTAYc/XGxFP3cD
+      T6t0z3Cz9gQ3wyj2w4nLnFLhIY2PXGL0BCudY2MgS0egvFLBWBdBc5Xo7I62Tcsr
+      LmtJ6/0jMfseGBkUXLQXndsc1CSG31HX/i2Nc9oTfri+Jm/LKr2AVJDuyxyoIF+N
+      obdP5PNmfPhYr1t18VZsVLLGvA4L956nHWoIkkImNIMTZhy17gPrUV5HTvOLKzMw
+      y3kcIhSinCwWplTSmoZVBGMdU9Ek9TC2AxUcDC7CPsOXMpcTzPKahy6XTKwaEAFw
+      QO0r3YU5GPyEBBwnW9opcRey86rmJsmLCq4eBzSgwxq/NDL1H9A0AccmvdgO/Ezr
+      YugLy8efZnkSlS1G7qO3xp1lB1+l4RrL2MTP7lWnbiSAx3m78wNcsF/PmDUYWYeG
+      mmdHPeX5xU7gvu+357LhJQ0YSvxcmd3CY+syFVKEj08/xqSD7gOJOWnOEi7Hi2nh
+      16T1EWTcklWxxvWCS0ypuo0CAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 549300EQW4J4RXDLD359
+  b6cc8460-c49e-4226-aa94-7155af69a608:
+    name: Paxos PTC - Sandbox
+    payload_endpoint: "https://travelrule.sandbox.paxosplatform.com/travelrule/pii"
+    domain: travelrule.sandbox.paxosplatform.com
+    public_key_version: 2
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAvbsPE0Exm8idpNBaXl4a
+      MPWcFI1SghQGSkD6OOz7eg/MzcoAcNcsQpuDngI9V3sBBON/0S+1H0hJMYBFQpVN
+      /ilazchs2GWGLb+qU4+nwV6Qa4D8+ub5kkVlcg0BuklQ0HVe7ZKv3nNpA/jC3iYq
+      nPMbNmJpp0em9bnzz/5tR20mV/3XJQ5yV5DD+BpaSpzQnIbVoJFTAYc/XGxFP3cD
+      T6t0z3Cz9gQ3wyj2w4nLnFLhIY2PXGL0BCudY2MgS0egvFLBWBdBc5Xo7I62Tcsr
+      LmtJ6/0jMfseGBkUXLQXndsc1CSG31HX/i2Nc9oTfri+Jm/LKr2AVJDuyxyoIF+N
+      obdP5PNmfPhYr1t18VZsVLLGvA4L956nHWoIkkImNIMTZhy17gPrUV5HTvOLKzMw
+      y3kcIhSinCwWplTSmoZVBGMdU9Ek9TC2AxUcDC7CPsOXMpcTzPKahy6XTKwaEAFw
+      QO0r3YU5GPyEBBwnW9opcRey86rmJsmLCq4eBzSgwxq/NDL1H9A0AccmvdgO/Ezr
+      YugLy8efZnkSlS1G7qO3xp1lB1+l4RrL2MTP7lWnbiSAx3m78wNcsF/PmDUYWYeG
+      mmdHPeX5xU7gvu+357LhJQ0YSvxcmd3CY+syFVKEj08/xqSD7gOJOWnOEi7Hi2nh
+      16T1EWTcklWxxvWCS0ypuo0CAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 549300EQW4J4RXDLD359
+  1620e954-ca52-4329-97f3-2ec25cb4ec06:
+    name: Paxos PTC - Staging
+    payload_endpoint: "https://travelrule.staging.itbitnonprod.com/travelrule/pii"
+    domain: travelrule.staging.itbitnonprod.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2Y9me51q6e3+E4AGWb4M
+      RAqcnKU5l4CNgYF2/LIL5lU43xik0wMhyqHjwA9vhQNkl4M846SFmNJZM+zwqiHS
+      MvHtArWKIcyl2N1cN0JC+bQL2e9AeRV4wPoy2gEhM7kT8eYaE75jFHU/sJB8Nkxf
+      VrYpShc2QxWqqw+JpLERzp4XtMddk+jp0OisaqrOKPk5VewBV8p31cxFgQ459bii
+      kdtfg/8qrkUhaWadg1YRmzesuMeXpCslASyYLQ9C/681kjgl1uatIfb+jfwNXG6K
+      gptxvHdrv4gCKvMtVS/P5gUUgoN5OH/I0tsJ+76ublWlUq2ueHiMc+Tx6aTK/xMV
+      lwIDAQAB
+      -----END PUBLIC KEY-----
+    lei: 549300EQW4J4RXDLD359
+  454d5d15-b167-457d-bcd4-756459d826a1:
+    name: Fidelity Digital Asset Services, LLC
+    payload_endpoint: "https://travelrule-stage.fidelitydigitalassets.com/digitalassets/travelrule/v1/travel-rule/pii"
+    domain: travelrule-stage.fidelitydigitalassets.com
+    public_key_version: 6
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoZNhBLZpPM0iCbmtx1N7
+      SXrA6aj8nKHu9D9W9sPc89iCTIYEP4IhXpJUu+efQEzeRrqi6j7uCEZxrmWwlfCm
+      v/O+5dbQ2D6JH9QfWo51GhEc53HcCxqDiNEeGXWugRRxqlsNKnGU24/pmChW6b2r
+      ogvDSVT6oYSsfUJr84pS980nkUDtSlJyNyoknlX1eVvBiZ0RNgQ4NGSkn30P1N2p
+      xc+X6YxadkSvWJJmXeRMk8xa5GDkfDDRO0ASKUDwAh1gfafLl1nvr1QoguDeHDUH
+      eTXevG6E4b4iWf7YClqxbOnYsXCPszuVqR0jGDxEAdTKCzjQVQ44PaWqWhxjW1+X
+      GQIDAQAB
+      -----END PUBLIC KEY-----
+    lei: 6X064LF7Y6B4DKF2GZ26
+  4885358c-2ee8-4bbf-90fa-f8e4566af2d2:
+    name: Fidelity Digital Asset Services, LLC
+    payload_endpoint: "https://travelrule-dev.fidelitydigitalassets.com/digitalassets/travelrule/v1/travel-rule/pii"
+    domain: travelrule-dev.fidelitydigitalassets.com
+    public_key_version: 5
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr/PMGuMNHvYtUZCJRmdY
+      4lp210U8zDRQdgSuSTp11zJzjWzoh1q0JnxhFlylQ0ihSoVzNIbABwMPyeV+V8pf
+      Nhf+mgPF3mhedeoPx1VBfUmK1C3dj9ujEDxrt/NU17s0BZGunf9m5S2vZY5st0ZK
+      n93dCkbUXSsLfpWp6mIbPiEmXUrSta4VaKD8ytoftnXo6Q230l26okwSOml28IRC
+      T55fKDvcXU9lr0Q8U3NeNq/7ZptOJ4D7CdRUryCLRjU03/z3hQvpSdc0Duu4m4SR
+      hkuvtkymzXiTcP/nfG/CXKpFI3/UcavN/a2Q5/vO4kAg+UPqGV0ISTmjldNxCTtE
+      kQIDAQAB
+      -----END PUBLIC KEY-----
+    lei: 6X064LF7Y6B4DKF2GZ26
+  2459e177-06d2-4b50-b691-77181d6fd3c5:
+    name: Fidelity Digital Asset Services, LLC
+    payload_endpoint: "https://travelrule-qa.fidelitydigitalassets.com/digitalassets/travelrule/v1/travel-rule/pii"
+    domain: travelrule-qa.fidelitydigitalassets.com
+    public_key_version: 3
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAozwCSV8oxW/ueq+L8/Oy
+      UCPA2tFvl9iZyC44qnhQAPrpUpzMivXQQOLDKyxh1z55lspHBcBSINPrgOShKhv9
+      y4RHW4SYqGi7NpawmMoErLxmRZaYT3Pjf3itfnFWyxwqLeus5pKVI/C3bRmb+zfp
+      p62iP15DgRqQ2j7sJcz/WE6SHTScPQm2Cy/Gjb0PfjTgzeSeH4o55qaBaAvWd/7E
+      6qxomD1HBaC9q471oP5d/FtYV6VPPNoqiHUEjEDlvKLiJPjxmUrp1Vma1WrEOIPe
+      pk+HNiuH6OSwifypgeDeCpPh9CmZ8yYssvWakCSLphG9yYpTfxspXvRnuGlFo0Rt
+      eQIDAQAB
+      -----END PUBLIC KEY-----
+    lei: 6X064LF7Y6B4DKF2GZ26
+  1d5b1a8f-1e2c-4663-8471-aaa80b875372:
+    name: Coinbase
+    payload_endpoint: "https://lionheart.coinbase.com/v1/pii"
+    domain: lionheart.coinbase.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAvopJX9E2tlPDHR3c8czn
+      RcDBi2fWP2koSCwiQAKVj1l1asisyi0NrLCroRmRzOVd/YeBZvsAREfRrzw1OPFM
+      VxYiHptY7Id5to9UwOKhnpHJ9w8DHXqZ8MBAWBKIPMRCdSR6/9xgFgyp5hpZiwmR
+      2nvC5ebDwIZiQ2lQYsX4qLWmPNgDthChHHS02s130gewcTCywO+gVrpjhEzAj+xQ
+      tFOGGyJ8ef6vT9u/JtAYPPD7rMim8k/faxiWojypyu0TOPK4Kd54Dy3Tupe3QS40
+      dLESyVPJuvyK06a0Mn25p00gGhYdlRx+xs4HEFcaCdfVyYFKnfVi8gusc/qAq5mG
+      SjBzKI3xPM4rmmj7OpnWF0QvQc2dWCk1Y6rJXZmqat/PadG6v56SQT0FjpMbTJ/E
+      0DrYI7MT5V+ax3dUI1xET71Q1O0mhwoYG74ZmhpXZaJyCP20U2XCXamf0x670+Dw
+      dCZ0T07MPNQibW3Hsx9nr1BykYAlNVbWLeO2L1BGOALsi9nK6QTI7mzIE7cJecBm
+      O2HU51j/lQVRJdV8PnSTVdJh/f1Y2rEYexEU4Sk4ulZih0E3c0XOYSbiaHfLQJEf
+      HnB8H9pP9Dh5p6VTN1aE97kOhakj6bFXzoFap0/LgcI7zhdCtavTQ8/3gptkeooG
+      b0lbfa57k/uQDlF/ymSbgocCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 549300QHD76EP6ZKTT48
+  be4d013d-cc15-41d3-8122-72e2b9c33f13:
+    name: Kraken
+    payload_endpoint: "https://travel.lobster.kraken.com:8443/pii"
+    domain: travel.lobster.kraken.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAwP22KXEEIqthqy/szKOY
+      1Az5slKkc3+vgfPS08gvNMqbf/iMNKQ38bJle+S6vLsUnFhXsNYwpJKr/R+LPx3g
+      kjIsTnQRgubznRY/E6UJg06PXiUouXwUiCxzdH0cUVangYxi0fsbp6NMwnjRm1N2
+      heHtOC+3tcpRJxwY9UGZ76eIFH2ySqRz8AQEBXqUIyPKpNyu9rbwKyMiuBIwloF9
+      PwzE8kPKqHe1OqcjP1rSj4CIEiRrUPittBHhWHx8c8ZyFjuMveTgXWj8nnYVcfrd
+      gDREXH95Y+T+vEzx2Lv8NYAzdPzoNn9BJFwJw95riUTA0Waz8WLzny2chndMhZYw
+      fFEUpp4KGorgZKib+HzkWR9zhOJ44zaxouJNw/exyss4si2pZWvh1COy661Kf8ae
+      DxHwzx2XS99L2NoNdtmbR1/BzYCl7bY/QPiq+mBb3ijYoHR1w75h/lKIaiSKmkfz
+      m5UUIgYALmCVhjGrNn8t7NQTPwu5T1VcLiKB3f7fnLxc4AegnJiDUvJBJds7v0Lu
+      1pWiGAdzipZKNnrx5KaO1Qmrkrgv+djFL7qhPAIOOv6zutCO6GwtlD1Kte/6UosV
+      7HVEdT3iPG8KBFlT579E4HR2W6S4mcSi9OWXFN/eJQyOZilY96NDUDFdDYhtLM3J
+      zI5WNIYRoLFOO0O6wP+sELcCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: N/A
+  6b194f1c-988a-45b6-9248-b23153bdd6a4:
+    name: bitFlyer, Inc.
+    payload_endpoint: "https://ppe.api.trust.bitflyer.com/pii"
+    domain: ppe.api.trust.bitflyer.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtOmxpTCSLTiDf3O6/tjJ
+      7Kyca6qD7tfmO5+sMx6WhZwgdjdiYMuPAYoTnTp8qzcjcz8zUvQNefm46Ds9ZW8M
+      wLB2xmg1yQyGl618PpzpX6qM/93Stn6VtzBifBsRk25+aPOJUZRTbndkZjUGF0w3
+      lDhp2YYCrUhxaoWBtXQUXH33UBA1Hembi3qAuYpQP5ivYpEZ4A6vKdMjKuiML8D6
+      rNmEpem3VRES3QPorSo5R/6Ap8lidFLfUU+ytNI/24Ibqx8MSHQ05/wg5rS7qKWD
+      q2Tqx9WwBuRUSNaCXgC9n6H5SONWJUt/c8aVdxHWCd59Yf+1iEi/j0bKAGHYyIUA
+      iwrdy2X9u0jq0hplZWfufJiVR6zZkoFg5t5JHRYL77ttC3MG4dzM7SVDWsA2XZZj
+      VltUKMv7J/OE3CEsb+01WVO5G4tn4hufAEprgnQYV51WWKMQd63g+d+Iz1wbh0/t
+      FZmTxTWRXdqsvqe+T9EUf3frM5r2chUPAQofvpeGiFP4DM5xNDrTN92AARcPn+mz
+      AUJdW1ICN/soa2LZKUaf2+RHJ7D1nRGUF7IjaNcPfjQLAu/TGtAw9mVWQO+Hut+q
+      d2E57v+yVYYMQv/+gyzOusciNKYidBNO16GCwpe7OW7GcT2CkcOp96SSE/4qSBtM
+      MbJVZXOmZ2WeXkKiNz9v3PUCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 353800JF7PYS866Y3X08
+  ccf622e9-51e3-45e1-a759-a2793256f266:
+    name: Anchorage Digital
+    payload_endpoint: "https://adb.trust.anchorage-development.com/pii"
+    domain: adb.trust.anchorage-development.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA0XFJoKqDpy+jAFIC5eCq
+      3QqKHLBvoJ2OUVwuuzuE14d+5WWz3tY8yfExPgl/+sc8KMUSisp6v4udbcEmFKYa
+      Hm7bBZOdIMuMwoQaL3W+ymv6UFRIVYdNnOCnjwl/34smJiefHIyQo7JmJX4KRdJw
+      K2tz9hcfbV/+FU8499tqjdMrufcxSlM74/lSEduaAkzXPDIzpboPMMsjN1v8wtqU
+      vWk2MP7irFM47DSOTiBpcCiiK4Rg4cIQ5CNCMABA4wcn8EN9E3X/vCgyoXhiP7JZ
+      Ckc6OlAIdCRHTyVNViAICM8g5pH1GD6d4EDGe61j2nNMk7KKzdxlinU28u6X4MOz
+      GW0eFvn4SgbodLdEe7P9oWgEsoDB1bZnEXSgdUy7faqbiElLtJWIvaTr878QFum4
+      Pui80ayjG7R3ZTSxiDlTcn/Bpr33rYe/qr88lGqM7S+/hFnWWmWKTWZljIdTwqY3
+      2Sy5voxJ9l0Xx2guLm2vSzEXI6H7EBJ/JK1BJ2TmPDWSQt1YguBp8bE1aZhVnRUq
+      /B3cpJ9Pb3l2YD5+dv1bfZuxoq62TR1bU5yXpMSz2GF8DI0FHzNM8y+P2I+P9PdQ
+      rxPK/P/pBhL+PxwnCWCf1nF/bdgRcogTiJkAhoCKOw94MnXTMZvN1HTmWYdJHbjY
+      hUo1zPCmrCFJqkeAFBa+d0UCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 549300JJSDEHXA1AKJ69
+  594d0b65-1a1b-4c64-9f4a-5d8e1d567845:
+    name: Anchorage Digital
+    payload_endpoint: "https://adb.trust.anchorage-staging.com/pii"
+    domain: adb.trust.anchorage-staging.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA6x78V/EiMggh/wI+v0JX
+      mkYG391vdFGnHsDY6OcDryiPurcEsEyaWVlwi/+cedMrfj+ABTfWKKREt4bl3zyy
+      eloWhH/gTjWafPIzDA/fF+gktZKoIBO/Ve9GFsr6ROH9Fm3dmLbiNO4eLhGEMlQt
+      haAxTt531JEV4o7zebwGQgS6WGd1Q3KcR1pkeK6dKUw9SYBKCw+h7yqeZ21ue8G5
+      820GufK+IFL6qTLFoVRCZCsYI1iwFXk437GIzxVGx46BrUrDA9xpxwgtkfma69f3
+      1Kf52cEpFKmwe3mHwzWo4esF+khO0TNT9FGQe0I/9PJkj3xaBJzei2U04OPonEuN
+      /hEEADtsg5XVo6cATtzHLclEdpwmX4kzLslJL5nxdPk0PPmCqhyFe7PSlpWusNn2
+      WfGuU8d0hXETKI2ZiaSzZOpPPIMGtMRxpXJQSacVzAFB0J/uft9pXFJsr7jNQCae
+      v0ESXZrHuFbwhmNtS5tbaR3cGhGRGP1V0XaPgwXA+ysSItpQEoe8w69tbgp6SrE8
+      JX09j9vEAbzpuKCtnlRpfR0y7C6xHya+R7Xz9OoBgD+z2GftEDueUY+kzHAbAgs6
+      42Z8lS7H31QBwKuZS/npVt0b+EKRXFf1AQoCFdatGK+pg1NCJnie1ZA+XEkyYMrk
+      Y8+NOmAj3luUMoKgDVXjYCcCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 549300JJSDEHXA1AKJ69
+  f648637c-e6c1-49b3-b817-12b6d68c6357:
+    name: Zero Hash LLC
+    payload_endpoint: "https://travel-rule.dev.0hash.com/pii"
+    domain: travel-rule.dev.0hash.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAoSVyJIDLwfxfesTWpr3A
+      4sZdmBXYzgdpJRiTIl37FkL+SqTTusEEPRfikg0TtP93fyw3cqahBN3ky3EIe+1l
+      K/OhfqN1IEFzRkf5cMNcrliCNlHRdA87GodXhtkA01nCxe0v8luY49rRjNnmcCsl
+      JTfLa7Lyy09dzcu2mmZ113WrfWny6hP5LV+FfMReBCc20TCE07ePBt2lcIkf5fGZ
+      6LJ1epovs3I2HgScLOGyUMlVM/P0t/w3/SX8xCjwDUeylJXgv8dicaur3nD5YCqy
+      SjhcM61Eylx3qFRIC+HrDw+1PBFr4K1TXurmqHNyeB8QMGbXwznWa9OTe67ZEXSt
+      qkVqS8eFy7r0R2xUH5gcFWdo1gZt4Al8pdPMJfsx6I4QwGPbL1lZk3rJqA7V/5lR
+      J+fiTfcWjJXgG6PjdrxM1QnTQL/R8Y62fTcfQKiqGbkVRv7SaWw1oGIRJ6Evngz/
+      KcIJ5zhowKS2S0LwIG9NuxBxNoPVryM3Wh6MuX6bGsctRdEHiAh2JNtynaE7LsBo
+      HMU3gvCwoMugA3uVsPISBKb2RtEd76DCOlaHiRZ/n8/iHfEE43TsRw9UU990NEsY
+      Y613JU8JjBV4cia4qNSwoujY5aBPH21XNl8CJw3wETfY8W+msTerXnSPNo8vWNb+
+      lSS11vsTE0ipfYdXhwjIGekCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 549300HO3R60QNJ2JJ83
+  e0be6a73-0856-4e5a-8721-1930c087c092:
+    name: Zero Hash LLC
+    payload_endpoint: "https://travel-rule.cert.zerohash.com/pii"
+    domain: travel-rule.cert.zerohash.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA9wdAQKkpjH1tnHICOQ7Y
+      4Te3siWFftLboaGc8zNOcjeijGquQX46g2jvQHseLwRs7p7oVXUvXZnsBMPblkUO
+      zDcVzdJQBw6YZg8cJnFk2x1ft3FayJQJLPIdsRg8DlKjgBr6ztkiJ4PCSXCzC8am
+      zGfYWFphUUHzRnieUU+Z2sTVRKkJBPoQp+OYZmimEoTF3li+8bIIs7uDm69Yfpdy
+      MQ6vqfnK6NxncGpM0Pox9eJF8t4pC/JQ0+lmyg6W+03rANmqjCHQM7eMypioMETT
+      FEgLKZjEeWdgeBIXAlAr6hmJQg+JFMjp7RQEvj0fmZfrXskGAXyAy5Jjh9OC26hk
+      DOlZ9XtJsO5D4wUeKYjkOlsHUW33Wjp+PT5afeM5GWzaMs5SnRECcQwGebvFArF4
+      5RCaCEvuqad0LAY/1CXAsm9j7o3DlUMuko9cvoeGAQDI/sQ71z2ESg4l+aH9wLcM
+      c+TtYR98T16gZSe4FFRvbVRQI/b3QAT6dZNjJTE0oErU+LJAJ+LOPT7ji+6CoTY/
+      iDfl8KBnC/qrmR/g0qbe1l35vDzbN3+7Ue/qv6bk+J5+HTIp3WomlvIhjTHejLU2
+      P4AdYNq9rwcSP58iEsW52blckbDpjBIkPQvqho802fQ+cuNWEixnnSu4Na+iPbiP
+      ydGyesIDt3gyswvOK/9Vn58CAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 549300HO3R60QNJ2JJ83
+  2136924b-69bb-405e-a535-b11778f4bcc4:
+    name: Zero Hash LLC
+    payload_endpoint: "https://travel-rule.zerohash.com/pii"
+    domain: travel-rule.zerohash.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAl5odPU0ztY1inWOuShwT
+      WbCahOeE1a2FjF560DTgJihU4PIwdNS/9PrLkYfpZdYPnWlNousVxE8lw4oLSaIC
+      G4Eup4r02mDX0dvsJ99TcSzJFW0z4YAYYs0jlCPWTGoRg0JIl7kFXtVPeOUAv2lE
+      PFqJmmedLVjO2wt3K7+0cxz674srndPv19Lq/ig6m+5JtjwBQb3jTSdlrdH81wGA
+      9WXZQgktAkC3zlhqYLeLPYbJYJcsi1+t+b8ETUSkPMyrLl81ZiFmrlT1qI5ZH7Qa
+      3RaTDBAs0r5THBt9VBXJvec9J0TLGIq7lclH2IgfAECfyJigvmLA5X170cPXm/vF
+      vyvYhCAMpGruluX6B81e4TOQEJXWtjr/Se2pHQ1kyctt9/tOuHidFMNKDGRYOD/E
+      xtP77IRVuJZU2B5vfKJ12/kwv1uGfAuAhtsWmHlMq7xo9PkoEfS00ieDtiU2uPSm
+      BsjxE1VSj0l9Z/Dxdzx7fTzuKHT70FEnwOb4QLkZM7xGvuM1vaB2ccvvljvmPYPT
+      U0AEPlb2fkglJO2vxrtARuQnsOYFVzmmtYpcnp+bn/i/AdSvMVZk3VF+1cAezBtE
+      l1QhJiwMAusp+vYA/qaC2GgkiehloMiricHaaG4ofGgQhPrvnrpL+ECjKRZS8ThE
+      xLJHQG0XkaWzTj9XwVO9g+UCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 549300HO3R60QNJ2JJ83
+  1200e55d-564e-434b-bdc0-aae066d27e00:
+    name: Robinhood Crypto
+    payload_endpoint: "https://travel-rule-dev.robinhood.com/pii"
+    domain: travel-rule-dev.robinhood.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAzKc8MLUZsVDIaZYT1J/b
+      UrJXJOF0+BO9HFkItytqClvaYtAwNU1U2of7iGZ010cWaFcFe5RRvzw8E3XeZkWh
+      dyCcTo8G6BKim3b4UJfIzRUHtqLxUBJAybfG79LIO1iPsVQauH7qekioZS7z57Zk
+      3PBFzbR+ZPLnBrmA/DANIemPyG9OKrBcXiCAkXlEtQ00e0pO+lr1pgFHBVy2onzv
+      u0iy3QVO92dkAnOjEV0z8x1ObAzWw01asdHoD+ejEt8UyFlIPwLh6nnx22a73hZA
+      ngILYA689XH9uVkuDZZz6ai7GUIpcQGGMIVhAlb+b88zq7lecETyWJSNcU+il5wa
+      JxXEYiHuW+pAZgHkw//C9va2ojRS7rH2N/JwJ8lJBnRKXiK+4NOU7I9Kg76oUeaQ
+      LIFDbka718ieJXpqH8E9MItOKSpZdHqg0/CPmo85ALXHE4xfHbWRfbgqx/uIlGyL
+      xCS7U39myuHHcvu+KMeySIg48UZix3iB2sg0tJUQiawBWVGBhi7XBCXsXOjXoVyx
+      bEylEVydGpxZt7TgVsr8cHo0Go9N9N0HGg1wfENTXL88MFVuzxw7rQUXbjCsoVW6
+      H5gz/OeQ1AvQ39uYpSNdBvsmjcaeEEKN6n0yBQ+nzIrns6kpEuRfVSVvFrYduzN/
+      56GSj8GGsrehGjbP6Rs1Y4sCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: Robinhood Crypto, LLC
+  38c7ac49-4d10-424e-bdbb-a2538df9f4fc:
+    name: Coinbase Travel Rule Test
+    payload_endpoint: "https://tr-test.coinbase-test.com/dummy_pii_endpoint"
+    domain: tr-test.coinbase-test.com
+    public_key_version: 1
+    public_key: PREPROD_DUMMY_KEY
+    lei: tr-test_lei
+  89836957-6392-4896-80fe-32abe47099ae:
+    name: Coinbase Travel Rule Test 0
+    payload_endpoint: "https://lionheart.coinbase.com/v1/pii"
+    domain: tr-test-0.coinbase-test.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAvopJX9E2tlPDHR3c8czn
+      RcDBi2fWP2koSCwiQAKVj1l1asisyi0NrLCroRmRzOVd/YeBZvsAREfRrzw1OPFM
+      VxYiHptY7Id5to9UwOKhnpHJ9w8DHXqZ8MBAWBKIPMRCdSR6/9xgFgyp5hpZiwmR
+      2nvC5ebDwIZiQ2lQYsX4qLWmPNgDthChHHS02s130gewcTCywO+gVrpjhEzAj+xQ
+      tFOGGyJ8ef6vT9u/JtAYPPD7rMim8k/faxiWojypyu0TOPK4Kd54Dy3Tupe3QS40
+      dLESyVPJuvyK06a0Mn25p00gGhYdlRx+xs4HEFcaCdfVyYFKnfVi8gusc/qAq5mG
+      SjBzKI3xPM4rmmj7OpnWF0QvQc2dWCk1Y6rJXZmqat/PadG6v56SQT0FjpMbTJ/E
+      0DrYI7MT5V+ax3dUI1xET71Q1O0mhwoYG74ZmhpXZaJyCP20U2XCXamf0x670+Dw
+      dCZ0T07MPNQibW3Hsx9nr1BykYAlNVbWLeO2L1BGOALsi9nK6QTI7mzIE7cJecBm
+      O2HU51j/lQVRJdV8PnSTVdJh/f1Y2rEYexEU4Sk4ulZih0E3c0XOYSbiaHfLQJEf
+      HnB8H9pP9Dh5p6VTN1aE97kOhakj6bFXzoFap0/LgcI7zhdCtavTQ8/3gptkeooG
+      b0lbfa57k/uQDlF/ymSbgocCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: tr-test-0_lei
+  483d718b-8c8c-4ed7-8854-ba579664215e:
+    name: Coinbase Travel Rule Test 1
+    payload_endpoint: "https://tr-test-1.coinbase-test.com/dummy_pii_endpoint"
+    domain: tr-test-1.coinbase-test.com
+    public_key_version: 1
+    public_key: PREPROD_DUMMY_KEY
+    lei: tr-test-1_lei
+  f202f515-81d5-4b84-8c6a-f4e2eb10bc5f:
+    name: VirgoCX Inc.
+    payload_endpoint: "https://wordpress.virgocx.org/v2/trust/savePII"
+    domain: wordpress.virgocx.org
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4Xfo4vLbQsP4HzV8MBJX
+      kK2YFXAnn/+xjsrDlzTwBHdTgM+FrCp+TtsM3idAI1Rt7IYY69B7+OPcUyhpoAHO
+      YO6Kpd7ULl443Van9EoQrwu+mRA1HmU4XgBzE+xvTaYZW2ZUHrlp8WRH8tVVbk2w
+      ijWxTArZCmhFpDMWHUN2gdI9QI92Yzb3W2gDI1lQjrfHSIMqUJmfxuS4tJPMaWnv
+      g2V7d8JS0L1TcjC9xVoWvrvhVOOoox4j1mWVPAPEbdqhvjdjsSY0jRSakQWNxrd3
+      9oFUtRdiT8OuRWA4rOezY44VeNtFkWRNunChn6Fvht97O+LXrK/Pm34vRRgbmFHS
+      mwIDAQAB
+      -----END PUBLIC KEY-----
+    lei: 984500CT5B7NF8039I85
+  0b95aac7-9e19-4bd8-a758-b1a008848fd2:
+    name: PARADISO VENTURES INC. O/A Balance
+    payload_endpoint: "https://trm-staging.balancecustody.ca/pii"
+    domain: trm-staging.balancecustody.ca
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA2Irr5+x7/s5D21ywrSQZ
+      nhwFroRBKjOLl2gNzgdE4R/UNvUrBmWVCYuY0ZiPL3Kdk2zWuVA27lEbru+QTbm7
+      CP1PraRuqqz3fTWoX2R7Ip8BPubTN0w8dpYS5PTEdx/UO2b9jxgxHAOOsOOewiCR
+      Cgd+CUTASfPovD6q+k7WAoZtjbWLOPvgtK7Smayr1F4qeY3AvI/qfN+dwK2Wvy4G
+      nymp6OqlpaSAk/lPFkQe7qnAS08RbTGc9br8jYWZvDYW4U9+VgdxZ6iR+EiJEmi9
+      9qtL2w47B4WNgLgeJvImYh2Lu2W7om+LCIpNcUmvYCoiPc0a+nVhoiyAglhWZbKa
+      oRtpEHJgNoiFVAX2Wc6bS7VxPf6dja21Ir1sE/NIAWHeCUX85aVFrffN5NfE4f8l
+      bAppQu2VoxPqpT6l0TPR+2G/BFXSX0ph0uaIyGs0jzBfsRoarM+TD0wFigsdXwNN
+      4rGJChLi/m8MZiBTicggz5P0DWmCNixDdq5COAq1L9oM0tPjXzHEn+5PWV5QnLsG
+      2L6rjpKpgAIHTtgoLvQHKu0pLCPo5jKVOZvBrcNM/812mNmKmrsUXxCICSMM69sx
+      qXfYC4AMiTAA+sMGJrJvgzK/eAWmnfU3NAazyR0A8uoVaDanitJixIgWSCRSaMP7
+      nHfGUuBLnBbJjpPcaHMPICMCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 984500L4BF7FE1577E73
+  e9a62d07-eb0a-4e30-943b-135f3e2c98da:
+    name: Standard Custody and Trust Company, LLC
+    payload_endpoint: "https://dev.tr.polysign.io/v1/pii"
+    domain: dev.tr.polysign.io
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAyL0c9FnIGayDYdidgpC4
+      +k9n1PhtEllt7mEkNN0MAWsVqqulQKl+nhB6l6J404MTgCM+KnnY4KzNBOYQwevW
+      85tNpfEZlspVZc4f+1EZFoo7mGIXRGF8txmTYj2OBFB+p77KzW730scBUEkj3OF8
+      oxMnirYGdcr7zROFoqSHDaOJP/P3rexuY5crh565cAPo9A0gE8FwPokDejfgaIto
+      mjh404WGiMk06IYu8m6MLVAR7is+chd7wCVVFTYgd8H2ic8aWydTAEk8ZvqJEHpn
+      H6tjJiiJr4/njg/lXKi1HAdQ/ORrsq8NKjzh8ny4YJHfhYLEZFxvG8GMfoSxGyT/
+      ph0EYq1hZy8n5hGYYv8UOuPzn7G0Os6LJUGJHobj8YWjLcIdrHW12gXRZHUY9jX+
+      bMJoItFvkwVR9svvZbexlGos9zc9BoeLHkf7AQErrY33ANJ/fg+xG4jQaR2pHm5f
+      zHdLGVITpnUntFsDsWxbG2MLEHgV47Lir9F6Jx4PzWBaBAIBTPCbZ8zz3VkpkPdX
+      RlloL1boSHmGsFjbgNG7UQaknoScHjQo1iqKxHHLyk/R/Ogz80gqjkpJpQm0JCRi
+      bKBtvv+sc+LI4hBYCDiDx/y9vgcrsMHI9dmG41gO4iaLykWRzVdHqxb+t4MePFWV
+      C+Z5riGE/5iSwbHSASwOUPcCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 9845000BY41D5F191333
+  c3976eb2-4d21-4a1b-aac1-6e68eb75bddb:
+    name: Coinhako
+    payload_endpoint: "https://trust-dev.coinhako.com/trust/pii"
+    domain: trust-dev.coinhako.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv57zUCZYmtuDybUW4pu9
+      mRkNaK7R3QvESh2m9jHDc/FDIcUrAVgxEBVQkZ5+3noaeRWaggRGctfqcjcEQn0z
+      fVBKPyMc+dlIINzH0a09EOY2hprkK0X1Xj6eE7oN8K1wQPN9Avr6NXdLtZojopA4
+      Q5qjJwQ8YxaEtKo1YPlyrswqXxm+ipavCgRZep6+4FVIr6XKNspXXceZn5fiUOd3
+      LTuTNfDwJPRtvpWI2i2g5bli+rd3gpxIvkDe/vIYH/KnY5COSBTtD8BnWrZWS9U0
+      su/Z1KA8bd1g+B0U+SzoyyeiLuIfuJ9NDZOAnmPEvyYEOvSOpesu8sESp80bBeWE
+      KwIDAQAB
+      -----END PUBLIC KEY-----
+    lei: 9845000CF9AECA9TD397
+  e9e57971-50f8-409d-b0dd-059e135b9ab2:
+    name: PayPal Digital, Inc.
+    payload_endpoint: "https://vasp.stage.paypal.com/travelrule/pii"
+    domain: vasp.stage.paypal.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjNbTHYX9fdebaSQYOzaP
+      IZ+Bx6QLcnw68R1+VGJqlG3aLJj+xcN0K3xlZJkuwqQojJxPfq+HIGBx/7bnf/y3
+      vkboZEc8sRsl49ukYLiV06wlQEo6mBiPV7y+wViU2w7WrsP1p1dlJA3ZZKQlfL//
+      24uRFGU9juxE9zWLAtaB3EN0NkVtdvll+/oBlqNfwCmqmFLC2qngVX4H01DhoHXn
+      R3NHg75vLhkn/+2w/Az3uawpKLpF8WwwKtCH3uBnIrBduwnq0vUC2jqADY8e3+8q
+      h0Ykrq4tXaoUt9JXFXV2pqdNstTrUIS8exyxDtY8xuad31TaqGLxAJDGgp8iZaVP
+      wQIDAQAB
+      -----END PUBLIC KEY-----
+    lei: 254900QAT0N4N31HEZ60
+  2cb0ec13-1bce-4e2c-85b7-7a7956b86ace:
+    name: Shakepay Inc.
+    payload_endpoint: "https://ustrwg.shakepay.dev/pii"
+    domain: ustrwg.shakepay.dev
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAymnncgusjoSkOSpNtbv5
+      zFb+6TVz8WfUCpkfRoYGUDPJW6v5ZQcStMC97YEbY96lJOQGylFpZiszl4rkc0u4
+      93KsxzLG6PKm7Jg0BxVrUM966MCmdznuNllfBYHPF2q6mN/jDlgDgXrJx6Pd/B6l
+      Ja/RsDLqUfte+qLrf1e3s27vrmSPAhgPjkWYY2bt5zYwg+IpKDrwqkDWP3LfEUkg
+      5zS8cND+YQti79xikBq2QHrUdVeD8j5ADQev9VvcgaCfgtoc/mHzivoj54qPoL+F
+      Wzyf4NZMrWX0A1r59VjI+w57FvSTu7oJWulC7Qu8RjnbgVAWAwBuRk1FFaGCtwiO
+      IyCjt6OKKaYeC1dvZ4PeJFL3IBcFRhCySuQ9b71fLVwy7yYyMVnK1tf0+0dwa06Y
+      Dd6paoUyLkQIkBhelt7+GnZOB0jywmYeXAOApwau9bNAVn28vrELPyKoCGvFZ0yJ
+      C5mJrsWMyjRWmR5lMMELe1qzuVKKB9RslqYXkzcV+2B6ILTrgqh+WXv5NRx6Eg8R
+      8Xb+J6l9kskfEeHLBKkiNN5HxeFaxjArpy5UnCxkYETgxse4+LwZOnA7d+eIP/D0
+      HPm0KP7alXqevf/63k7lNR9nANEQVeEWCR3c+2WvWvNJ/gKCP9ueBI15jXGdYXUX
+      6CrH3wgKHcqn12eYbxguKu0CAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 549300L7M39R85XB9I39
+  1869dfbd-67d9-4b52-9949-448c2e7ab09e:
+    name: State Street Bank and Trust Company
+    payload_endpoint: "https://trust-travelrule-dev.statestreet.com/pii"
+    domain: trust-travelrule-dev.statestreet.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAv2ooKns38xCrcskwoICy
+      /j1dF622ikIDG74crp3+93QvAdHXzYAbBO+qwIKcuyHnJ6FKVilFbXytvPa+mui9
+      p6Br8KGn1KC5TtlDmMh8eQ9SLg7EofzR75yFL2gpg/HAYcWjXfMo/qQyFQNLxGmu
+      AeAzDSl6wqx1fkdID9GTNnag0ZK4t7VnmJa0zK7Tya2Kf9nrZ8VkVwkG7h0o3mth
+      vqcGqEmQw+e59dbQf+wSpOfSzOmmbyIedPAbQwzrzLQ+rMGR/Vpn0EL0EafNCpIc
+      IfXZ9VGUbcYGkPZnfKbzcLizfUuwlLQ2pi8Jvkdz5dx6zMMGicRfYwRegKinLBKo
+      rtQ//60LS2DvpbTGntv1VeUVq+hGRYEEKSgnSpJy4/XcgF9Rhllbt9PRBYaZzqIo
+      GyNjfKyJ7vFsyUymxsyIlNJXcWnVq0043IJ+4ykeAd4nNSdMGZzwaiNn3iprL/TA
+      3B/FwPShnB0ayTXlH3nhXV+Zj4M5qY6mf63lPs+bpNrmPX/xBgmrhP1CXZrrzHBc
+      ivtjQJRr/riLl8TWKEA6AicRN0MNVxlHw4SBJ5tR+UPjIWkW9rez+LTuXeC4pG7Y
+      X/yZlfG9ePrZ7JTyeGvIZbHfucKHC9A9i1Jy7NwBMdmJya0Pb6ymoWJvojIu0EYb
+      Gpn450+eyzXGEFn/rQngS4UCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: N/A
+  4c9c0524-7b63-4967-ad09-3f4234b2bf27:
+    name: State Street Bank and Trust Company
+    payload_endpoint: "https://trust-travelrule-uat.statestreet.com/pii"
+    domain: trust-travelrule-uat.statestreet.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtq2MAkqJAdkd1m1fkzi3
+      7BU2BXMALK54qEIH5FmQ6uxkynAwPfQImVgRwumrHwkDut/y0+xp2XdOH8hpa6SJ
+      2vzcTL0Do0LBEinwkUtuWgoEApb2QjCNRm7UDQlf1IxrZ1VyaFuemL2guDM+R7he
+      kXRzEXio5gz7KN5MKTifICncCLdsYzQuj72vxQHsHh/WYlhCsKORipH0meMzibKS
+      nxdEGCaU42V/KGCCxhVNyYohGl+OmdnkBhyCKffDs3eTNR2wARSZC9keAOwhlh6B
+      RzUXOp6k/rMfc5EhrtA4IhPTYzFES4G3wn45E5RPdRXpNDzk8i2jXAxf3SZbvfXE
+      TrCBFlJ54NwgVbERooQjeAPGtQc0xKQ7/rhzC4G2FTSbmrZ4BCyp7SUUzTFDZQKb
+      m56CIWagHsK+7+nf+ezpZdYwQwccrz2n/tAKisg/7Pxu90EXukt95Z8fWWHihtrl
+      yEmwQyHRJ2VzXIFLsGbthgQGiOZYRbP0b3uN3Tbe9Rd3UZ8Wc9kC3QkBEjUyrSpu
+      RRVtrxmImr/EiHVqJbzTIrN3eYUvVNs/0dmTM7dPY3cg7CqNA7OhcdduCtmFzZhO
+      U5ePQ+RdRYqgpiy+sA+0uhz9Cc86FZcbJL7PzcG3/k9w8VyDw15i1R/uSFggDVi7
+      MwKyUqPyj6YYpviNAem8PK0CAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: N/A
+  eee064c2-e0ce-4ae5-ad5d-d85cd5dbe67d:
+    name: Binance.US
+    payload_endpoint: "https://preprod.binance.us/gateway-api/v1/public/risk/trust/pii"
+    domain: preprod.binance.us
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA+RlXFUSOG13zj0mlvRYH
+      2tkW/U6sWW7Xh9kL40FA5KMGjVtUWTqtBWFwt197XrXOeD1vxv5Dpc7QK6nXhCR0
+      SwFOcYOtRDxowp9/Oav6/LFuSYMbXRs4rlGpuxmR56n8Zc/mKcrbZQVfiLMCiGhK
+      VE4/OQAf1akCNBMEsAavTDHito02yBfDssZCfbPca/f5DI2fgCWuRo9GHlWj0QNj
+      THZ8hSKza3ctgxPCBcfVlQVkqZqPEQ59P7zTFs/Iz9qQYW7/WOpQ8uemAGds9Uy2
+      hSOQosDcNLlIqTpk+YS/+5XHBDGsvLRQENeFQzOLCk1+S6eJxcQIlo8ZUFbCSyNE
+      xn+/SG2/RBcLMIcWHncIN29oAFiwJ9tBde5qYfXFRyavkxGmDq/XoLm3mmB+3Aq9
+      JZfFPw9B7hGBgFhk8NlIfo1K+oCcnPducJMLQrNpDGNQdZTWU1mAmwEronQ6z+Hf
+      ntbLrJe7wKEcNhmzHhlpk0RGr4wJ2f+lXybjneuGMP/9YIBinTZHRgtdj/EaSkv6
+      oZZDvXU5mLaxxXIlu5xNB2Q/xielQ6T3gzO57tKcraOPdPzmUsD4p/nGgBguCXJr
+      58JTtKZlCPULDTgGUJg3WN9FOBhVRZaV4qJiQxgtA4+p8AYe07LQUgxE2SkrWi0u
+      h6jEiZduR2QqerC7rpYImdUCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 984500XA936ADED80619
+  33ac42e8-d9f9-41e8-aa77-a8e3db18be19:
+    name: Coincheck
+    payload_endpoint: "https://tr-test.coincheck.com/travel_rule_api/trust/pii"
+    domain: tr-test.coincheck.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAwtRu6wKFzry+uG5xMwNC
+      LGA+E9FMWkA3ghHOe5YokvwMmd+n/HZHpc+iHQhs9el5Yy6nv0GEFkw63aqSmIdg
+      R+BZiPtnkEUUNzLuMYYD4jN078loiJzn3dhhWlwAv8NaXZE1yVEo87Hq+taBoE/K
+      s5vmXafTwxdj94rsSD19yxf+M0lWfDpr1+Y3VlNYXRhDieu+NrPWYH/SBGsp0yjY
+      LwZufHPM08YJGKIMQW/pig5YCzUPI2V0CmGIo+WOHutGNsv61vUCRrN8Brt7F3a4
+      oUBxkWFhWIBd9OIPPncNOnRE39S8KAFCofsD3uP24Eu8bOJM6G1XfnnCzLjwoI3i
+      /BLHy6iR4EoosMMsuWEKalxrhoqWYc0yBaWJYmaH92rWvgS0HiBlFSSDUXYrXCpa
+      txQkf3JsPTyveiauM/zO7jWP84NJzLEUs4WEgs9zlB3XQIAOMwnPuc0unvk88uj4
+      vhyavWV96qaw7JlXAYc3pEFpsGp6+owu5CHVW+VS5qi6CRJ4oL4l/m977AKJhgDc
+      wU22Zd0cuYSqf+/oqeqgP5idm4pKOhV957S4aVEwJXzGlUwWQz5FjE387kLrlfOg
+      t59+KfWlYF5+l/tJM30IrocGOZxqIeVP5t+ibvZQwZ+1qirut0mMG6zAw263A6Sm
+      2pnyYAE8do/UvipsBnbOhqkCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: N/A
+  5f03b74b-459c-4be1-98d9-8912f720e4d6:
+    name: Zodia Custody Ltd
+    payload_endpoint: "https://trust-uk.uat.zodia.io/v1/trp/confirm-kyc"
+    domain: trust-uk.uat.zodia.io
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA4IrwpbPnAvGwNKpNLkmZ
+      TjA+tFvfHTKEFZyq9efZscsk39xk4pBcMDpqVhUt6vEhQ2s7k46ixLRecNoPP//b
+      i+0sfXa/Wn4CXLjcNbNpk11MZ9rU+xjC8+8c0eN6iaRQl7p7+NisfZjtxIq6tYOy
+      iqORFd+EdUQMlZ+jQRG4O9vbq6HxBFXIOW6SEB4yLBEDjvPsMdbLNnp/o94pv5zC
+      fm+QLo4vwcXRkEx0q61V3FQXxprB5QrEesaLTyhQLXkOMrIy9tytcpWBItx15Qle
+      PYg8/A0cLx4kyz00D9MGiae5ThPMakVN/mY4g2cx0Ny8AcQvuXHL57paEJm2JUis
+      S1+bxypOv99Zviink3tEzTTZrAINHktmnmqxUdVK7Zrfwbh0IKL5sP9fSbZ2MR1J
+      d1dn0q4vIZ9AWGYpmsJxP73PGC1B46jUIznyJOnUjR3OgapzFAwB2k0jyOLHgoCt
+      GoxpifKajl4Ar7U2jtjqW9C7IJGVCIUkXQCOIRfEqEUdWpAqk/xiMZH7agZv4/32
+      H8H3XN1J8AsE+wyr78VlmmizSflKXvV76vgqCIGmyh+2+OPZA2l3klwHIkgb4+hL
+      c+PuwkEwQ2VaupmQ9ZdYW0t6y9FQRhE+ef72oP5bTq9xrt7W+NazZt4+TCmhXGjC
+      fzG8uLFTgWmK9UaWVb7BSO8CAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 549300GW5G8DI3A6KT57
+  157bbfbf-7744-47fe-a1f5-3d46094c1f99:
+    name: CBOE CLEAR DIGITAL, LLCACTIVE
+    payload_endpoint: "https://trust.newrelease.erisx.com/pii"
+    domain: trust.newrelease.erisx.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA2QmfLmxbfGFyT09h6LFE
+      kz53zuZf9xrJXGcDJ81MuEt+F2Kbbg9lWz3m5KDaVvVTXvSWi2Alq0GXJSatgzXg
+      TNrDx3SFXpCb7aErwDXz8d9c00jGx0cTyjkOczR7fN5Btz35hD5VU3bHg6pP7rR1
+      2nS6q0hbwvE/0QbXTILyexVByTz02NVVirWWmbdKfpAypP+ARobf1SJa+qVDfHNx
+      2Lg6OEMtLk1oOHqo3iBz4+liyzAfSaw0VNRuy4tlgyXy80dLK8kmVBsue94q/H2v
+      IKKdXYEbvay0YEXGLe7zLADm7yIomqI3kb57TeLAmTGlZB1zFJST+6PNLLrUGoqG
+      IBVCp/Vxeo4GvtH6yOM/SBM7pdd/cjoXTSz4GypI2cQDpDld824JCTateAIGlpaA
+      R1PQRseErzHwgwP0HLWQuythTF3YAGqSDbWilDLgHlr5BfA0rckQJeQJmVB5gBsq
+      +ZZyBG+52OeIRQzCNfeI7RiqCMd4G7q6yocvszoRbq5k2MfFqQBxh4qIz5ujdgY9
+      rNa/HcLfs8KNNdH0pjcjDr8rPdALMNsCYhjhO1pB4nmjh5rJZTBqvyJgd1kFehWN
+      0z3O3ga5/wdltqEydjvxnB3Xx3lKLF3RbGprI7p1JSYT5ClC19N45aGpvd9PrzQ3
+      P4zeZbhA9B8nN7ZpOR2p3fUCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 549300IFCIOPT0ZONT19
+  7860c887-3ec6-4cdb-a95f-59d60a330581:
+    name: Revolut
+    payload_endpoint: "https://travelrule.revolut.codes/pii"
+    domain: revolut.codes
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA4fx+yIpAgGeD7u9vcsCg
+      WbqN4clq4q6CwU7x5JAjAuGHSTmSiK2Ro+CiBS3xVUlqkh8SsSOlbUVp/r7jQlMF
+      zRZY4Rws/2U5k1+vCLDJM9IJG+60s/jsI/TKNMurN4KR03qZOB9kGZ21sv5IKn8G
+      nqlOPSDANbZvBTGcCp+sW8Jzw0F+gg140aEKWUeM54KCSXAWFGOFQLYz6vFxbUn1
+      P5HWYoYyLsnxtTNILAmtkelvUF/UDcPz+oFNalk6fsJQ6OZHJy9djyI11BbNpJYs
+      M9UHgZY0n715KwU7J25AubUMpEPk7eRxD4PBl0P/Rf4DifIF36jcHyFXmURc4XB6
+      tbjPo9mCjA7hLwsBCIl0kKqFVoay7XcM67O9CULYM484aqs62lFQR2LmnpDV4FLG
+      9lW5NRg1VIZQE6ZAtJkVskzZq5pz5V6f1KHDjp8DhfZ/4OV4v8NJpWKBtYJ9a+rD
+      c+Me8JjnsWMIv9NPsjvlJ0O+tO6jQd01RP1pe3m/XhpzdQWPuV5W4RUpi2AwHq6e
+      s156K8ztqPpXMuyyV2EWfOYEx1l6iJ57ltyZEMOhWu7Ce2POkYr5qLES9tukuODm
+      Iup14CjJODbWteRqDiPdDy45wQfNAfVCWNlSLfNuk18+Ukqx/8BHwq2mqSx5+ZXa
+      6JTmatZVUHSV/ooLsO2jbJUCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: N/A
+  a86d310b-a475-42cd-af05-86334a3d84e8:
+    name: SwissBorg
+    payload_endpoint: "https://trust-stage.swissborg.io/travel-rule/v1/pii"
+    pii_request_endpoint: "https://trust-stage.swissborg.io/travel-rule/v1/pii_request"
+    domain: trust-stage.swissborg.io
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA2zCkO1ZzBlGVDqYF7vu5
+      6XQdk33iMjpsQpM05C/eVCvyGymr4QGJqnrXAP20xVw8D+SrXdO9R7gwTH84jvh6
+      BReXGFT6MH8zac/fqAAviJ0/XkMDhYiy1IesDS584uxZPwUJGAeFBTNcHrYQ+Fnc
+      sfCLjU5QZ82S7ISMsRV4Nzy+Kq2o6yL2pWLiSbM4bOyMYpi0/ILsThARi7GbdEvL
+      FSr9pyG/V/M5OHBR89zFkgkLrWcl/8ol7I9XIXOEOewXfp4nKNLeMTtc41lSuL7n
+      l9KyRxrjXaULSZGuWDDj41CdoO3ZK9uXd1URPQZTpbEjOYvAY0ErhQzgF6r9Plmf
+      7d5wUxHr53N18QIltIbABYiafJC1Zss5ztq0hQY1lvOos7tdyCYjK/FJW0xw1U4a
+      xaCrmfSopV6PYzU5bheyTpw9KB/ZudMeVmLZIKkLoKRxWOr0QRBQqwMx/HKSgrak
+      tlaJzvXyWcKF0fZUyqjVfAGZQcrtkvIxVvG9a58vepBUA4LNqWwQFy2TmJ/0/sbc
+      IelBTxGMJ+SYHSVMyV5zqx8flTFw6h2CueEFzveQNyqLZ42aS9uJdsFF4VquAflF
+      bRlxn4KuOVCdb9YOh3sW7w7ieNECd42gSH1vGJKZl1kYUa3H7z3wJxfyXBByz2CC
+      4FIoTrIEOLHl3ZS4K/CIrOMCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 9845008A72FBD63ED592
+  830211fc-eacd-41f7-b773-293887c31422:
+    name: The Bank of New York Mellon
+    payload_endpoint: "https://apigateway.qa.bnymellon.com/dls/v1/travel-rules/pii"
+    domain: da5-trust.dev.bnymellon.com
+    public_key_version: 2
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArsQU28g8idBbwjMU26PU
+      d99Bs4xX3o5e3XvRUab/T2UY4UYGQutKrYG2PlKPdi8FJsEDHlzzNsInjA8Si7nT
+      6sGrAr3+8d0llVbIxcye0tUKS4Qd8I4P9XfSF76CnV0YGH7yQ9bMWaXpRCdZ6nY3
+      rsXl+33uubgF6bGTe+CF5qzgWk8Ofy9JrgT6xXSclc7TzhkYgB+27i6VRKZ4m30Q
+      uVf+RY3CXeryFF4fCRmnMchBe+ptjdWit6q3m4iriJ3RD9RkNumzNHvJW3KjhGSy
+      u5Vd0wk4/DwYLF/HfsjE3Dd2b8ZKZZIMzuP9pScvvsR1sYJ45GP9WDJ1q4Nme4Do
+      FwIDAQAB
+      -----END PUBLIC KEY-----
+    lei: HPFHU0OQ28E4N0NFVK49
+  240c9d44-4f86-42fd-9f24-8cd5911cf0ca:
+    name: Bake
+    payload_endpoint: "https://trust.muffindefi.com/trust-travel-rule/pii"
+    domain: trust.muffindefi.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA8bDoXtdoRKQzG9MCNe5B
+      8rc4ApypA02LUaWG3qWh71W5yXiuZyuTcwbjRidYSv+mmFXjZPO5XZPd8bYAjQ4y
+      q87THFkA5cjXiQNVtjtjJYRtKIq0CZGYe8MOF6I31vZbRM+ZErDW6fDpR/VijnSO
+      aws814S9pYkKIbFtSvm+5/mfkGqkT1Gg7oq0iP4NslnjOgiQ0lyvyS5FCznw0IAb
+      kM7NQc1c4qhz7CT1aZpEt6doEGaWlnIAI+ofvtixNQODmUOU+UFAPdNHPmPT0Y40
+      uMSXHH+8paHPJI13lkEzgRgZmnT/KRMuz/AZkFF1Ql3mFxzsWitHQBZwV+ShMbp6
+      OF5LMynar7hhRwzD+7dpuQtzrAiqv2IhO861HBPVZsmwfA46F946epEwO9R6FDjs
+      h4riXypf4HfXOdmwHrU58ZUggeyK+XRwzxdmTwrtxjCNF9aOTVxmmfqhThGyW4G9
+      zYQu9hCQfCK17Kf2fczm739VAqOvQvp8sck0yekcsii8X9NFdwJ1BnIb79ombhQU
+      OEcioeYlEVu0asB5mkWzJwaYnTfmPAoNX3picsVcaVB0xF+uM+bYM18jk4MryXEv
+      E6AXByU2fC5R9Ntrwe1Dazvu6hou41/idQwu/g1fAL2oqVNBcUcchfjfR9Vo3wPy
+      A0kpAkruc6EgqEF5UQ8R0zsCAwEAAQ==
+      -----END PUBLIC KEY-----
+  05e9ae5c-8efb-432e-b6dd-211cd0b26b8d:
+    name: SKRILL_LIMITED
+    payload_endpoint: "https://crypto-travel-rule.eu-dev.sandbox.dw-cloud.net/crypto-travel-rule/pii"
+    domain: crypto-travel-rule.eu-dev.sandbox.dw-cloud.net
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAt6T9hNm4trZJW2Vx1Yjc
+      irUnMB8/we2+25tqOHEaxH6p4lJepuI8OM3N0hEO3PZkO3gZWPQ3dz1NQ/eL2cyD
+      WaeoZOCRq8DsASQ88Tfk6r6r3P62MUr/ZqWcfpPFJDSErXmjkLyEqyCZPQ3c8dnl
+      3Uy2uD9+sp1LVLgWanqLs8IefSJrAl7Qtmalmc+IO+yaW7xHVn4y73lQZ1qm993Q
+      W5JJ0tGrid8ehIeMEuaBU4kZdBH1XxjAc/DG5fA7nsGQ1IABVmOoOCngokE1fews
+      8koN9+0Fw3k4N7n7z2mtYkq1be6YrsvDEOg84/JtLkl+s1AJUs0ri20IxkwAw3JA
+      27LBzE3LQ1YiKzx/UB0+YYgR6U4Rj27lpL2GMYWq9Fb0RUhgeYGQUrNPa9QK2uh0
+      nXexoe+Z39Xs50hK1TA8jqDFO7Fu4CE7FQT+0ognuGBngHi6lQgZ/Bs82TetueHh
+      VCbwXfDCLY9Ob8ocPx7CL/oG1agAuHqxnd6eQ6uCzkOTslpzArRZWtnHcHXXQatD
+      pJybAPZdIYwbfaQqB+1UJsJFj5EvelG8QpZad5OUo1bX9HznOpTXkbja11c9iGS6
+      5ZG8mdxQ60kiI8xPKJbD1oTHx+JokxJoGDdp91BrYvZpWIbvxQoqq/IRc2K1Rn7Z
+      zqC7XQVB7JHTJO3A5Pz3vCsCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 2138005V2ZQ2G86FZJ50
+  f46732d4-4aa0-46ba-9028-e691374e18c6:
+    name: Okcoin
+    payload_endpoint: "https://travelrule.okcoin.com/api/v5/users/compliance/pre/trust/pii"
+    domain: travelrule.okcoin.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAvlAV8swK3mN0hzIk+ExT
+      2l5R28c6CCaLcRCL2tZJ7vjODpXjGbaS9EnZ4JGA0ZfCajaulqSJJKlPEAQGXph2
+      N58Xrnm89Ry+SpFsA9jzxoBoQGdnQQQZ5s8X/H6GxRdsZlrnCx396e4Ceoaw9h76
+      e9GI3ocXSOhxZblpn8+sWKcwgl2qNF8KrEjKir7pVrVLxLyRyMQfi4ZhpuiCiYW2
+      ZhiYT1xBHTMVMluqi1p/s0kq7jXwNPNPu92dm16Crls4lPQ7tfAo/+LGqdDyj6cH
+      Gen+BJYE3Ycpqmh2TRYOGZSWVCTNQlmV5rMQUUGXvGX+T1JqsyJ6x/0wULaERk2z
+      MWdFGVW8ci/UdFDjE2OSgUlxXve/3jQFhNJI19VPL/NjSwWYqZvEDejSc/a5YE25
+      yt51Yf3JL9DXhWn+Yu0kUt3hesbXKI62Js8TVHsKTy5EJqPkSBLF0xMKM2PIZ7U0
+      4vtsoGDKJ983Kg9qvI6hzu/t+7VLwplKiznu2auRjkUc5BAq+FTX9hxiSrbAkY1h
+      bm6iaYpNPpBJ8Q+VSgk95aTrX9pxzIhmGp2dbEGqz5A9Xz10QxtnT1k/Wrhojz9I
+      nzoie4NgtD/ee7+16SiNcoskLgVLepGrc/NhUqDvVJXj0w2uPUbqdX20MV+jmADB
+      hhOujVT58bTFkQv5vzs+w2cCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 549300V2UCXF735L7837
+  5bebe7f5-d677-441a-9140-28dd0dbe7d38:
+    name: Crypto.com
+    payload_endpoint: "https://tr.3ona.co/api/travel_rule/trust/v1/vasp/pii"
+    domain: tr.3ona.co
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAs/h7Ur4o5Ar9K938KJSm
+      hpffTF4C6Yag5+DVu08cSq7qlrANyhTx2CdOcfbhPaIUrPh1+R9+laS9+BuK9dVH
+      mDPYE/MNW1mXtPzZYcWQgU3Y1U3P8F1Axks+er5fWNNSJrfC03xNxXaWsTwzj5Jx
+      5zlj3OHLZwIkkjOxRI2Dnzz8fSQPsq5aDu9pr+XipQerkkROCoYmBDWmPLS0OV2V
+      NCC7JmLLWDzK53fhLTwVs/BpLKsU2oqDhFwcb+2Svw0emAUr9qdHQ7t0k8/7DPXt
+      ZOtjY+bLOOGQQQhmxSeX1WQbeKkRAHeoeRMXgJJpOz90B6HbuNkQlhtFNK7TNVVt
+      8zeiYEvAiwbTkUOyUanwBukl1l5EXHMxla2hwklfW0RZqxJK2z/gKLq7Np8w8dpF
+      X5jq4gdqVFkzqgF617nzCGwsSo2pefAcQqMt+TKJSJHrZhh/ynrAZgAhSyjVB76n
+      hvl7z+4c9gQOSEBY7cnZhtjHPJHunfp01jyLkJfiCUkyRqZjhy1i7npuD4MWrB2T
+      UIWXpNeVSVEkRy3lXFmk59GpD010hniSjsq0yoX/9k2ikrozf1emRawQtGQbxywM
+      m8R2GEHuIB7SF6KtNSU1EHDVDaB7zvjoVUkxhMV6NmbdxgWqB7NhMzJ2Dr0bjU3s
+      5a8iscGes8N9Lfmh6Ejf8/kCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 98450050CE1FCFA84126
+  753fd65f-b0e1-4c5d-a73e-a435dd5e5fb0:
+    name: Custodia Bank
+    payload_endpoint: "https://trust.custodiabank-stage.com"
+    domain: trust.custodiabank-stage.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtEIyANQTyh3aWCtPWx9C
+      e4s2OrqODnjHG1STvHKA9rMlOYAylfzliLCWnLUgYl3ZoO/bC86Hrgy6URGHvHC0
+      qX3E02bxooVQNxwSu3NYtnLQ1lLKJLiSP+jaHL/RKxFDUYCUIUeoSmJcycvSuqTF
+      QsTCgMXwrRSKoFl/xwSjmKDqO6IGUOt/0DrH9yMdtTD8WpyY80GVQVl+1i5HELbZ
+      l9owkKmfsWLc1ybi1wasMYDVrUN/L/1T2ZkFeOMSQkwWH5NpE9ZZNDatFlO/HoXw
+      NE9za9oKpUfTQGyzooPbG7uNkUgvJud4u5Vbnmffe7dl3oPc0pjWKFK7xKy7QwBp
+      m6pBMQSfLNZaqbnXi8TFiHvc6mJzGrgdyOWPCx7xWoDmuCltTDdQn/JhuveM6I2Y
+      yN9BhcqadmjA9oMOUQiEYKOElPRTu8AAzuzSYozhf85V4OFNkWKsLkY5Ndh4XDwT
+      ekGN4s52psIzflPswCsI0HUWVnnAYdW0it29OWvz8r79NuBKv4DH6LX0iUym292c
+      8uOMlktRn17i7N3An0dappKbrcTH4TxMws19ILpK/vOWiBqUObnPWOc7fk7H8v0S
+      BYrWXKJvpSimGtHmJzItsH5coFd/EHu6ujZ6gmXs3Ge2arkuZtYW9VDfPwrdd131
+      zF8q3bnV6OGiboyL7JiXxGUCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 254900GXUYDCZ0V0HH78
+  bf5ef013-cc89-4b57-8568-31406522ceb8:
+    name: Baanx Ltd
+    payload_endpoint: "https://trust-integration.dev.baanx.co.uk/pii"
+    domain: trust-integration.dev.baanx.co.uk
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAjYWdbySmmbyLvSQznVH3
+      2FsOldO+LmKI5FKMzFo+aiS/liZGhrwLD9IA3wWDcYbfztvOe61/pijVoHutcOBq
+      KR89v38BBGP3IRk9gBSfvzfcYbyalaR2NR3dBFZ0fX713iSJn2uMuUO17aWF3H+P
+      OZKbQYn4eNBYQEhVJ1DtrNpPgqTeXlO5EwXvXGty2cF0fp1z+FZXZNG0OxW5n5qY
+      26r0NZW8fhUSRjWl21MWk1SQQBDrRvNh3cSQ7qxI4uAvKtPaJYU7LQkYA5O4LEq8
+      boodskd1iPbxH985tjTEvLxk0yhbzUYt+yhPEevI31HgWYBCHLvkbyaHHOSDg9p9
+      zyPBwyPUCmpI2uijtUeCFPhIoBxjDUB7IFWMX3St7Ti4kHeXROIIfvF3iclR7TFF
+      Z2wgI0pgvo1C/hqiWbjg6nm+k6XalHmTf+MlD09y7A6YSUMlEFtVSluwsp1h4R9L
+      Xx4oLM8fxsZWEoRyy7vga4d7XWci3DtDW352zcWMYOhkMMxQtS01U9YyjUFEloVf
+      HdIKEgYwALXiGOS2i7DVr4nnVMK9PtRo7oI6QEYlOpw55Hoai0TTPehpoYlKR9s2
+      7wvC12ppa6lxNYHgP5ETTndxxZVnnzZ9+pHK6AucdM63kGi/UPyM/DP9znp6GTHN
+      Nt1VC+W4F96JmnA5USQatuUCAwEAAQ==
+      -----END PUBLIC KEY-----
+    LEI: N/A
+  d95f51f7-0b67-417b-b80f-878400a7185c:
+    name: BITPoint Japan
+    payload_endpoint: "https://stg-travelrule-gw-trust.bitpoint.ne.jp/trust/pii"
+    domain: stg-travelrule-gw-trust.bitpoint.ne.jp
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAqYETEDiB+5D3xOv9ownQ
+      qrnYmUqJ5g7yTlVb36zEiOF+d6zsybm4ZFEZb3h+vMw4v9d0MtQ47S9g7E88IFSS
+      aJwIQPZYnX7diY8zKCstxEcaBTm6mdTnk5fCijPtZesbAzJTfFb7bOBWddKErbwI
+      x45BbYkKjhCj3AJpKxcucGfgKq5QvpPSyHuou4PmBXOaLFl3hNgebPqXO1Wra8bp
+      zTgcZhRQireCzEwVB7izxRZo3RcU1uwRiWPIEOvVOUA+QixfzDTRP1RHTBY2J+0w
+      jslUbyiywThJPpcMX7wY7sHTeesLAwj7KRYebBcgOz/L44h9+83nUxXsDqWLDaJd
+      ulVhWjIqVtdg3YJV9/a1krrWpGr89vWJeeW2LqB+eItRei26yoHeawGy/H+1pO1y
+      vmd8z5UVB4bklBoux1f2KylpojAOMyTFr87wl53oAMlsd+RWxGNCjwSax30+ATAh
+      8uK2YlKClRKjz7bZxt3wU9ebctZPEmyPs5t40RlZp4PRDmF8PucybpfYmJlbl9e0
+      RKI2iSPyzEUTk+LZuYdx1Tt+OkCuy7t53oGMjb3yI9TPo3O29XWP0tqYCOzHa2wj
+      F7kPUvO18Qkd6COi/Z33ZhLD/qoMFD14QzAvZ5WBR3C7xL2RSk8Ho2leG2dksmGL
+      9Esfcj266dLB8DrU6ygdWisCAwEAAQ==
+      -----END PUBLIC KEY-----
+    LEI: 353800MWSNZJFK6VQW54
+  7f145409-377a-4a17-a1a5-f37b845c4417:
+    name: Anchorage Digital Singapore
+    payload_endpoint: "https://ads.trust.anchorage-development.com/pii"
+    domain: ads.trust.anchorage-development.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA0XFJoKqDpy+jAFIC5eCq
+      3QqKHLBvoJ2OUVwuuzuE14d+5WWz3tY8yfExPgl/+sc8KMUSisp6v4udbcEmFKYa
+      Hm7bBZOdIMuMwoQaL3W+ymv6UFRIVYdNnOCnjwl/34smJiefHIyQo7JmJX4KRdJw
+      K2tz9hcfbV/+FU8499tqjdMrufcxSlM74/lSEduaAkzXPDIzpboPMMsjN1v8wtqU
+      vWk2MP7irFM47DSOTiBpcCiiK4Rg4cIQ5CNCMABA4wcn8EN9E3X/vCgyoXhiP7JZ
+      Ckc6OlAIdCRHTyVNViAICM8g5pH1GD6d4EDGe61j2nNMk7KKzdxlinU28u6X4MOz
+      GW0eFvn4SgbodLdEe7P9oWgEsoDB1bZnEXSgdUy7faqbiElLtJWIvaTr878QFum4
+      Pui80ayjG7R3ZTSxiDlTcn/Bpr33rYe/qr88lGqM7S+/hFnWWmWKTWZljIdTwqY3
+      2Sy5voxJ9l0Xx2guLm2vSzEXI6H7EBJ/JK1BJ2TmPDWSQt1YguBp8bE1aZhVnRUq
+      /B3cpJ9Pb3l2YD5+dv1bfZuxoq62TR1bU5yXpMSz2GF8DI0FHzNM8y+P2I+P9PdQ
+      rxPK/P/pBhL+PxwnCWCf1nF/bdgRcogTiJkAhoCKOw94MnXTMZvN1HTmWYdJHbjY
+      hUo1zPCmrCFJqkeAFBa+d0UCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 549300UAOYRQOYK3MS82
+  0560c7b7-4662-4c0c-ac5d-cd731c6b428c:
+    name: Anchorage Digital Singapore
+    payload_endpoint: "https://ads.trust.anchorage-staging.com/pii"
+    domain: ads.trust.anchorage-staging.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA6x78V/EiMggh/wI+v0JX
+      mkYG391vdFGnHsDY6OcDryiPurcEsEyaWVlwi/+cedMrfj+ABTfWKKREt4bl3zyy
+      eloWhH/gTjWafPIzDA/fF+gktZKoIBO/Ve9GFsr6ROH9Fm3dmLbiNO4eLhGEMlQt
+      haAxTt531JEV4o7zebwGQgS6WGd1Q3KcR1pkeK6dKUw9SYBKCw+h7yqeZ21ue8G5
+      820GufK+IFL6qTLFoVRCZCsYI1iwFXk437GIzxVGx46BrUrDA9xpxwgtkfma69f3
+      1Kf52cEpFKmwe3mHwzWo4esF+khO0TNT9FGQe0I/9PJkj3xaBJzei2U04OPonEuN
+      /hEEADtsg5XVo6cATtzHLclEdpwmX4kzLslJL5nxdPk0PPmCqhyFe7PSlpWusNn2
+      WfGuU8d0hXETKI2ZiaSzZOpPPIMGtMRxpXJQSacVzAFB0J/uft9pXFJsr7jNQCae
+      v0ESXZrHuFbwhmNtS5tbaR3cGhGRGP1V0XaPgwXA+ysSItpQEoe8w69tbgp6SrE8
+      JX09j9vEAbzpuKCtnlRpfR0y7C6xHya+R7Xz9OoBgD+z2GftEDueUY+kzHAbAgs6
+      42Z8lS7H31QBwKuZS/npVt0b+EKRXFf1AQoCFdatGK+pg1NCJnie1ZA+XEkyYMrk
+      Y8+NOmAj3luUMoKgDVXjYCcCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 549300UAOYRQOYK3MS82
+  40cba05c-984d-4f2c-90b3-6a5abf6314c3:
+    name: Triple A Technologies Pte. Ltd.
+    payload_endpoint: "https://travelrule.triple-a.work/pii"
+    domain: travelrule.triple-a.work
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtInZKmZl2NFKuCDvwp+2
+      QrlbwoB7cs0HkvjCffAu/OSXOWHu6egOVO3FTCgdni9C9bfilPVwVQOxgsh5z3H2
+      fxNHcoB4iUE1VpZicKciY7x7tzbHRq3Wsrc+ZsOfywDJlYYlrCaPyJ5wqgUAY+8C
+      TBw+nfCtVqoAfeC+A85dIex7glyBbzZiYgJD7ZJ1btcxbCIMMWgGALlbzXDMP+I2
+      z+at4nEUSdp66RtOjpDGJoeg3QW0V2S5uvmet0unksxmAOwaJB6FlZOw1Lub5Kou
+      4y07mF4RFXsIT+zU/CCB1SiCNroZhplByF7FG4XR/+Yx22Lj00ThdtYMxROMqFg8
+      kwIDAQAB
+      -----END PUBLIC KEY-----
+    lei: 984500DA4B5DE9599547
+  244721fd-ea0d-4164-b78b-5098df28b90b:
+    name: BGE
+    payload_endpoint: "https://api-callback-test02-bge.hkbge-inc.com:8548/callback/travelrule/pii"
+    domain: api-callback-test02-bge.hkbge-inc.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAo860JG8ks8tXn48wBoGZ
+      FN/CQJ7sXVzGCrJT7ctY9m1dtt01jg7krsex9ezy8JFzWkkE7zvj63ZWijNkqYYl
+      Yeh4q3O9x7nJ7X2x8mItkXUw7Zrabd4CKKc6TYXRI8WJLzlow/JsRII8dG9qaSuh
+      GOiFxa9W94YnY/DLgq5LUsPsNd+vXHSg6cDX0xv/rmbEwz9sAhA2FrlAdyEM9XYJ
+      pIc3CqnZiL6GGD6VL/xbxQA1gD0WlFTRGvOHtyHdkJrbfZPBxjRRLTJwVtKxMyto
+      AgagqB+DSwn1QE+3QJgV4sVLaf1vHyBFz90mlxFVQ85e8gmvZfcj6antbspEvbs2
+      61B3Kv1pBy8DVrPTYN2vALK4cd03oPM6vpgJ/qeNPGKOeCKiT4wWNikP+0u780iI
+      5pHVbTlQipFE7vtDWXNwNwZRbNnolJCXsP5KWoAbCchkn6EBKyf4SV3SfcaQa5kW
+      f1U892SakV9TM1gDeX9xXbRLlZszmFqcrACPSZFvDv0YvjaFl1ZNr1d7pEDxIz0k
+      Cnc5K3LF5H2xP+UJTQEPDGWUHmhaaFLeg66JCdsGR3uO4Af0GrGH9aMdyBtrgPGD
+      pMX5Qztc8I9Z+cWetS0wqPQOZiK4oanMKgstTwyWunphqcpSkov1skS9y1/t4lCV
+      m6hfJyGOcvyLV7503xBXd5ECAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: N/A
+  40097d6b-fee4-4c6c-a9d0-3a2fadce7027:
+    name: Bullish
+    payload_endpoint: "https://travelrule.ext-api.simnext.bullish-test.com/travel-rule-api/v1/trust/pii"
+    domain: travelrule.ext-api.simnext.bullish-test.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEArstx0T3dBDuKalwHyKSi
+      bExoUF5crBWEElDKMoc/E5s7ZlbbPCI7HygAnHhBQMOd9Ly9CdHasvKGdIQoWs2Z
+      8IXszb4NCk4uIDG6Nm7DNXNV5/7kdSkNpti8v3FLWi2rIkIVIO/ZhvHuwOelpddo
+      VmuqZYzLNUAIQJZ6P0kbx3tTGCxlWahGzi/xj4+IAhnzMAISMofe4kU4fAZbqDjr
+      nchnUbpnm36BGoK5417cTAweZE3XeOykS1yvp9OMkcsLgEuvbG2TfHAHWu7ZrFld
+      GtOqBMwUoQrVm/57NsbfD+88BWMP6ETc5IO6ktTeAmMYItTpUFJuWmerCspz7F5s
+      IP6xSgo0I9LxNpj8TyGdUMHraPV1aEwEvPLoTStdQh99UdtgKEjktciPy5Nnoi3x
+      H01sKhdmLl95soaFbT+qsSpCryi2oYw0damKP1gPtYiFG2KccCbTR5filubTHbW2
+      PX203y4u/jkgCoK85Yq9cotOAn7kzYsYN1y/mAmCEfkaJfh2Tl+K+ASYrK9k90iU
+      WLhmsMvPl9YNqmiUeRktvNxdKuMq95FwPpw0iCsvWsI0jeQCoxuSprO18hZO/1/8
+      hC3MnW5ucvXM/JMrdLOGQaU7Mg95lciDFnScLGlGrbA0LsHOIs//gdhtIOrL97Ii
+      a4URLWRd7IvXtFYZNjkgiu0CAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: N/A
+  29c29545-df00-4138-8139-4dfb92ab42f7:
+    name: SBI VC Trade
+    payload_endpoint: "https://stg-ext-trust.sbivc.co.jp/pii"
+    domain: stg-ext-trust.sbivc.co.jp
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1KUX4tlrdS2n4g7Uxgm7
+      vQ0xkpfIgcnqP+W700WAse0mcYcVg72cKaBbqxcX3SzMl4ln7qG7r9hCmolIKFxN
+      talyQpsDfJpvJ1s3sbGMSJadSYbY8LJVrMCUv8j0kT8UJ4Sz9hXwQjIw1emUrbuK
+      ogDZb1kKdgC2qNFUQIsEoei95DkhDVHA552PhUWk+fkn36Xvk/WBThB0ojOfG3dQ
+      ufm8MDD94M8AzViTk9coClMWHZ1ptYjXxBPIwKtGyIvHsgsXfQKLbejIL73wH++w
+      YhJ6RXH+4UluMK66QxwXynX5Fs+KkvXSqGMAAt/1RlIGm3bk+6wuOnCRxjRxTb5g
+      DwIDAQAB
+      -----END PUBLIC KEY-----
+    lei: 353800MYKVMV4TJ24B49
+  073569ba-cf32-4407-b324-8e9af6c19ffe:
+    name: BitGo Trust Company, Inc.
+    payload_endpoint: "https://tr.bitgo-staging.com/payload"
+    domain: tr.bitgo-staging.com
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA07tc+yZe1RlhGSwSziDX
+      xQ9kJqKghc70wHrkzYE0WguiWaZYQMpzHHgNR542y0J4GswERZgNystD5DzL6hm1
+      UKTTV0iDWlyKf2A06PVJhh0FDz74Tf5xc6Re0xyDrsoB9OlHRceamPwo79Yn5N7K
+      Bv/r37epVj0+uIedIFmaMNBblokmYDiHsSuxao36eKBzZJCOaHbexh4iOZtKYQ9e
+      x8vYTYWUCXlXT8n4fNdUaVLKMq8kvLwl3jEKIO0VF6FLZSLVqHhn5svJgIs8p1h0
+      0BzeZv9yiG97+gLtDQVE0PXk73cNKi8l7+7C06T4FcEEvUQjD5um8bzpXwKihOyu
+      QQIDAQAB
+      -----END PUBLIC KEY-----
+    lei: 254900QXDWGM1T0HGF47
+  5713a06e-0394-4a7f-a916-eeece5263a3c:
+    name: Paysafe Payments Solutions Limited
+    payload_endpoint: "https://crypto-travel-rule.eu-dev.sandbox.dw-cloud.net/crypto-travel-rule/pii"
+    domain: trusthub-api.eu-dev.sandbox.dw-cloud.net
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAs1zSKRwsUe6dgXrHwGEF
+      UVolZPJIBfObz9rl3Jt8n3ndnn30SlIHd9PkAoPp7CBhqE16S1Yb95tLKJSs4yxQ
+      TPSY7DXr3i7u4L0EPWQZtL9BD0ndh2wDEminauowAWmJibvX+EZlJKZMTcvjKWIb
+      xXuhERz6ZXQZQ70vfi3uzVFMcL2787Tw7OHxW25UeRkQcfRWgVZz73EGeHQIlXzW
+      s55TwqY+P9FcWouQkx/baLPeBd5lTyq7kPJB0OKwqrm79Gwy/n0GJHB+qZEHaEPR
+      NHBR6tDpXCmry9wI11uS0YnKhn7XgE04diPMN9mXYAZpDrF2DUPjQMx13mLJaDtK
+      YD51/jdamrQyPpVGNJntvWY4DZOdTMk9HF/ZhoRH/sgQrTjnr4b+An66O0pyvJbZ
+      ZL4vaNsL5weksKjOnCChrLgFZlho/Y2ZnQFoxAUftuVZ6o7cqBtMwfPmkOgp+McT
+      DN2/ecNoGkDnKALveMzsFABXC9t1hBxEgfOKAtkz5cCoaYUvZ5TqouhSmUUOfPqo
+      mXhU0O/TnvQpMStsExJeLmsPu+65rs7s5ozFdC/7KIrv0r7x2BZwCq0rvKTb5hyD
+      RT8Nev3wkJq7ArB+f9dKVRhgWh9EO7Kg/tAtUjjG84Z7+x8g12NjKs/YWMksFBui
+      nKv+FkJo5ao4JILxsqVhHrkCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 213800QBQVHWRBHJTA89
+  482dca97-5dc3-4f65-a15c-b41678d0083b:
+    name: Safello
+    payload_endpoint: "https://travelrule.s4f3.io/v2/vasp/pii"
+    pii_request_endpoint: "https://travelrule.s4f3.io/v2/vasp/request-pii"
+    domain: travelrule.s4f3.io
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAzw/DSbLnVX8Hy6pJ4QaF
+      XZCy4Fo2dUr2UxX+qYbQyB6BigpVB0D/4q+HBjDaM9xv+N5bAzWJsgtY17eAHN+Q
+      ti7U4qdeiFNp/HNsyyqGCjZuW53poSJlu9dU8UKpKW/W2cG3VerZNK6SQpSgScqO
+      Qym2Sa/Qu5vjYQEfY+gBxul26hYllrnxyhmqKWRryE4xSF/Yen5Is96GJSGevvbz
+      MMdWx3r5h4U9CFSkUAhrZJs9Y0xHzSQwpxC6HNZM5oyvZqk/jhUIH3zBnaaImAwW
+      KkrvJEtm1mN6EG/XCc/9rwK/hT/avcUTSVtxhhKNQd0GWZSywc1segWcEIVaJDl/
+      q1AGHib0mWm1b3s/EBwX/4BaKTGhXmYRhQwXhwh5IVqLhGP8NWULkYD+AY6b0Shw
+      zaW2ipNvYDVqcql1vhVxqjt+ynMSE855MxwNk8tUr5d2GiJY//b+DxcarHdAU2VL
+      +rJHWpNt5vcXOWSKIW0JhWluhj42AhT4kCWP1pSmURzeMewNA+AznkAgzKa4CRCL
+      DWtVn3oUd9W0PW2lkLbOcXfyfWGWndx+kbeV7HLzg/NVxZnh2HrYmQiAN3w8kNID
+      QFRu01+hsTJhFQIcQUEy91lJUeuq4K095GAbUICVgeMgfpmR3t2Um8JBNIePdgt+
+      Byri2gOXBkP32rTO+X/hgWECAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 984500F1A979085BB828
+  235f8bda-5af5-4274-9bc8-7b97bb135c44:
+    name: "Wealthsimple Investments Inc."
+    payload_endpoint: "https://crypto-trust-staging.wealthsimple.com/pii"
+    domain: "crypto-trust-staging.wealthsimple.com"
+    pii_request_endpoint: "https://crypto-trust-staging.wealthsimple.com/request-pii"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAiCb47KIHRY5bLN9Nwbck
+      vSPMt/2OXI5ofRllvCZZgtO6FxtY/tMvXax59hBf/Dh1XSE1nibtgbgl5nFTV0p/
+      FHH+LIewD8XJKC7mkyeaMXgsMKom85V2fvBS7vSjyPBNOUdjdv1SfleUknnbwhkb
+      0b9ESzJ7EJ67ISy8YjNOQ5MAlzpVK2zX/vicSkxCuyxzTVvgkDoJslrkY67YehC5
+      AvpsC8fE+S0mE49NJJsVQgMeExznuZDkFFSIdV7Eeb4zbP92vrJVrSEYkqSNZtkW
+      zmGgtkoJOeBAHwFliNorNlrkEomCQiDJFGhPw6ehFCCJOYmP5EFur5Pa13kksV1d
+      k/HYba57FRTJWHYt5lZ2GDHRJqNWkvbwuLUI1pAvQkyY/gQfnHmQ75HEQerk0EYv
+      p/UKF2YAvYLCny4iaW+uYIyDABSSwy0g1FquaopAJXSHDdJf4efVTJ+q4zouOQsE
+      1e/4NPMJIMJjYXK8M2V6Q94MIRLctJWm9GgupaZqYWTmvaF4le6r/g2HkbyOfk9B
+      dpQ83tCfU4PcLQ0MEDua/CDcw5SJv0NoKg6a+ZjPBbno5gh5f0NdULDO+p42AXpx
+      xbuYF+TG/oFo3Jh6iVUoyUcFVboVCL8hOclDP1tzKwdIDyB7l/cEPsvRI1Bc+CDT
+      fkFZ2fMwKbS2d0urBldjs4MCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: 549300TFF7BEQMGPHG77
+  20f88e8d-5231-47a3-a950-9518b89711e9:
+    name: "BitGo Singapore Pte. Ltd."
+    payload_endpoint: "https://tr.bitgo-test.com/payload"
+    domain: "tr-sg.bitgo-test.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEArtHiFs509yeVgFf5hB+d
+      UAuXwf5aHF4fiyB/YZHdcaR2J/Mbzm53t/vaMRzbuCFLmVPtSDo5FmIuF4o7i/6p
+      fiTYH/Myso669+Gm5lCjPxUH9IEUsOeIY5pfSABeE8kVvnFp/CC63c66JLTZgmac
+      bEYeO4pvD1F7HsIBCWXsHbqYIYcCw1L8TsyFhi+B+mHYkjvuXDvvBHMw1HRhI4hA
+      FVItmc2UjjcEQ59wPVk7163fPWLw/3kDzeVelUvRZkZfHuFhhwpy5rr8ua6RErki
+      eNkg6VQrfz7HntxqNE8KziIi5q+wtXXCr77Us4UdP3wzxYscXdrj6PLIhUBzH2UO
+      sbFrTl34UclV3Ubj8Salif0gYb8zhj7gh4JeCW2+EhbCH/kOs5SCDalr/J8pbVKA
+      sMtVnW4N/ELLg2IMc5UppH/w34dCuRuMq37ZpR4W1qI93iL8tCKGc7fPb57xloaP
+      5jsThovfKch5kij3YtWruS52is0nu5moThZbD6GEinIfoE3RqD+uoEfLNrZYZFv9
+      Sk02to1W7AIXEgiVHLfQl0Lq8QrbYPi4hdneybGeXathJLZL0/8InJyor/rizLyS
+      zuU3suPdUygxtvcgZRidD7qMZqtWkOb0mVCdsqOnrxLNxNrWeonudnk6/4CF5vt2
+      vRFo5wNgkALRY3/z8XIAtNsCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "25490041JUYGTG7PZ905"
+  842833b5-516f-4551-bbf1-0b4c107fde6f:
+    name: "BitGo Singapore Pte. Ltd."
+    payload_endpoint: "https://tr.bitgo-staging.com/payload"
+    domain: "tr-sg.bitgo-staging.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAqzBAYq757tc5PA6ABAwW
+      ie2p54eipedJw9MJM9WgEDk++IfzPVWxKNn8rDAdFh0TBYqqbrlTz/zTtRj+9R00
+      mZ81WcmD8Q90gVWK1Mwn43/7Z5Oa4wKbgy/ArdDh2vKrsrMP6q+83OsrEh5HxD80
+      Ih3vnMbcsAvl/mMyxgyCd6Mau98Z9gfOUxNDvghf1jfRyC9SmqwKGFLQ+Teb0gFv
+      jsr8gGb+081Use5gnjMr0MGo22pXz5dUHpTXvF9eFci2QUSQG5Xq2GmqL/lqx43q
+      6/9w+EJJwrcwWfs6EGc020Xv2KxZgkc50qTGhy8Itj3QQLTJ8s6WG4gAKiEsmC1H
+      cu2w/MeRxIgNQaK5vn3+LmY8Idd6oIXyN4/Ay9OTb1TCktK+daX9xVB54EaZJxte
+      BjWb9b+yc+HSsnHTnqUGJL7vYhR9CAv+/t3xybjou+tV2BFyvw/ewEaK6iLJF8sC
+      TcOUd5ucQzjl3UQdyMNfhSSA8qBJX/k9V6Z6wY2vY8Uyl1uIAt+mKpo5FKZQCW59
+      Qpa60oqxAipmLWzyXouz1gIgKy5TX62fyler5VIoey3Ol7bxykD8F/FSyea2/EIj
+      Alq//2N4X1ZgXOrwvZECC3WuKv7G0N6Qi3NNcZWxAFKDsf3YmL5iEomUJNe9JSaS
+      pBur2E08xpBPFohcsIOTKIECAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "25490041JUYGTG7PZ905"
+  909f01a5-8810-4bc1-bde3-7d4fb3c43b14:
+    name: "BitGo New York Trust Company, LLC"
+    payload_endpoint: "https://tr.bitgo-test.com/payload"
+    domain: "tr-ny.bitgo-test.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA2BmtDUuCTtwCK5Ny1gkn
+      IsRnTEHb3OikRMkquuZ+Ff0IkKaH7Efgpk/YdaR8zzQ1uhAS0yrjoyx35hd2I63u
+      9KgLgw0rLCQRmH5Nj8RgrvGcCsYRVc0wGYyMTxZ9I274XBm/YHss7dkkzySwTHEx
+      /Ppx9zZKWr9v7VvVKo7f6yxB2rUpWIw65LhzaP1NDBjsq0mU82r4ZdsJd1JwoxzU
+      TPT5WJvJJ9T61+YlNMJLgFecITobdS4SL8ALPfvS4sJLN87/8Osjh8gsGID8Ndyh
+      uv55X0QaBQ73ypYKEVQJd41GbEF2EhEhCPvEGLDPToEvkuLYrfChUwy4AhTQQnEs
+      GOi7ETTFFjt13YModKIIX9/biwPjUvkPUnBk5m/saSKqZmU1jFSftk7NUxWCfuTm
+      GrXvYpFm82AUXDlJbbCbQmjHK115xwVNSmNVoCG/vhNT7/BX2mUwAzDxhz4cfJWc
+      daY2Mcq05JXdZwsYprBHxaeMKCXhEnUKrp7/9FxI0pCELGXe6HtCvX8VJapnr9QV
+      Nx/XPxZwy+/NtNy/aBtCvFFOie1WqLVN0n6F3VKyxRgqc0FaLvbHcy4f5MzAEFaM
+      VZAeSSyiKCl/j+glLLG6YMPSkqQWhzEi9P18X5xRYy7RIIgpVZR/jJfsMb1j+xWO
+      7t1kPF+SIm74wm8jr1fSXCkCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "254900GMEL008327R258"
+  5a982db9-d911-4094-aa11-0ca514316fb8:
+    name: "BitGo New York Trust Company, LLC"
+    payload_endpoint: "https://tr.bitgo-staging.com/payload"
+    domain: "tr-ny.bitgo-staging.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA8Thg8WzMgN6O/gMC4CFA
+      NJw7WKAZhxxkZ0pxpChwIX8ugT5QcOjb7E9QkBV6qlJIyusLyfFVThnYCRQUkjp8
+      ksmXq6vRWirSWrrUIUlDXU7ZCFdYoRmJwrC28CmM6leSi/2piPJblF4C915KJung
+      XDoxdoMZhEegfMZC1V866L0FSZTl/Vfy3Ydll/l7W4GEnXzeLnAB8BRl6Cf3X+9q
+      pZU0JSKojhIiBYTYqCglgZiqPcXzGStymPz+PjDyutm9QYs3y8rNahNZdGd3lbiO
+      GGhbYhHfDLZCCHhNogl68TeK6NcvvUeMnqBWbv3UxnMXKsdxKxbkdhXioHK8j+3f
+      B4Ws/6K+fktiEwUP350PP54YVBt7nZPyVSRsqpe8qb4Q8/NAwYhqzQC2bJtbdQZ1
+      2hBeBqYTLSnFU/fEN3jySB2ZlReQ2kSM+LqEgLXZE/ldr61TSK3n4Lj0NYa4Dp2K
+      KaDwYaleIwLsNOx9OAgFPbvr2b3zZkl9oEbfNb7UIcStv/BjFutr+DfKoFo18bgJ
+      Leaiehjhv//Pj5nb4fu3W2ocdujk6ruJhAT6N6sC35QYrsHgVoMaj/OxjiVr/+lo
+      H75hhGYOGG7TVvzAVmgbxuiYLQqHZRSez/V/Nq6D19KqgHPwvuhFQ/neqzmVX5km
+      61jiK0oKovbOdVneljS4fx8CAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "254900GMEL008327R258"
+  9ff7c18a-0776-4e5f-83bc-e7cf69f31ed3:
+    name: "BitGo Europe GmbH"
+    payload_endpoint: "https://tr.bitgo-staging.com/payload"
+    domain: "tr-de.bitgo-staging.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA0sI3n+YQamlYvZLcFoe5
+      oyJ286UZBGr305qibIizGv8xQDUnfZ7nuvrf/z9hUNv9Gkw9kVcLZJ8ZlyOEeYhE
+      6lnVAhIE/zEW0uZCapQUHCyREsMp40On3pep40EPhO+kX/UkGRXq5DYqI2chtRk6
+      R1LM1tKlG99H3wibzFBW0ur76mHQAYa+ERNYyEpo1ANdv8vOUqFL04xIdYjRkL1c
+      KUSLbCk7rZWkDvGf7UYf1ZEoGtnY1x9+180+KBraI8EiGiA40nR6UUpeqMuXve0G
+      sBgc/o06RoeXlg7hKiBOsuA+tgwguIazXAPo4TqlUm/6QYPVYfdlK8VcLOvajb39
+      r1zdkjcrmsrbHwLY88Am+3Lk9vm1Cr3uzYGHKL44MzfA9mLvdkZ5QY/g1H7Haz6o
+      neZvJ1vh0MxP2ow0Urf37ZpLPR7THJc/GcRZxsqE5I0dnd0avV+Ynu5BI6vTlMMX
+      LD9JcwH9/xTps+mHaRJzgxn+RkWeDcHdB2qkaQExOKGRVZ0H6Vq7Lr0htVCWFBWr
+      YMiK5oiX+XtP5JI+cwoCZUcBZ9TiBqxJuxT3cXPeWL6XabRJTa6qROnBmRkQWmNk
+      HXAaqMYuW8nVaqYUP2MRaK64nQXj+z/7VnmVQE5yS3PMOvH09ssbDg7OIBAHTBEg
+      V1xjIobsE8vLSgVRoA6RrWUCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "391200IJ3B1IP7993O16"
+  88b4974a-ac8a-445e-ad56-d0046c968c3c:
+    name: "BitGo Europe GmbH"
+    payload_endpoint: "https://tr.bitgo-test.com/payload"
+    domain: "tr-de.bitgo-test.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA39DuYIQZtPjJvW3bGSkj
+      Rsqg5XZv4jhOOk2E8VIuJTEbSRKORfuxTl+EFKB76H1GqGOpz9ML0VO5Vw+u2j82
+      tw1XPA8wnlng5/7a2/R/5oVKD1yING3lYbnJ3MPGrPLygJgj6lEvT0rVbGa+9877
+      dWQb/zjqztrP/2VJZH5vMfhUKH0B1ih32IYXkA4G78ihpuC9LXUHFyPegYxWZD+F
+      d0fCtVIsS9fYW6JDrLfkOpq8Q7PlWIpzzeD5XDskcTkstjzDamNvZ4xBP82+ZSof
+      XF6ckbWWCn9zu85M01XGYgThUdUFdq6A6JC3eZH/rnfKEaTPfTJSgII4o1JF7wN/
+      XNwfHl+HetpWrnKAfDHtqmKPKxSQj88EnxkvtlhMPSnw9V9PhhIlsw7bxc30bg7w
+      96HCZFUn8yBoF532jV2TdixTyHs1D0JIS+JuwEa03uUnbvU2IjoOj2xA3ggh0tVm
+      6mnPLCK112BdM16njwnrrnNRKKUJ/ijS3LC6nN8Ek+v/0fwxjvIDmbdjNUgHN9nI
+      i6vkBYi2DGi2axjn/7dUltnbAnk2PPVlkjJSIORqJqxmvl5LksUc0nKaIRjGjhcR
+      idDd4mzZHSRl0ZtV34xM8eaXvwuhOArYGrxGAkl+1c4JlHfLFniwZf2FP3VnemQR
+      78hUj3k2jGq0lzqIJeIMqzMCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "391200IJ3B1IP7993O16"
+  52a098b5-65e5-4a20-815b-375e55180eed:
+    name: "Greenmerc"
+    payload_endpoint: "https://staging-trust.greenmerc.com/pii"
+    domain: "staging-trust.greenmerc.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtJCxAUJAgrg9ls98eF8S
+      LJxMwZFxvKytBnVqEQD2BlbZ0c9hxT9evBNcnqklRXGJNRITseLraJRxPCaGg1IK
+      dnl/AcgJNz+ezzAmt/RZLxcGxcgwAEocdsGxfD6u2xg4jsL8ox0NLOOprXJc16OG
+      jMh5XeM1dPwSZdZUQkv/5LZiGjZ+HHwehdEpDMc3qhOu3bJ8CB9xPTGV6a+phuH7
+      ZyWbQU9S8SAlrNoDi8Fe8vl78nNdwALXyCHbMPa2s+TI6yumo/QNDhHtMcZJ4mDV
+      0MmaRD+jl2D5USYpxLdgB8mzWVrjMua0/JdJ406lQ3gO5505bQJRtCanK3HV90+Q
+      EwIDAQAB
+      -----END PUBLIC KEY-----
+    lei: "636700QAWC6SZD422R49"
+  3d6be034-d828-42e8-b57d-e4f9e5458c86:
+    name: "OTCIS LLC"
+    payload_endpoint: "https://travelrule-preprod.ripio.com/api/trust/pii"
+    domain: "travelrule-preprod.ripio.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs3QpcqssPnVZzZ91db5B
+      YyK9FBmjr/SU+TpCTg6Ffo5O/27XshKwkZXQdTTzIz5ERl6H77EZkNwPsYut3BiL
+      CDAz0vx7j6djzo76rz6reniSkCRteXjoED3PnMbmmsH6ASJ27JuPKkLuu41ATUi1
+      R8N5oCt3xO0h5lPZlKBm0aWF+bKGAGOLgKoT9OFm3H47wIDNbSHCaNw4hYd+kxQR
+      3i6GzxAmuL/Hj0aEIULhDu6+BOQvlxBC4Ap/4KYj5lX1yWYTHuRjyexTyiwsOLZJ
+      BfLna1Lif5wbD5vRnwWDs3dotKym6vRHtWGNxeoQxsbvTI7Yx3F2rg53QvSSsuLu
+      KwIDAQAB
+      -----END PUBLIC KEY-----
+    lei: "N/A"
+  2ca87b53-05df-4bef-8354-f4159f123ebc:
+    name: "sFox Test"
+    domain: "trust-pil-staging.sfox.com"
+    payload_endpoint: "https://trust-pil-staging.sfox.com/pii"
+    pii_request_endpoint: "https://trust-pil-staging.sfox.com/request-pii"
+    public_key_version: 2
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAso3Nd+M06QKib1RIDwdS
+      ZHink9Sso+7zTu78cJ4nNBKkBk0xsJxYwPMnXZW8ksevOcKGiwa3ItCI5eLCFGqw
+      7iu42v42TPXhgYi9SZyWjUg1URl9uk6HCAgLQncVMlNTAq22kTOkNnPiVzupHyPn
+      Yb8H4tGFO62PL35TXVtswT4HC6SiRdsF1UQgiWJGGg23z44LZZ1V5rW5fFkNB0z+
+      SW0XeeGtyQAYJz7lvwnmKo9ZP3YXvMRY9FHb7Q4qDMWT0Tab8M//gMhv26/qfH2w
+      NeAwwjbHlIxDIO1lAl+Rx9GkFqWgO43twXRBHIjVRwaYDcOR7AGOkCtjF7Ax1CH3
+      TQIDAQAB
+      -----END PUBLIC KEY-----
+    lei: "N/A"
+  f55a452d-a7aa-46c6-89d1-05ae631c79b7:
+    name: "BitGo Custody Mena FZE"
+    payload_endpoint: "https://tr.bitgo-staging.com/payload"
+    domain: "tr-ae.bitgo-staging.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA2zronHDsOQIfjcPmHGL9
+      MRyXtvE0Pm4EMlDcEtA1J1VmMRoYOi53v0l9W9hx6p9l5i+GYCFH251jjyD8QfxM
+      rB282tv8miQdPN5sGauhBQcjr8Qzg5TPCBXS8UIIsg3lafxTgTHl5PvuRIUjVoTk
+      h8uaZ0etEk57W69Aw42Wso2RzWsQonv6v4Jx7PiXY9jELzaLISwF5rjfr7XEJoMm
+      QVuk1isexBhPfZL7dm/KqNPdY1/EOnuZd+ovaHxvW97okdPhpccFwASrefp175T/
+      gofKUaNSrudPvGZic6xxxnAEWtmFFvxpwhLY0aQfJaBJBsXaKhuA8xaNj5ElgLmd
+      Hn4uZhaZQ41Jwk/d6PTqOmWdKMIz6NBta2B2oqkWdALA1BOmgfgFE+Ybj+h+aBw3
+      juQ4FXmMUhi75YzIji3pfe2hiK7iQ+qQqMMuBRmTuSZwSWI48YQLI0DTPwgvhzp+
+      zsNuH6N36YxFQaINUc15i29SUMTJFUoFvEb9JnaY5WjIlbgU7vB0PWIstZoylkUl
+      a67cgUqjUCyIurnYfkeMbW0s/Ae6FnWSEKjjP5+KyHP84Npgkh+A2QSoDhEFEn2R
+      JrvS9sE55a+EdeZF7AV6reP8wRcDtvtyNm7+NEYJgGC+8aVIxDe0Lglq30xMJhXD
+      uRhntEFXhTfjBosHlHgGzyMCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "104679043000001"
+  cbbbe27a-0f1d-4cb1-9d2f-c3051250570f:
+    name: "BitGo Europe ApS"
+    payload_endpoint: "https://tr.bitgo-staging.com/payload"
+    domain: "tr-dk.bitgo-staging.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA72moHz7wzrPKfMB4ElwC
+      4N+zr3hEZgyFOAHjDUajShQP1u+rU4SQ1fMzBfNTRx5PMqhpOv54FRph1dl1DxEz
+      X2LUNvjmm2JYDvN8QYFDVyOG3UgC22O5sGkKno5JCDquPtZLilHZt7aJj9nh7piI
+      uANIhsuY84EOMfnrpiZRR3qqhPx1AAAx3rmrHYtW8CvXGIJveJIqOHgK/XpIlcKP
+      34FVFE5t5NDc5eusiGTOLwMh+IJUVW0Km1GVF6wiZa4gk/zRK0o1LedUb6dEQvja
+      BxE2lOeI4eGzSc6MVogjmXp1jWcX8MeRdsjC7QggkCoChxoM6WabDWXjU3J/PecJ
+      NOY0/kXxr2vZDPheQ/GLnlFr0nAZbDf/0QAObfKW+wpXQcotxnfcj8FknTEz04ru
+      HXwHEAMK+B/aLT1jjj7rNUKqQxl7tZm9VHdzL9wdf68p0Z02IYuS4q0gwURjMPbY
+      MaKkYFMzc+3mir2gJEuJJr7LPeZRKJvkkd/5xaja7LTqBN0fdUHnMCn2soiyy5e2
+      05uDMUoW1A70HIKM3mvq0Y5USF28Hf3F0u6chEd4kLZwGCBbxCCcWJkFWOB4on1I
+      0MR0LjAwrXW8DEUEhjlLniPrBlKChqvPxWJJgJuFIqiIyP4+i6/EAe4ViOedIz5H
+      myy3fYBSSfcCBBN4TwaBQlMCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "6367001YWOMBTI0OKN75"
+  0d3352ef-15cb-43cd-981c-6b796641f89a:
+    name: "BitGo Custody Mena FZE"
+    payload_endpoint: "https://tr.bitgo-test.com/payload"
+    domain: "tr-ae.bitgo-test.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAwsQwfePhSENPIBmGu0CB
+      ffLDQEMZj09AG+dXlv0az8R2OmiSOkYmiAcgvL9iNY4GTDUo25I4EExcJxi13Y0J
+      wf8vFtBYkIWAkHSGdlyelI1dgT1VD51x63fGtmlyOUuIZlx2084rArUF05v8VGNF
+      hfetV1kgvzyTxmyhuX4yaUDZMx/9TyP/U+10vUYionX/7TY3vaReb6dJRo0fRLBc
+      mLlLBwHsEUGixaaQICEt0fwIsq3SSSLN2ET/UCetbxnlH9QFro9D6cce0Ci5PtNw
+      YvdNCK6rVCw/xeMXtr+KXA5beKYJYHwS9fUhVd47261gAdjK8P3hSfCtlwXAkhv5
+      g8nevGj528SKsGHdsIEF1dqvMM/0Q3X53jcsyLOovujmbgbI04Yxy2vXtRweERF6
+      jJ1ICAkusSBwnbjQfas1sqaEbFHyF4WAIhWStx/GVVC/YboM6sOsajqqz2m+Lc+a
+      zMSman44fwhS3GTPRBG6w1x6Sfd6M2Zq0w+MQWWfiTE35NA+WJOqvc6MJwNcC+qc
+      sCOAkanAUbh4dPhelJFcQwc8UAqxb8TSRwnErcLmJHxBzuJ4dcQ7Khfao29NBjrq
+      Vq6ThOgE4Nc95SV4MEOT+y/EHZsI8V3mEpXpGm4pIbsldLje/TYZDUePgs0D/88z
+      K/SEIuWzqTKCAFSlK1+5HOsCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "104679043000001"
+  98e479de-f2d3-4e2e-b4e0-faf5f7ba94df:
+    name: "BitGo Europe ApS"
+    payload_endpoint: "https://tr.bitgo-test.com/payload"
+    domain: "tr-dk.bitgo-test.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA4l18dW+3dC7LPtgihtDQ
+      cI5JJp3BFl9bNEvEEWEUQs8ApXoxnGmfe720A5eSBhdwEl6AsUmASl1FDmX1qLzE
+      jhSjwxG2BOMFXyoVP5Hzmqq5Rl09BmlDtNlrJ/RzNM3F9LLslxEAitdnbAy1P49Q
+      IeOx5QDJECeamTlMUw09HiQ5aaluJMnL/Z5aLrGesJ0bBH8NQ2eigkRKv5avNBTi
+      ce95uhlxL+OKsn9TcNuXqxRBgESMTCJhiFRJPXQOyD572HeCjx4kjWRXAupE08KX
+      CB7r7cGg0IA2R1P6VGnH0esdeMp/X72wv+LQT6Ab2ot6M58TC5GrIStYhUutovgY
+      bjBJdog5FiSa+3OS6igj+nwZy8GEbwKr7VBPwMl0L0wd2NlxXxcdCLNFnzZ9b2ES
+      V4q9etihJUmADneDXmz4+TI936uVX2G9xW8dmhMiguF3BdL/HUKbLGPqCMCVCREx
+      KB0Q3WzN84peI/DA8tQLPQhEC0fR6kWpCxOwO4KI4lr8pPdxOg3eoub0gjuGGnGg
+      uMnjk5qiS2SJrYNx93Z2Po+x6sb5tvJhNcWn6O0QsrTd/OoMouAv30A+A9df3W7z
+      grr0YxmhXLc0k+LZ81toWs64oTVaP2bsPJwXD0KX4FAtaabL7HmWOliGZXnB+On+
+      D159QR8OPc2veQoPjqKztw0CAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "6367001YWOMBTI0OKN75"
+  0d3352ef-46c6-4094-b4e0-05ae631c79b7:
+    name: "Coinsquare"
+    payload_endpoint: "https://trust-api-sandbox.coinsquare.com/v3/pii"
+    domain: "trust-api-sandbox.coinsquare.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEApUdb9MKgDwVBJqsA959L
+      /KpFojCFkzLyfdCrc3jDLAazDcLiG3lr98wuGJrMcBX6u16mOtCAwgS1nsrivTxg
+      FQ6KpQuCBSUjzluek8M6hGbvddCiZIwsTudAxCYsFg0B1cAi2ZlZADT0aQmLRYqa
+      LsMaHknYuNANWciqtNWL1g3F66RieT6PzWUzlJ8EHF5mKYw+SDt/axSON1dZ5f2X
+      9W+nlOPKUKotULCpaXVqV5d7nSfe+3DU6iOVtZeWhAEo/mLCPi1tRKPwX8fFLcJ2
+      Z4ct+peNOs+HTnJTcKHlhPIPPWVXUNQ2ShZ+mw4TQK1iuPshR6vS+zFG7suFB5Oq
+      DPXwtluvSbbgQ0iB/Ue4St9px+bySfTcddZUa1NZ8w/uUlDVxClalcDeo/ZtW2Bx
+      9ZN0aNYzwxG+AScLasjBmI+CkCz2ScwBKj21KDTiNX68th8uJxMrKHOPXSWg6zvT
+      9ccjRatc/L9rFvAg54eLzXHqlf//U8IQDF5pao7AVKXar3bGYlzpx1xsGVs6nO5h
+      qKJ154/hooXEvvcNt9DAPPYIr2Qw4sPULJ0KMaLv8QfiIgoye6Hf2+uanMrdte/Q
+      VV1r5+Ug+jDUNhXw+I7PzK2i7RItEDcT75/xM2I1HhN4vTCYJBWWCUFMN+YJgs7n
+      AjykcKT6qr5Z/NAxnoHwR40CAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "8945009847R804APV731"
+  caa8b54a-eb5e-4134-8ae2-a3946a428ec7:
+    name: "CoinJar Sandbox"
+    payload_endpoint: "https://travelrule.coinjar-sandbox.com/api/v4/public/trust/pii"
+    domain: "travelrule.coinjar-sandbox.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAssU7ciVMmNnQR30AsYLj
+      mFnegbbkVHOuuLQ4+OUbMTPp8XWx2Bjedva/OrK7D0XKWZ8Whc+8tR7TaaRWkgOF
+      2olHDOyM2fnMLtNutKTjAcgesGvjZqDl0aT9MSy7/8+5qGBM5Z6VxVomSL0nEt+y
+      9T2pU5O0csHdJx7F+q0vABwKBPukkJ8Sbf5t0uibRFMUTu2um44TCB4ImJ5kn2rN
+      b0J6eNh11GXsF1LAnXYdAb0c2kvvrqDEaAnJa/45+Sih997bwd2zHCtJTcDvfLAB
+      ZT829rNJTnUAw/I8xOfljarO1bF4Sel8OfA0N+w10DRTMZm3df1iTR1NpVquSAHc
+      ZDATJ77l/RbUiQeyLiNEKOLFAhlEtv449J3IIKEFyb1zPVtsdyeIMS3VoiVCVyZT
+      2OL9OQ2y3eI6z/zzNKryTUGMk0Hgb3Je4Gee+tJnUPUnvgyJeK8mCPjDH+3AI3N7
+      vQxkbWI3H5irUqIWUx1vzcjYqPIeOsqdsrZW6AFV6k0BwktoHLXGZZ0RxpIQu3PM
+      qx2+4v/0mFkohkGmDOwULIT8P6Voxwsor9NQ7z+s6YA+RPoRSznYnX7gsexUa1Pt
+      nkY2mnypKrzKoRErlVAy8FWL+f0KBb06j2Chty0Gqhb6rfdG1gXlY7F7MObQfmkb
+      o9zZA4l2S+s+r8E3P+6qVY0CAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "984500DF66E68BE1AA50"
+  3124784f-27ac-432f-b8a2-cd5ef92c7705:
+    name: "Easy Crypto"
+    payload_endpoint: "https://trust-sidecar-pii.easycrypto.dev/pii"
+    domain: "trust-sidecar-pii.easycrypto.dev"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAsXom1g5cDOGOAAvuOfAr
+      HJpoU5PcVEruVSGlte+q5OSZ6fiVM9JlbANxRWlTdsd3cQwqNQcBEkTQaGbV8W/F
+      int4MpBQQS1b8VRZYlPG/pVdYXff2gwImXAep3OK+I4BFLVxozrsgbD7gPmr0FiJ
+      /q0k5RW0pEvL+4qBMwq207AR/rULuH46W4sHL8MEJQMjy6HrnfiYcixyjjuwpWVs
+      h6gOi9O6gXiUXfh2qe8d1zm5hqWF1uaX/7Jp425FfgJEbf4PKtXgJD9cFPaamo2s
+      0PTaAxVe2rTQlY6P4ocYv6Ev5OloRFGOMVErlX3y35vtuN8ZDwJzwoiIZyrQJKGw
+      mIErkBZL2gy8OVhjCf+oT9J40Qb2aazFs9fZ5pVdOG+6GCqUC4YsGYz3fJ/fyFbC
+      m7FzJDYHzD5mcAjaOk9sby5R3o1G4Ob/ku+QuPsiuK+CCWMS6s0wqP+ECYadjBXp
+      I9qvMlCw1vpPn70NFjE94Q7IjOMKkhqcWvMTPDfvw1VdYUmufqVl7x16gbIALufu
+      js9aP9XkuInw1qiVzs5fGBrN1OlPCfwDqeqkqHALL7BisTkHPnS52/+QWVfGSjKY
+      kAxzpBBOPvb1NZSgTfeT6LCfCuKKlD7feMyPDfuVc1a06lio0DC8ScDTgkEfCuUr
+      PPeg68xEIHE1xnO14YTaOf8CAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "N/A"
+  43613f4b-71d4-4490-a056-aad9d45a855c:
+    name: "BTCX"
+    payload_endpoint: "https://travelrule.ext.test.bt.cx/pii"
+    domain: "travelrule.ext.test.bt.cx"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA2ksHX1uKgemZcaD6HHnC
+      pcnzUHtIuUureULiGS26ED5xhVs0MSSycSuKWKbJkesv7wEH9OPwA7N2k1t2ejyo
+      LdiBp3vM7NTAZeiqqSuKsOh3pvq4DfWI2hxS/3wWaay5zOucnHgcCawu6rjNBZQo
+      Hc220FUkJ8fEA3nBIDxpOK1kEgCo6j0gcjhlRExn5KpQvWChPNT/pwNlYiU97Z/M
+      GOR0yeQP6mCIhD+rVLOYuKN82PwqTu/NUSCUXYeqBhrFX6cAe/wzkDc+C1ueoGZP
+      WcELS+N208SJrzBLUs7t/4wuHHj2dszloqSB1k5RRBqXKWOmyO6XvQ8v80H3CPIB
+      stYKK28ZauPMOpaeQiTG46ZpIlaTmpAG5OCAlkk8eoNyGTGTsAwtMib2bgaCNvp6
+      QRUZtWKlsQ9A0ekE9sPfM0eCjKutsVcLEiyxRk4BqR7BrvqLlL20SlLr4MUENIa0
+      xky4qvy0DLKmvXMcT/w5udZe4YXZjIIX5XOYpsW98ZJVeTfBvofVqSxDdxTfeN+/
+      BtkUwiG3uvUT7EICLg1L+c14TZkStzdyF+iEHc1YeujzH9Yx/fHGWsy6T0nwVP0+
+      YTImNyUXd4IdnWobPWCnqdOsX6AxUpowVYAtcYo2NwELMw+RJi5R5+Tk+jwlqV38
+      7apmxrNjtFtiIygEzTnelrMCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "556911-9992"
+  7bae838c-d52c-458b-9229-9caa24bd6d7e:
+    name: "Luso Digital Assets"
+    payload_endpoint: "https://api.luso.trade/v0/pii"
+    domain: "lusodigitalassets.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAqzZN9Gk0hEb+0I9l6whx
+      HNNGFjj0gbUKVHP1fkkWQdZCNovVAO8rrU0tiu0wvK2FpIv17m4DXX0wx52twv4Z
+      mKPhNQJVrWc+EyXSE6RV41VhbyQkp6Cs1fHh/9oR45pHe2khKrUuikcqW4LQoWQH
+      v+9rfQVt1BunZRHwWxavkog2efQsqmTOzMzdCV8OCFM6/PyMmtELBAbyg7VnsOnC
+      eFyNitFSxocyLUCRPERSCHvh8gR4ndqa/ulWqhAISl5kRs18BvRaosyhLOge6BZn
+      Cq1m6ut+AYhK/QIesQ1C/jH8y/HZTqdYCwbUm4p4Ppc3LnKSit3GqzbXZQffIVrh
+      wGgK/efpo2AFyJiI9l6PXpeUlg4Zegzh1nKfummUX2q93OeScxBgC3GCCk0asaE2
+      9C1CYXWMUqQFzvATIlmKXoDo4QnYaLcttoOMPkaXb6vjgShNDpHl9pJty7nNxQe9
+      arGG0lxy9ozXFW+dp2JeVsvBSbqHZxp21hV5cH4omdk9KFQJRxBEKywJI55dsDNS
+      ZGSKvLd9kpYTeH8lkkXJ7dtGZsPnUkBa8VYqYNe20KcxHuw8MqmsjlUAlTjSlJFq
+      wSVOB+1mY0SHMYTi0+Lk1pWT/ArV2MPKa9VEFx5GUM63Mvku9JnF9bb9dzXnVtUa
+      Fl0zunFfjlahZ447NyLXa4ECAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "8945MXAQUTMZ5VNY11"
+  6ac80f1b-cdf6-4e8f-99b3-ab12e5560f19:
+    name: "Block, Inc."
+    payload_endpoint: "https://trust.cashstaging.app/p2p/pii"
+    domain: "trust.cashstaging.app"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA58sFqZn5X5PVBFOnPwVO
+      b02r4fytADUtbFaSXRn0kfG547bqBrqSRwE+TAuUMP4uZ2o5Yavv5mqyXeUsce4h
+      vr/2t2Q9M+jH49jhNcbmqttZaF56Lrr88Xcd8y53RgiWGqH1gY3d0OKqFw01HFR+
+      750trivDq+QI+fCTL4DoFcx9xPAhixGKUp1b04KLoVR2Up56bz3MpIDP6qznh5Fo
+      hUakfeyMNDQv2X8+ZMgrt30vcQnJKjTC+GvYkubTiPpGNbCMRKOHj8KJ76FZ7VI5
+      L5uyQroAtJMB3d9SqI0niU/x82oA9EdpTyD4OzS6zEgM21fCPIjbyTR80p6lIu4d
+      UQIDAQAB
+      -----END PUBLIC KEY-----
+    lei: "549300OHIIUWSTIZME52"
+  68954b41-1840-4a93-ad92-2f9e1241c81b:
+    name: "GTR_BINANCE_FRANCE"
+    payload_endpoint: "https://e.globaltravelrule.com/ext/trust/gtr_binance_fr/v1/pii"
+    domain: "gtr_binance_france.e.globatravelrule.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5XazB4a84QpO3N3XkTUG
+      iamNJoIeCL4hy787LUTP4hpmBbBOf5vLsdkWXLd4RVPnD+fqZupefvZWNzJBUqEn
+      /FSNdhZ1mFzs7rvGxHXlZJUtUDZoclTk0WdHTP+sFGm7y3fUCK4SAjkamb70R/A/
+      I/nWdQ9zJd5Z1+j4kgL/VdY9ql4DblUsz62VmroDXRQyjiUYDfQOG7FFnC1y6P/j
+      R9zk6H+/X1qHK1FZW3+JghXDdLS4+5wF32qcu94unL8/8shCb5O9s6xVcBrMYWej
+      d+JXUzanVn2mEkn5dtI1slAHCwLnYyYGCH2wBCIkRYPa1zKUyf7/y8ZJH6z93p2U
+      8wIDAQAB
+      -----END PUBLIC KEY-----
+    lei: "969500IHGTBN0TLO0129"
+  fb3db427-0137-4f8b-b855-8f00ca441971:
+    name: "CoinGate"
+    payload_endpoint: "https://travelrule.sandbox.coingate.com/pii"
+    domain: "travelrule.sandbox.coingate.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA2cyhUjf+sZqjKb950BaK
+      AWZCkeIu9RVW3KcGVzw4VTUZloa2rfIllZ/JjyrMf/ZTFsHCU4EjhnZlF6Mdbh4S
+      cReX3x64jXJvr7z5BK7qYzUGKYvoMZtAmJzvGQvXkfNCAYUqeeMi5VUnlfpKYMdG
+      h1KMt2BHFDkIJS6fRwT1o6MRuP/uDwPrGqNtHhjgqEjUsOzAs9RMSpjXfnlDnbhY
+      fnRCb3xW/CvoeRJscOCHSAr420DHqFLCTqItgl70obp/pVWxtLie9L3M5ISiJ/1k
+      d2g/4pN/V8WEkWkRdIv2pMrwiICDXXLAKqg+y1M9s1UDm3YqWqPU6xk9bRuPbUjS
+      sYkVe6+8JQzQS6pcVXMUgWo+CstdqyxTDSXtbpw0+vLrZohnGotFFWnbWZlAOsCS
+      71URPAsgiGe5JRRIPrL8ac4VCdoJCRmQrzN3xM8+hocAH0SEXckJZ75NNQPsX6jI
+      y1rHjkJ/SomonFx9UEI5A4jrcP4FvbFKl9gf7nl6hJaOI6hGH3R4k78ltW0vNntU
+      V1hoK6aebmDzFC3Sjn/2OnLYi/RmrEVugM+xt3WLmS3OwsY62tvK465KXT5mW4tj
+      /Fnq8973KQ6dH4wbTgp/pJZnUcowd7OeFYtRxy+Zf8cxic/B9waqLx7ltXtP2s7B
+      zCZPJuCrH7HAKs0Ih4rafy8CAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "485100001PLJJ09NZT59"
+  f8da8e99-1798-4267-b53c-5db713467574:
+    name: "Trade Republic"
+    payload_endpoint: "https://casp.staging.neontrading.com/travelrule/pii"
+    domain: "casp.staging.neontrading.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9KnT1C/QdRhSJl+Pd1Ec
+      Sit8pnX7FYTB4SsohVsEIFb4h9S1hx1HUTOkAwPxbT5sdVY/7FJsusIaRWn77Cgg
+      BG6rddPWe9Q9CJvCy0Vc+f1/9eej6DCBc91faLfjLxKJvehGYkdJPoua5652W67Q
+      4fCYSBB3LUEmpf0mbO5576aqcL6a0NTa0yZ+GkSI2jHQa4ezy3oNY0Tkv7DcMtLe
+      wos7yS99RYPeXXG5WWIgP4yPYrJB8MVU8sneLoDxdTyXHRiOohiJrG1g82EfINPK
+      dEWwJi1RqFUbUl8NKmP54SzXLc1fhvj3YPnuMjdgxvxZnDuI40fQR2+sLMDLwbFw
+      ywIDAQAB
+      -----END PUBLIC KEY-----
+    lei: "5299009IFX1XTKDY4568"
+  b97a0281-84c5-4091-8354-6529a55cefb5:
+    name: "GTR_GDUMMY"
+    payload_endpoint: "https://e.globaltravelrule.com/ext/trust/gtr_gdummy/v1/pii"
+    domain: "gtr_gdummy.e.globatravelrule.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC2gNH5R0hqnVDOaGuQR8simBmt
+      ZbH72+IfZQuzO0+A3v/iyIazdbAnf/ocZrprnq6z0Hs1M4vVVIxLcv9pnCetA0tn
+      qveGCIl2ZpQDFt3qtxc9IAxW+bQ1+6JH0VSlMztewezH+qbGy490r1shP0h4zZy6
+      xlffP2rUntpGFIEQCQIDAQAB
+      -----END PUBLIC KEY-----
+    lei: "959800NEPUB4C60K4F84"
+  a23fef8b-60c3-448d-b3b2-806d8bc6de56:
+    name: "BITGO TECHNOLOGIES INDIA PRIVATE LIMITED"
+    payload_endpoint: "https://tr.bitgo-staging.com/payload"
+    domain: "tr-in.bitgo-staging.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAzwgAR3JDeLIUaQJ/EpA1
+      Msmr9Tt4IWjrw6xDkLCBJ3TotgoyvcZr0US+4HTeYTifkWf6ib+JY2tESyv1rwUa
+      UM3N1s+pOMK+hy2pSnsMBY07evSHB74Z/Ox8A6Z0EdSILW25LkmIzr7PmJ1a3sOe
+      v3Ox4pY3fhcuAytS2AvEUtDUEq6EjdfTERUh5V7h287EfoZ0YnxoH7YautF+nN57
+      OJQTwUE72TSTGbeV/e9IdzG5WxYtpvnZJLLTCuB2sGiD9fevvIcHSz1lvMU7gTw8
+      3of8hVVFq+zWrjMGEgK95pjRnRK1SEggVhZ2bb2czVRJENF+gv2ILchGhzHGzCFn
+      UekLJ6vN+H/r6N7a9IF8Wz4x3Ob9zAksyETYgmpZ8CZy0U1vI/HO75anR2S42dEo
+      C2VKiyfq6U45IB390P77JfT3MWQ2sPz0hdVYzvttWcbSiWuo0rn/LHuWJAe/K3Un
+      SwAUOoVLM3qZjFTuMFjYosq4WAOTxyC/1lywCEGtiM8XfuzGhzbcDPHHMLZoEbau
+      aSx7tsuKaISyY7GZR3J3Bz/CMSNkqSR1qb8gaU9EnnA7hfqtchdwqbCQAZf6P7gW
+      upYXKOI7KffCzbqMQgs+4QM9XNwmLL1KzptxGsjgKNa8/6vaaEx1+1MEidMi3A78
+      yK7kanNnYCXh6p/LzRbkgVcCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "894500OVID8WQHMU1688"
+  6703c924-12b6-4b59-96c9-88516423e475:
+    name: "BITGO TECHNOLOGIES INDIA PRIVATE LIMITED"
+    payload_endpoint: "https://tr.bitgo-test.com/payload"
+    domain: "tr-in.bitgo-test.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEArtlaPmmPn3E9PpRoQKdM
+      JikpXSMAdvo3CS5M8NtCJQ8aLG+1HSrgEsgBOFIJJsafHxmheknvLTTbCspCV6/R
+      L0+IlmTPyS5w3IxF/wU2vZqmYi8Y0Yq6TQkRDYOdm6yveS0vgVaQj8lJLx4hiHc5
+      NOpatV6UCpT/1cRBADNFF3Eys8+ZjgyE075/XDjavu5AChcmS+x9yNM9guj6vC0q
+      +8wlZMYyds8peay/ZHYVHylwJ7oh0Wgk+p2JgbH/2MxNjCzCjTquBQUhfft6yfNJ
+      y3BJ9yslNBBukUedF9JKVWkW1NbGWRJdduRlATfKNg+VWc0SZpZnFt9yGlxR1DMy
+      ju3k00ONCuU+3r2pLp7/TG+H5nIf8uYEddLnhD/u2DljNzV2bsUZxGtKCaxpEzXD
+      UbZ4r+oq7EQ52b3d1nccHjA0IAQC2VYAN6qmpvqvlShUXUWLAj50otzpscA0XBSR
+      BYjeuKJrkCoLE8W5Huc1YymadRZCjPNA8Pvd3rs57sjWpig9lfnOW1KjskZ2n7eP
+      3VlkepsEN63EzOYrYyl41e5YxSVUuODkRvYJmEtOVM6lJSTXvpGBDzT9AUCL+gB1
+      /5AxAHWkJgW5ytg2U/q7fc9cYvHUiDTT/rsj89QXQC8lkG8sUZ0gpPvZg5RMcNV4
+      b592hcuwR9JFuzqcwJLRXKECAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "894500OVID8WQHMU1688"
+  e4bc5268-3352-4b95-a88d-b2f0ed058370:
+    name: "Citibank"
+    payload_endpoint: "https://citigroupsoasit.citigroup.com/pii"
+    domain: "citigroupsoasit.citigroup.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEArtlaPmmPn3E9PpRoQKdM
+      JikpXSMAdvo3CS5M8NtCJQ8aLG+1HSrgEsgBOFIJJsafHxmheknvLTTbCspCV6/R
+      L0+IlmTPyS5w3IxF/wU2vZqmYi8Y0Yq6TQkRDYOdm6yveS0vgVaQj8lJLx4hiHc5
+      NOpatV6UCpT/1cRBADNFF3Eys8+ZjgyE075/XDjavu5AChcmS+x9yNM9guj6vC0q
+      +8wlZMYyds8peay/ZHYVHylwJ7oh0Wgk+p2JgbH/2MxNjCzCjTquBQUhfft6yfNJ
+      y3BJ9yslNBBukUedF9JKVWkW1NbGWRJdduRlATfKNg+VWc0SZpZnFt9yGlxR1DMy
+      ju3k00ONCuU+3r2pLp7/TG+H5nIf8uYEddLnhD/u2DljNzV2bsUZxGtKCaxpEzXD
+      UbZ4r+oq7EQ52b3d1nccHjA0IAQC2VYAN6qmpvqvlShUXUWLAj50otzpscA0XBSR
+      BYjeuKJrkCoLE8W5Huc1YymadRZCjPNA8Pvd3rs57sjWpig9lfnOW1KjskZ2n7eP
+      3VlkepsEN63EzOYrYyl41e5YxSVUuODkRvYJmEtOVM6lJSTXvpGBDzT9AUCL+gB1
+      /5AxAHWkJgW5ytg2U/q7fc9cYvHUiDTT/rsj89QXQC8lkG8sUZ0gpPvZg5RMcNV4
+      b592hcuwR9JFuzqcwJLRXKECAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "N/A"
+  c845db30-01ea-4497-974f-b980c41c1807:
+    name: "Swissquote Bank Ltd"
+    payload_endpoint: "https://uat.tr-cc.swissquote.ch/sq-dlt-trust-gateway-soa/api/sq-dlt-trust-gateway-api-v1/travelrule/pii"
+    pii_request_endpoint: "https://uat.tr-cc.swissquote.ch/sq-dlt-trust-gateway-soa/api/sq-dlt-trust-gateway-api-v1/travelrule/request"
+    domain: "uat.tr-cc.swissquote.ch"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApwEMyEpYXiGuVT0eHdGk
+      QLFTp0V94NiRaMPKUuszyV+5Es7Grj6YC2jtehUgfQI/HCRUuY+7W2jTtOkAUbX8
+      tSZkWB9c5pWhWgvp7xVHeTRJ3KOmro3Umj1aHlougga8nRETVWvv3v+6zw2BnniR
+      7Bi8yxFNx5/6muLk6jb1f93AJ4MrSXPTF70Zv+OrTQDEtEzEsatOs4R0fmIX2Iu+
+      5Fwude1yWXCivSm+Uceg6NRVNBLkXFTNmzR359QKxLBFw/4ie8EKi7qAxTbzi57U
+      hYHpHl09R7rA4co8XRYAqQXimEnL1x/bw4ZMJd8HCe6OxSgjebtZqWQJ3nHyg+9n
+      AQIDAQAB
+      -----END PUBLIC KEY-----
+    lei: "549300O3WME82RDPEN66"
+  d734a390-096f-4606-8a57-91a991729cfe:
+    name: "21 Analytics AG"
+    payload_endpoint: "https://test.trust.21analytics.xyz/pii"
+    domain: "test.trust.21analytics.xyz"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA+IiM+khbQv6V8hOHb44J
+      b+de9ZIpdTBpQyZOQBngXEpUjU+Wm1Cezy+yikNa/lwEe6ZEmba/sfKJMHsHTIXk
+      z/aVyGs2kjcp1CT6rnyPMmDx+qabmgKNexToKO/dz9fr32R6So8XGhcnO5JA/EfC
+      9ZmdaiU6gBqTCCEOzkN1DG8jd/aO20WBsm4h6hyuzO800JFxrYktRNyqdSm0RGCQ
+      LfMccocdOsK5PDLnZsHc7RbbG5BjZjrPaugQ3/sGYLfcLvWfSU633kUgWypevROu
+      uElv/ZEGStAUkzVKYNIgCQZvPFY4M7HSrDuImsq/EbFqGGpB4fSbMh2iWwHsKIZU
+      w+dQdUVyr4HPE/jSKDwZ5Y9msx8X2ICZyvDB4vjECTVm8JhTlJ/Goi5bHya88E0R
+      FaE6tWFy8Y2wcUROfzvWQXG8EjaWJsG3SxxoEfkiXrBIq6zagGv5Wl8Yxy1VPfeW
+      Bj0w+43nHnO1PnIa7WPn4nzVv1VRW9C+pIgI0lCqOBHxIS9KW6EVu4VLerlfVL8z
+      7q31hprmChNF6yEFuvvCTmTtS3iOJjEL6NRCDFwFFRYg9cSruHuu+3ryEBOWELXF
+      k88u9phIbdFwFwCiULoTYpCGAgb1KmTd5Qrce7Ncty+YudjNlrWlRRmtW5Ds2He0
+      7iYBmTPWebVnjaTAY6n5ySUCAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "506700T7Z685VUOZL877"
+  22340f55-a8a8-4331-9843-9ab71e64b942:
+    name: "Column National Association"
+    payload_endpoint: "https://api.column.com/sandbox/webhooks/crypto/pii"
+    pii_request_endpoint: "https://api.column.com/sandbox/webhooks/crypto/request"
+    domain: "travelrule.column.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu65Df8KCb9DzkC9t57fl
+      Koccj8pxK/2wlHWyEIEEopzuKY+0o0cND1o5gjjEp8By5jTEW4vjKHDrab2XQpcF
+      IIXu7oyk+Zf1DOBbtPL0f9AyB3S4LtfaJRlCPjQ/iE7f1+x5oDV/c0PsozxLk4yN
+      0KV1zjWd/I6sc33dE8S9nvGsOh8C4m4+D7LbizDYYS6cymUuldZ/pV/HZqNVQJFj
+      gwB3UgaMdAGARCkp8Qf2Ls2yO4mtHzonunrn69vO1aWuGhXl3BV6nDhMnpWzp+7M
+      HRewCWW7ZP6cJ/cDnvhw53s9yawOIMLWYwnwu5aulLrTyx+mPhSKl1KLhGo/efte
+      sQIDAQAB
+      -----END PUBLIC KEY-----
+    lei: "254900NRUGL0OCAYH953"
+  60fca247-9197-464a-b670-219f6fda6034:
+    name: "Wireflexion Sp. z.o.o"
+    payload_endpoint: "https://hookah.razzapis.dev/public/trust/pii"
+    domain: "client.trust.brighty.app"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAmsykGIPy8ovdcVZnf8tn
+      tL3T74RDSePWbKeh6DGA1CPGyez0fjwnQHRcDyOFIbbmO8XwJ0UVAnlTVPLE5qb3
+      WZHNu0zVKvdqweujlpv7EbAEb9XdfGrhzwbkle0DWTG6coUWhBKhQGmHDAkpnFuF
+      jGBhREnDpU4IqC60o5KIxW7XSi/wntEEyKcU8Y7YcS14q+DaNmzvP4+WbQpEiWS6
+      kGqYemqY5yS7vufsoFGyMFuRoNUj0Db1utEXGZXZkpu2cMXppeXawmEES+LtPkCG
+      A/kpxT56fn5MDtZ7xAdx8uBUZnCyXIxqEUsdv8rCsEmEXtujPSuU4sYup4EBd2r1
+      fZCtwLEYmO4ED9OMb32MwF/D5/sLWMfKbjXcxnpjde5dVL0X+2q+ay8MEnu5IwMT
+      iSTBz6PI3FdlOrmUdBZahcfiJgXlY2CxHdOPkRciVOhelfk+6+Xmx9frf+zkawFV
+      YqNwgky8Pu62U66JHTZ0PQwF+iZoTmzbG5TSKhdgaz5gjtQEXK3YzAc3UVpR9UNv
+      2yD6Go/NPEG79rAjs7JjEB/6ugIDq6/v+0b2pS79UtdFhb9Xc7uggcHgZObY7t5X
+      XtH9+mSubNJRuuqrZma4RMCDZ7fGtxtopqAWP+9X6Fc+VT09QVwNwnwiwGe8oVio
+      UdSrzJ5y+OPPWvmd9Fu3670CAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "259400TCK0087PGSBJ47"
+  ffe4b6e4-b288-42de-abee-e0f3734b92ef:
+    name: "Gate US, Inc"
+    payload_endpoint: "https://ciccb.bitdesk.com:443/trust_webhook/pii"
+    pii_request_endpoint: "https://ciccb.bitdesk.com:443/trust_webhook/request_pii"
+    domain: "ciccb.bitdesk.com"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnCNZ0JM8hxaH3R3TVR8Q
+      hKAPib9Upjue5zhAloCVnW5FPP0DdrrFPvpF5+tDgtPVUI9qZL6zJcvfVnyAYFso
+      8OSywRtm7VzbnR5RaVMwzsmww0fLkjuxi0GcTl5PorFPwBmAHjRsnis524Yjjxfc
+      XQlvxW7tcid7ojVneAY5uGj83tUNRvDH0V5SCDPa3oFR/pgsoK5lMRleINsMBdS9
+      x1Zlv6PGoUHYx/oHkuovvms+pAgk3Lvn+xU53k5giSL+9vQv7Ro8zJC3R5DDleEs
+      KevW1TsYB50jToPP/C2evUFbaFhzFMopA10wR3/TMU7DLuVfqjQFSZlo3nj1rGTD
+      TwIDAQAB
+      -----END PUBLIC KEY-----
+    lei: "N/A"
+  8fd8c5b0-69c7-42e5-8e5a-53fb60443ff5:
+    name: "Bridge"
+    payload_endpoint: "https://preprod.trust.bridge.xyz/travelrule/pii"
+    pii_request_endpoint: "https://preprod.trust.bridge.xyz/travelrule/request_pii"
+    domain: "preprod.trust.bridge.xyz"
+    public_key_version: 1
+    public_key: |
+      -----BEGIN PUBLIC KEY-----
+      MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAwG8X4OgmPFfXUV+bmSGr
+      JYt7eH0VFcGMSKF27bhaUIf8bcJkSrJSrRupm+kCbw5jqAXM2BvUDvjLS/8zXTnz
+      PRfFcWAV0UPVzURX+hgu0iq7FlAz66y8e4F2PVEtjtYvRj1Vb6w0LUnMQPbRi74F
+      lpF/nNDJ92DSU9vLavAuUbNiiln7hIoP6RKV9MFztrodevxt8nkV84GxgHPImYuM
+      1zjtIn7+vT549VT3aFWoyGu5zamz7QXSKG7ODOQDYG2vYFtOkWDA1z65pvF0IjOt
+      uy+Ol7NA4n4IlFd5jrONfJKhQMuYDVXRcnQb2/TMEXA7q1/SCafzR2nVr7hpR2Tg
+      bm6yYj45YlWLiKtKSOJizrg4KmtFgOQiX1bVWk/SimHC9BYEI9Ugo/TPQL+IUGgo
+      GwZ+5y0g0t0bQtHtkcaRxh+1v9UgVIq3A60Lyy6XOkvT35+Nl5DSeZoXwklZHaie
+      QWqPUPfYXpL4OHcvAb7rFaXOATdSN2PXbY9hoVGFX+NY/kxDp6Fj9MHs7UEWjLiC
+      PtNf25NHXHt8Drwjrl6fMdTqmMOCjRHm782zVyOKZE9t0zs1c20gmUXM14RZhByG
+      rpxhogClMkq3LPpvORE56UQiiaBwlQVMLlmtlFfyJC+X5MMxndNNNS8sZCeAVHcK
+      io2hDchg+5ZvzsordhdNPF8CAwEAAQ==
+      -----END PUBLIC KEY-----
+    lei: "254900JI23FL3I3DBY91"

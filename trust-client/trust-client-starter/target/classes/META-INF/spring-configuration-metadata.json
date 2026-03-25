@@ -1,0 +1,28 @@
+{
+  "groups": [
+    {
+      "name": "trust.client",
+      "type": "io.trust.client.starter.TrustClientProperties",
+      "sourceType": "io.trust.client.starter.TrustClientProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "trust.client.additional-headers",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "io.trust.client.starter.TrustClientProperties"
+    },
+    {
+      "name": "trust.client.base-path",
+      "type": "java.lang.String",
+      "sourceType": "io.trust.client.starter.TrustClientProperties",
+      "defaultValue": "http:\/\/localhost:7000"
+    },
+    {
+      "name": "trust.client.dns-name",
+      "type": "java.lang.String",
+      "sourceType": "io.trust.client.starter.TrustClientProperties"
+    }
+  ],
+  "hints": []
+}

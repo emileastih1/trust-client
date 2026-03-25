@@ -1,0 +1,45 @@
+version: '3'
+services:
+  local-postgres:
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: my_postgres_db
+      POSTGRES_PASSWORD: password
+      POSTGRES_HOST_AUTH_METHOD: trust
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  local-bulletin-board-api-db-migration:
+    image: local-bbapi
+    entrypoint: go run cmd/db/main.go up
+    environment:
+      - BBAPI_STAGE=local
+      - BBAPI_ADDRESS_SECRET=D2R5WSpZZyj0RSw1F7HrLVDxZX3nrX4Xb6+ce4qX6H21y8bRqtq/S3SNYdL5NJ0bHY/uPO5DOjl0XJaNRKXRsg==
+    depends_on:
+      local-postgres:
+        condition: service_healthy
+  local-bulletin-board-api:
+    image: local-bbapi
+    ports:
+      - 7000:7000
+      - 7001:7001
+    environment:
+      - BBAPI_STAGE=local
+      - BBAPI_ADDRESS_SECRET=D2R5WSpZZyj0RSw1F7HrLVDxZX3nrX4Xb6+ce4qX6H21y8bRqtq/S3SNYdL5NJ0bHY/uPO5DOjl0XJaNRKXRsg==
+    depends_on:
+      - local-postgres
+      - local-bulletin-board-api-db-migration
+  local-metrics-reporter:
+    image: local-bbapi
+    entrypoint: go run cmd/metrics/main.go up
+    environment:
+      - BBAPI_STAGE=local
+      - BBAPI_ADDRESS_SECRET=D2R5WSpZZyj0RSw1F7HrLVDxZX3nrX4Xb6+ce4qX6H21y8bRqtq/S3SNYdL5NJ0bHY/uPO5DOjl0XJaNRKXRsg==
+    depends_on:
+      - local-postgres
+      - local-bulletin-board-api-db-migration

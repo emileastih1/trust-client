@@ -1,0 +1,390 @@
+syntax = "proto3";
+option go_package = "/server";
+
+import "google/api/annotations.proto";
+import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
+import "protoc-gen-openapiv2/options/annotations.proto";
+
+package bulletin_board.v1;
+
+option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_swagger) = {
+  info: {
+    title: "The Bulletin Board for TRUST"
+    version: "1.0"
+    description: "Bulletin Board Service"
+    contact: {
+      name: "TRUST"
+      url: "https://github.com/USTRWG/bulletin-board-api"
+    }
+  }
+  schemes: HTTPS
+  consumes: "application/json"
+  produces: "application/json"
+  // Shared responses
+  responses: {
+    key: "403",
+    value: {
+      description: "Not authorized";
+      schema: {
+        json_schema: {
+          ref: "#/definitions/google.rpc.Status"
+        }
+      }
+    },
+  },
+  responses: {
+    key: "500",
+    value: {
+      description: "Internal service error";
+      schema: {
+        json_schema: {
+          ref: "#/definitions/google.rpc.Status"
+        }
+      }
+    },
+  }
+};
+
+// ========= Service Definition =========
+
+// Bulletin Board Service
+service BulletinBoardService {
+  // Health check endpoint.
+  rpc Health (HealthRequest) returns (HealthResponse) {
+    option (google.api.http) = {
+      get: "/health"
+    };
+    option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
+      summary: "Health check endpoint"
+      description: "This is the health check endpoint"
+      responses: {
+        key: "200",
+          value: {
+            description: "OK";
+        }
+      }
+    };
+  }
+
+  // Get a single VASP information.
+  rpc GetVasp (GetVaspRequest) returns (GetVaspResponse) {
+    option (google.api.http) = {
+      get: "/v1/vasps/{vasp_id}"
+    };
+    option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
+      summary: "Retrieve the information of a specific VASP"
+      description: "This endpoint retrieves the information of a specific VASP.\n\n"
+          "VASP(S) can query the GET /addresses endpoint to know the VASP(R) who claims the custody of an address.\n\n"
+          "Once VASP(S) knows VASP(R)'s identity and verifies the Proof of Address Ownership, it can query this endpoint to know VASP(R)'s PII endpoint. \n\n"
+          "The PII information should be encrypted with the VASP(R)'s publicKey using the JOSE spec before being transmitted to VASP(R)'s PII endpoint. \n\n"
+      responses: {
+        key: "200",
+        value: {
+          description: "Successfully retrieve the information of the VASP";
+        }
+      },
+      responses: {
+        key: "400",
+        value: {
+          description: "Invalid request, parameter validation failure. For example, the provided vasp id is not a valid UUID";
+          schema: {
+            json_schema: {
+              ref: "#/definitions/google.rpc.Status"
+            }
+          }
+        },
+      },
+      responses: {
+        key: "404",
+        value: {
+          description: "VASP not found";
+          schema: {
+            json_schema: {
+              ref: "#/definitions/google.rpc.Status"
+            }
+          }
+        },
+      },
+    };
+  }
+
+  // Get all VASPs' information.
+  rpc GetVasps (GetVaspsRequest) returns (GetVaspsResponse) {
+    option (google.api.http) = {
+      get: "/v1/vasps"
+    };
+    option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
+      summary: "Retrieve the information of all VASPs"
+      description: "Retrieve the information of all VASPs."
+      responses: {
+        key: "200",
+        value: {
+          description: "Successfully get the information of all VASPs";
+        }
+      }
+    };
+  }
+
+  // Claim ownership for an address
+  rpc CreateAddressOwnership(CreateAddressOwnershipRequest) returns (CreateAddressOwnershipResponse) {
+    option (google.api.http) = {
+      put: "/v1/addresses/{address}",
+      body: "*"
+    };
+    option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
+      summary: "Claim custody of an (address/chain)"
+      description: "Claim custody of an (address/chain)"
+      responses: {
+        key: "200",
+        value: {
+          description: "Claim address custody succeeded";
+        }
+      },
+      responses: {
+        key: "400",
+        value: {
+          description: "Invalid request, parameter validation failure.";
+          schema: {
+            json_schema: {
+              ref: "#/definitions/google.rpc.Status"
+            }
+          }
+        },
+      },
+      responses: {
+        key: "409",
+        value: {
+          description: "Conflict (when the address is already claimed by others)";
+          schema: {
+            json_schema: {
+              ref: "#/definitions/google.rpc.Status"
+            }
+          }
+        }
+      },
+    };
+  }
+
+  // Submit or update proof for an address in custody
+  rpc CreateAddressOwnershipProof(CreateAddressOwnershipProofRequest) returns (CreateAddressOwnershipProofResponse) {
+    option (google.api.http) = {
+      put: "/v1/address_ownership_proofs/{address}",
+      body: "*"
+    };
+    option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
+      summary: "Submit a proof of address ownership for a previously claimed (address/chain)"
+      description: "This is the singular endpoint for creating an address ownership proof"
+      responses: {
+        key: "200",
+        value: {
+          description: "Create or update proof of address succeeded";
+        }
+      },
+      responses: {
+        key: "400",
+        value: {
+          description: "Invalid request. For example, the (address, chain, registration_id) combination is invalid or missing fields.";
+          schema: {
+            json_schema: {
+              ref: "#/definitions/google.rpc.Status"
+            }
+          }
+        }
+      },
+      responses: {
+        key: "409",
+        value: {
+          description: "Conflicted proof status, e.g., change from non-IOU to IOU"
+          schema: {
+            json_schema: {
+              ref: "#/definitions/google.rpc.Status"
+            }
+          }
+        }
+      }
+    };
+  }
+
+  // Get the address ownership given an address.
+  rpc GetAddressOwnership(GetAddressOwnershipRequest) returns (GetAddressOwnershipResponse) {
+    option (google.api.http) = {
+      get: "/v1/addresses/{address}"
+    };
+    option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
+      summary: "Retrieve the custody of an address and the proof of address ownership"
+      description: "This endpoint retrieves the VASP who has custody of an address. You must query with the sha512 hash of the address. "
+          "Additionally, a proof of ownership (or an IOU) is returned so VASP(S) can self-verify."
+      responses: {
+        key: "200",
+        value: {
+          description: "Get address ownership succeeded";
+        },
+      },
+      responses: {
+        key: "400",
+        value: {
+          description: "Invalid request, parameter validation failure.";
+          schema: {
+            json_schema: {
+              ref: "#/definitions/google.rpc.Status"
+            }
+          }
+        },
+      },
+      responses: {
+        key: "404",
+        value: {
+          description: "Address not found";
+          schema: {
+            json_schema: {
+              ref: "#/definitions/google.rpc.Status"
+            }
+          }
+        },
+      },
+    };
+  }
+
+  // Delete address ownership.
+  rpc DeleteAddressOwnership(DeleteAddressOwnershipRequest) returns (DeleteAddressOwnershipResponse) {
+    option (google.api.http) = {
+      delete: "/v1/addresses/{address}",
+    };
+    option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
+      summary: "Delete a Record of Address Custody",
+      description: "This endpoint deletes a record of address custody from your VASP's filter"
+      responses: {
+        key: "200",
+        value: {
+          description: "Delete succeeded";
+        },
+      },
+      responses: {
+        key: "400",
+        value: {
+          description: "Invalid request, parameter validation failure.";
+          schema: {
+            json_schema: {
+              ref: "#/definitions/google.rpc.Status"
+            }
+          }
+        },
+      },
+    };
+  }
+}
+
+// ========= Requests & Responses =========
+
+// Get VASP Request
+message GetVaspRequest {
+  string vasp_id = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The UUID of the VASP that your are querying for"}];
+}
+
+// Get VASP Response
+message GetVaspResponse {
+  VASP vasp = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The information of the queried VASP"}];
+}
+
+// Get VASPs Request
+message GetVaspsRequest {
+}
+
+// Get VASP Response
+message GetVaspsResponse {
+  repeated VASP vasps = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "List of VASP configs in the TRUST solution."}];
+}
+
+// Create Address Ownership Request
+message CreateAddressOwnershipRequest {
+  string address = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The SHA512 of the blockchain address."}];
+  string chain = 2 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The blockchain of the address, e.g., BITCOIN, ETHEREUM."}];
+}
+
+// Create Address Ownership Response
+message CreateAddressOwnershipResponse {
+  string registration_id = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The registration UUID associated with this address ownership claim"}];
+}
+
+// Get Address Ownership Request
+message GetAddressOwnershipRequest{
+  string address = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The SHA512 of the blockchain address."}];
+  string chain = 2 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The blockchain of the address, e.g., BITCOIN, ETHEREUM."}];
+}
+
+// Get Address Ownership Response
+message GetAddressOwnershipResponse {
+  VASP vasp = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The information of the VASP with custody of the address"}];
+  AddressOwnershipProof address_ownership_proof = 2 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The proof of address ownership submitted by the VASP who claimed the address"}];
+}
+
+// Delete Address Ownership Request
+message DeleteAddressOwnershipRequest {
+  string address = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The SHA512 of the blockchain address."}];
+  string chain = 2 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The blockchain of the address, e.g., BITCOIN, ETHEREUM."}];
+}
+
+// Delete Address Ownership Response
+message DeleteAddressOwnershipResponse {
+  string message = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "Detail message indicating the deletion results"}];
+}
+
+// Create Address Ownership Proof Request
+message CreateAddressOwnershipProofRequest {
+  string address = 1  [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The SHA512 of the blockchain address"}];
+  string registration_id = 2 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The registration UUID when you claimed the address by calling PUT /addresses/<address>"}];
+  string chain = 3 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The blockchain of the address, e.g., BITCOIN, ETHEREUM"}];
+  string signature = 4 [ (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The signature of the proof of ownership message signed by the private key of the address"}];
+  string prefix = 5 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The prefix of the claiming VASP's choice"}];
+  bool iou = 6 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "Indicate whether this is an IOU"}];
+  repeated AuxProofData aux_proof_data = 7 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "Additional data supporting the different types of proof of address ownerships, e.g., redeem script. (See Proof of Address Ownership Spec doc for auxiliary data required for all of the supported proof types)"}];
+  string proof_type = 8 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The proof type dictating the logic of proofing and verification according to the spec. Example values: BITCOIN_P2PKH, BITCOIN_P2SH, BITCOIN_P2WPKH, BITCOIN_P2WSH, ETHEREUM_EOA, ETHEREUM_CONTRACT. (See Proof of Address Ownership Spec doc for all the supported proof types)"}];
+}
+
+// Create Address Ownership Proof Response
+message CreateAddressOwnershipProofResponse {
+  string registration_id = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The created proof of address ownership"}];
+}
+
+// Aux Proof Data
+message AuxProofData {
+  string type = 1 [ (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "Supported AuxProofData type, e.g., ETH_CREATE, ETH_CREATE2, REDEEM_SCRIPT."}
+  ];
+  map<string, string> data = 2 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "Key-value pairs data. Each type of aux data should come with pre-defined set of parameters. (See See Proof of Address Ownership Spec doc for the data schema) "}];
+}
+
+// Health Request
+message HealthRequest {}
+
+// Health Response
+message HealthResponse {
+  string message = 1;
+}
+
+// VASP Response Object
+message VASP {
+  string id = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "VASP UUID in the Bulletin Board config"}];
+  string name = 2 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "VASP name"}];
+  string domain = 3 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The domain is the dNSName in the SAN (Subject Alternative Name) of a VASP's client certificate. This will be used by all other VASPs' P2P channel and the bulletin Board for authentication during the mTLS handshake"}];
+  string pii_endpoint = 4 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The endpoint for receiving PII data. This is a full url (host + path) that can be directly used to make the HTTPS API call"}];
+  string pii_request_endpoint = 5 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The endpoint for requesting PII data. This is a full url (host + path) that can be directly used to make the HTTPS API call"}];
+  string public_key = 6 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The public key for other VASPs to encrypt the PII data using the JWE JOSE spec"}];
+  string lei = 7  [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The Legal Entity Identifier of the VASP"}];
+  int32 public_key_version = 8 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The version of the public key. Version should be bumped when a VASP rotates and updates its public key"}];
+  string return_address_endpoint = 9 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The endpoint for returning address. This is a full url (host + path) that can be directly used to make the HTTPS API call"}];
+  string return_fund_confirmation_endpoint = 10 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The endpoint for returning fund confirmation. This is a full url (host + path) that can be directly used to make the HTTPS API call"}];
+}
+
+// Address Ownership Proof Response Object
+message AddressOwnershipProof {
+  string id = 1 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The registration UUID of the address"}];
+  string address = 2  [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The SHA512 of the blockchain address"}];
+  google.protobuf.StringValue signature = 3 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The signature of the proof of ownership message signed by the private key of the address"}];
+  google.protobuf.StringValue prefix = 4 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The prefix of the claiming VASP's choice"}];
+  google.protobuf.BoolValue iou = 5 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "Indicate whether this is an IOU"}];
+  string chain = 6 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The blockchain of the address, e.g., BITCOIN, ETHEREUM"}];
+  string proof_type = 7 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "The proof type dictating the logic of proofing and verification according to the spec. Example values: BITCOIN_P2PKH, BITCOIN_P2SH, BITCOIN_P2WPKH, BITCOIN_P2WSH, ETHEREUM_EOA, ETHEREUM_CONTRACT. (See Proof of Address Ownership Spec doc for all the supported proof types)"}];
+  repeated AuxProofData aux_proof_data = 8 [(grpc.gateway.protoc_gen_openapiv2.options.openapiv2_field) = {description: "Additional data supporting the different types of proof of address ownerships, e.g., redeem script. (See Proof of Address Ownership Spec doc for auxiliary data required for all of the supported proof types)"}];
+}

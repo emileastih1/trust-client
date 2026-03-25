@@ -1,0 +1,19 @@
+---
+secure:
+  required_reviews: 1
+  requires_mfa: true
+  upstream_repository: USTRWG/bulletin-board-api
+  branches:
+    - preprod
+operate:
+  budget_org: travel-rule-eng
+  slack_channels:
+  - "#proj-travel-rules-notifications"
+build:
+  engines:
+    - BaldurECR:
+        name: bbapisvc
+        path: ./Dockerfile_CB
+  multi_arch: true
+deploy:
+  engine: ContainerTag

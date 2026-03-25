@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.trust.client</groupId>
+    <artifactId>trust-client</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>trust-client-build</module>
+        <module>trust-client-dependencies</module>
+        <module>trust-client-builtin-board</module>
+        <module>trust-client-invoker</module>
+        <module>trust-client-starter</module>
+    </modules>
+
+</project>

@@ -1,0 +1,5 @@
+custom_logger:
+  level: error
+
+secret-manager:
+  region: us-east-1

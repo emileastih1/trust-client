@@ -1,0 +1,4 @@
+io\trust\client\starter\TrustClientFactoryBean.class
+META-INF\spring-configuration-metadata.json
+io\trust\client\starter\TrustClientAutoConfiguration.class
+io\trust\client\starter\TrustClientProperties.class

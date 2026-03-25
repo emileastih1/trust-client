@@ -1,0 +1,939 @@
+openapi: 3.0.0
+info:
+  description: |-
+    Bulletin Board Service
+
+    Contact Support:
+     Name: TRUST
+  title: The Bulletin Board for TRUST
+  version: 1.0.0
+servers:
+- url: /
+paths:
+  /health:
+    get:
+      description: This is the health check endpoint
+      responses:
+        "200":
+          content:
+            application/json:
+              example:
+                message: string
+              schema:
+                $ref: '#/components/schemas/Health_Response'
+          description: OK
+        "403":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: Not authorized
+        "500":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: Internal service error
+        default:
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: An unexpected error response.
+      summary: Health check endpoint
+      tags:
+      - health
+      x-accepts:
+      - application/json
+  /v1/address_ownership_proofs/{address}:
+    put:
+      description: This is the singular endpoint for creating an address ownership
+        proof
+      parameters:
+      - description: The SHA512 of the blockchain address
+        example: string
+        explode: false
+        in: path
+        name: address
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            example:
+              registrationId: string
+              chain: string
+              signature: string
+              prefix: string
+              iou: false
+              auxProofData:
+              - type: string
+                data:
+                  key_0: string
+                  key_1: string
+                  key_2: string
+              - type: string
+                data:
+                  key_0: string
+                  key_1: string
+              proofType: string
+            schema:
+              $ref: '#/components/schemas/Create_Address_Ownership_Proof_Request'
+      responses:
+        "200":
+          content:
+            application/json:
+              example:
+                registrationId: string
+              schema:
+                $ref: '#/components/schemas/Create_Address_Ownership_Proof_Response'
+          description: Create or update proof of address succeeded
+        "400":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: "Invalid request. For example, the (address, chain, registration_id)\
+            \ combination is invalid or missing fields."
+        "403":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: Not authorized
+        "409":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: "Conflicted proof status, e.g., change from non-IOU to IOU"
+        "500":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: Internal service error
+        default:
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: An unexpected error response.
+      summary: Submit a proof of address ownership for a previously claimed (address/chain)
+      tags:
+      - v1
+      - address_ownership_proofs
+      - "{address}"
+      x-content-type: application/json
+      x-accepts:
+      - application/json
+  /v1/addresses/{address}:
+    delete:
+      description: This endpoint deletes a record of address custody from your VASP's
+        filter
+      parameters:
+      - description: The SHA512 of the blockchain address.
+        example: string
+        explode: false
+        in: path
+        name: address
+        required: true
+        schema:
+          type: string
+        style: simple
+      - description: "The blockchain of the address, e.g., BITCOIN, ETHEREUM."
+        example: string
+        explode: true
+        in: query
+        name: chain
+        required: false
+        schema:
+          type: string
+        style: form
+      responses:
+        "200":
+          content:
+            application/json:
+              example:
+                message: string
+              schema:
+                $ref: '#/components/schemas/Delete_Address_Ownership_Response'
+          description: Delete succeeded
+        "400":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: "Invalid request, parameter validation failure."
+        "403":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: Not authorized
+        "500":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: Internal service error
+        default:
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: An unexpected error response.
+      summary: Delete a Record of Address Custody
+      tags:
+      - v1
+      - addresses
+      - "{address}"
+      x-accepts:
+      - application/json
+    get:
+      description: "This endpoint retrieves the VASP who has custody of an address.\
+        \ You must query with the sha512 hash of the address. Additionally, a proof\
+        \ of ownership (or an IOU) is returned so VASP(S) can self-verify."
+      parameters:
+      - description: The SHA512 of the blockchain address.
+        example: string
+        explode: false
+        in: path
+        name: address
+        required: true
+        schema:
+          type: string
+        style: simple
+      - description: "The blockchain of the address, e.g., BITCOIN, ETHEREUM."
+        example: string
+        explode: true
+        in: query
+        name: chain
+        required: false
+        schema:
+          type: string
+        style: form
+      responses:
+        "200":
+          content:
+            application/json:
+              example:
+                vasp:
+                  id: string
+                  name: string
+                  domain: string
+                  piiEndpoint: string
+                  piiRequestEndpoint: string
+                  publicKey: string
+                  lei: string
+                  publicKeyVersion: 7859
+                  returnAddressEndpoint: string
+                  returnFundConfirmationEndpoint: string
+                addressOwnershipProof:
+                  id: string
+                  address: string
+                  signature: string
+                  prefix: string
+                  iou: false
+                  chain: string
+                  proofType: string
+                  auxProofData:
+                  - type: string
+                    data:
+                      key_0: string
+                      key_1: string
+                      key_2: string
+                      key_3: string
+                      key_4: string
+                  - type: string
+                    data:
+                      key_0: string
+                      key_1: string
+                      key_2: string
+              schema:
+                $ref: '#/components/schemas/Get_Address_Ownership_Response'
+          description: Get address ownership succeeded
+        "400":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: "Invalid request, parameter validation failure."
+        "403":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: Not authorized
+        "404":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: Address not found
+        "500":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: Internal service error
+        default:
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: An unexpected error response.
+      summary: Retrieve the custody of an address and the proof of address ownership
+      tags:
+      - v1
+      - addresses
+      - "{address}"
+      x-accepts:
+      - application/json
+    put:
+      description: Claim custody of an (address/chain)
+      parameters:
+      - description: The SHA512 of the blockchain address.
+        example: string
+        explode: false
+        in: path
+        name: address
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            example:
+              chain: string
+            schema:
+              $ref: '#/components/schemas/Create_Address_Ownership_Request'
+      responses:
+        "200":
+          content:
+            application/json:
+              example:
+                registrationId: string
+              schema:
+                $ref: '#/components/schemas/Create_Address_Ownership_Response'
+          description: Claim address custody succeeded
+        "400":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: "Invalid request, parameter validation failure."
+        "403":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: Not authorized
+        "409":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: Conflict (when the address is already claimed by others)
+        "500":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: Internal service error
+        default:
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: An unexpected error response.
+      summary: Claim custody of an (address/chain)
+      tags:
+      - v1
+      - addresses
+      - "{address}"
+      x-content-type: application/json
+      x-accepts:
+      - application/json
+  /v1/vasps/{vaspId}:
+    get:
+      description: "This endpoint retrieves the information of a specific VASP.\n\n\
+        VASP(S) can query the GET /addresses endpoint to know the VASP(R) who claims\
+        \ the custody of an address.\n\nOnce VASP(S) knows VASP(R)'s identity and\
+        \ verifies the Proof of Address Ownership, it can query this endpoint to know\
+        \ VASP(R)'s PII endpoint. \n\nThe PII information should be encrypted with\
+        \ the VASP(R)'s publicKey using the JOSE spec before being transmitted to\
+        \ VASP(R)'s PII endpoint. \n\n"
+      parameters:
+      - description: The UUID of the VASP that your are querying for
+        example: string
+        explode: false
+        in: path
+        name: vaspId
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              example:
+                vasp:
+                  id: string
+                  name: string
+                  domain: string
+                  piiEndpoint: string
+                  piiRequestEndpoint: string
+                  publicKey: string
+                  lei: string
+                  publicKeyVersion: 7080
+                  returnAddressEndpoint: string
+                  returnFundConfirmationEndpoint: string
+              schema:
+                $ref: '#/components/schemas/Get_VASP_Response'
+          description: Successfully retrieve the information of the VASP
+        "400":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: "Invalid request, parameter validation failure. For example,\
+            \ the provided vasp id is not a valid UUID"
+        "403":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: Not authorized
+        "404":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: VASP not found
+        "500":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: Internal service error
+        default:
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: An unexpected error response.
+      summary: Retrieve the information of a specific VASP
+      tags:
+      - v1
+      - vasps
+      - "{vaspId}"
+      x-accepts:
+      - application/json
+  /v1/vasps:
+    get:
+      description: Retrieve the information of all VASPs.
+      responses:
+        "200":
+          content:
+            application/json:
+              example:
+                vasps:
+                - id: string
+                  name: string
+                  domain: string
+                  piiEndpoint: string
+                  piiRequestEndpoint: string
+                  publicKey: string
+                  lei: string
+                  publicKeyVersion: 4059
+                  returnAddressEndpoint: string
+                  returnFundConfirmationEndpoint: string
+                - id: string
+                  name: string
+                  domain: string
+                  piiEndpoint: string
+                  piiRequestEndpoint: string
+                  publicKey: string
+                  lei: string
+                  publicKeyVersion: 6710
+                  returnAddressEndpoint: string
+                  returnFundConfirmationEndpoint: string
+              schema:
+                $ref: '#/components/schemas/Get_VASP_Response_1'
+          description: Successfully get the information of all VASPs
+        "403":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: Not authorized
+        "500":
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: Internal service error
+        default:
+          content:
+            application/json:
+              example:
+                code: 1979
+                message: string
+                details:
+                - '@type': string
+                  key_0: 9782.503974832818
+                  key_1: string
+                - '@type': string
+              schema:
+                $ref: '#/components/schemas/_health_get_403_response'
+          description: An unexpected error response.
+      summary: Retrieve the information of all VASPs
+      tags:
+      - v1
+      - vasps
+      x-accepts:
+      - application/json
+components:
+  schemas:
+    Create_Address_Ownership_Proof_Response:
+      properties:
+        registrationId:
+          description: The created proof of address ownership
+          type: string
+      title: Create Address Ownership Proof Response
+      type: object
+    Get_VASP_Response_1:
+      properties:
+        vasps:
+          description: List of VASP configs in the TRUST solution.
+          items:
+            $ref: '#/components/schemas/VASP_Response_Object'
+          type: array
+      title: Get VASP Response
+      type: object
+    Aux_Proof_Data:
+      properties:
+        type:
+          description: "Supported AuxProofData type, e.g., ETH_CREATE, ETH_CREATE2,\
+            \ REDEEM_SCRIPT."
+          type: string
+        data:
+          description: 'Key-value pairs data. Each type of aux data should come with
+            pre-defined set of parameters. (See See Proof of Address Ownership Spec
+            doc for the data schema) '
+          type: object
+      title: Aux Proof Data
+      type: object
+    Create_Address_Ownership_Proof_Request:
+      properties:
+        registrationId:
+          description: The registration UUID when you claimed the address by calling
+            PUT /addresses/<address>
+          type: string
+        chain:
+          description: "The blockchain of the address, e.g., BITCOIN, ETHEREUM"
+          type: string
+        signature:
+          description: The signature of the proof of ownership message signed by the
+            private key of the address
+          type: string
+        prefix:
+          description: The prefix of the claiming VASP's choice
+          type: string
+        iou:
+          description: Indicate whether this is an IOU
+          type: boolean
+        auxProofData:
+          description: "Additional data supporting the different types of proof of\
+            \ address ownerships, e.g., redeem script. (See Proof of Address Ownership\
+            \ Spec doc for auxiliary data required for all of the supported proof\
+            \ types)"
+          items:
+            $ref: '#/components/schemas/Aux_Proof_Data'
+          type: array
+        proofType:
+          description: "The proof type dictating the logic of proofing and verification\
+            \ according to the spec. Example values: BITCOIN_P2PKH, BITCOIN_P2SH,\
+            \ BITCOIN_P2WPKH, BITCOIN_P2WSH, ETHEREUM_EOA, ETHEREUM_CONTRACT. (See\
+            \ Proof of Address Ownership Spec doc for all the supported proof types)"
+          type: string
+      title: Create Address Ownership Proof Request
+      type: object
+    VASP_Response_Object:
+      properties:
+        id:
+          description: VASP UUID in the Bulletin Board config
+          type: string
+        name:
+          description: VASP name
+          type: string
+        domain:
+          description: The domain is the dNSName in the SAN (Subject Alternative Name)
+            of a VASP's client certificate. This will be used by all other VASPs'
+            P2P channel and the bulletin Board for authentication during the mTLS
+            handshake
+          type: string
+        piiEndpoint:
+          description: The endpoint for receiving PII data. This is a full url (host
+            + path) that can be directly used to make the HTTPS API call
+          type: string
+        piiRequestEndpoint:
+          description: The endpoint for requesting PII data. This is a full url (host
+            + path) that can be directly used to make the HTTPS API call
+          type: string
+        publicKey:
+          description: The public key for other VASPs to encrypt the PII data using
+            the JWE JOSE spec
+          type: string
+        lei:
+          description: The Legal Entity Identifier of the VASP
+          type: string
+        publicKeyVersion:
+          description: The version of the public key. Version should be bumped when
+            a VASP rotates and updates its public key
+          format: int32
+          type: integer
+        returnAddressEndpoint:
+          description: The endpoint for returning address. This is a full url (host
+            + path) that can be directly used to make the HTTPS API call
+          type: string
+        returnFundConfirmationEndpoint:
+          description: The endpoint for returning fund confirmation. This is a full
+            url (host + path) that can be directly used to make the HTTPS API call
+          type: string
+      title: VASP Response Object
+      type: object
+    Get_Address_Ownership_Response:
+      properties:
+        vasp:
+          $ref: '#/components/schemas/VASP_Response_Object'
+        addressOwnershipProof:
+          $ref: '#/components/schemas/Address_Ownership_Proof_Response_Object'
+      title: Get Address Ownership Response
+      type: object
+    _health_get_403_response_details_inner:
+      properties:
+        '@type':
+          type: string
+      type: object
+    Delete_Address_Ownership_Response:
+      properties:
+        message:
+          description: Detail message indicating the deletion results
+          type: string
+      title: Delete Address Ownership Response
+      type: object
+    Address_Ownership_Proof_Response_Object:
+      properties:
+        id:
+          description: The registration UUID of the address
+          type: string
+        address:
+          description: The SHA512 of the blockchain address
+          type: string
+        signature:
+          description: The signature of the proof of ownership message signed by the
+            private key of the address
+          type: string
+        prefix:
+          description: The prefix of the claiming VASP's choice
+          type: string
+        iou:
+          description: Indicate whether this is an IOU
+          type: boolean
+        chain:
+          description: "The blockchain of the address, e.g., BITCOIN, ETHEREUM"
+          type: string
+        proofType:
+          description: "The proof type dictating the logic of proofing and verification\
+            \ according to the spec. Example values: BITCOIN_P2PKH, BITCOIN_P2SH,\
+            \ BITCOIN_P2WPKH, BITCOIN_P2WSH, ETHEREUM_EOA, ETHEREUM_CONTRACT. (See\
+            \ Proof of Address Ownership Spec doc for all the supported proof types)"
+          type: string
+        auxProofData:
+          description: "Additional data supporting the different types of proof of\
+            \ address ownerships, e.g., redeem script. (See Proof of Address Ownership\
+            \ Spec doc for auxiliary data required for all of the supported proof\
+            \ types)"
+          items:
+            $ref: '#/components/schemas/Aux_Proof_Data'
+          type: array
+      title: Address Ownership Proof Response Object
+      type: object
+    Create_Address_Ownership_Request:
+      properties:
+        chain:
+          description: "The blockchain of the address, e.g., BITCOIN, ETHEREUM."
+          type: string
+      title: Create Address Ownership Request
+      type: object
+    _health_get_403_response:
+      properties:
+        code:
+          format: int32
+          type: integer
+        message:
+          type: string
+        details:
+          items:
+            $ref: '#/components/schemas/_health_get_403_response_details_inner'
+          type: array
+      type: object
+    Create_Address_Ownership_Response:
+      properties:
+        registrationId:
+          description: The registration UUID associated with this address ownership
+            claim
+          type: string
+      title: Create Address Ownership Response
+      type: object
+    Get_VASP_Response:
+      properties:
+        vasp:
+          $ref: '#/components/schemas/VASP_Response_Object'
+      title: Get VASP Response
+      type: object
+    Health_Response:
+      properties:
+        message:
+          type: string
+      title: Health Response
+      type: object
+

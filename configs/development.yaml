@@ -1,0 +1,6 @@
+
+custom_logger:
+  level: debug
+
+secret-manager:
+  region: us-east-1

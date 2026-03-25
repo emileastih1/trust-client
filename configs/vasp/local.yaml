@@ -1,0 +1,33 @@
+vasps:
+  06507e32-c5cd-4a9f-b4ab-1b2787192c8e:
+    name: Test VASP 1
+    payload_endpoint: "https://www.testvasp1.com/FILL_ME_IN"
+    pii_request_endpoint: "https://www.testvasp1.com/FILL_ME_IN"
+    domain: testvasp1.com
+    public_key: TEST_KEY
+    public_key_version: 1
+    lei: test_vasp1_lei
+
+  46d24377-ba1f-4e95-8133-946e3cfcc683:
+    name: Test VASP 2
+    payload_endpoint: "https://www.testvasp2.com/FILL_ME_IN"
+    domain: testvasp2.com
+    public_key: TEST_KEY
+    public_key_version: 1
+    lei: test_vasp2_lei
+
+  00000000-0000-0000-0000-000000000000:
+    name: Test VASP 3
+    payload_endpoint: "https://www.testvasp3.com/FILL_ME_IN"
+    domain: testvasp3.com
+    public_key: TEST_KEY
+    public_key_version: 1
+    lei: test_vasp3_lei
+
+  d0c51944-7202-4ca3-9e93-32e32d65939c:
+    name: Test VASP 4
+    payload_endpoint: "https://www.testvasp4.com/FILL_ME_IN"
+    domain: testvasp4.com
+    public_key: TEST_KEY
+    public_key_version: 1
+    lei: test_vasp4_lei

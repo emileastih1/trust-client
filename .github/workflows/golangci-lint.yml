@@ -1,0 +1,24 @@
+name: golangci-lint
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths-ignore:
+      - '**.md'
+permissions:
+  contents: read
+  # Optional: allow read access to pull request. Use with `only-new-issues` option.
+  # pull-requests: read
+jobs:
+  golangci-lint:
+    runs-on: 
+      group: 'Default Larger Runners'
+    name: Lint and Style Check
+    steps:
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.20'
+      - uses: actions/checkout@v4
+      - name: golangci-lint
+        uses: golangci/golangci-lint-action@v6
+        with:
+          args: --verbose

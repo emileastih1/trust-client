@@ -1,0 +1,20 @@
+
+
+# AddressOwnershipProofResponseObject
+
+
+## Properties
+
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**id** | **String** | The registration UUID of the address |  [optional] |
+|**address** | **String** | The SHA512 of the blockchain address |  [optional] |
+|**signature** | **String** | The signature of the proof of ownership message signed by the private key of the address |  [optional] |
+|**prefix** | **String** | The prefix of the claiming VASP&#39;s choice |  [optional] |
+|**iou** | **Boolean** | Indicate whether this is an IOU |  [optional] |
+|**chain** | **String** | The blockchain of the address, e.g., BITCOIN, ETHEREUM |  [optional] |
+|**proofType** | **String** | The proof type dictating the logic of proofing and verification according to the spec. Example values: BITCOIN_P2PKH, BITCOIN_P2SH, BITCOIN_P2WPKH, BITCOIN_P2WSH, ETHEREUM_EOA, ETHEREUM_CONTRACT. (See Proof of Address Ownership Spec doc for all the supported proof types) |  [optional] |
+|**auxProofData** | [**List&lt;AuxProofData&gt;**](AuxProofData.md) | Additional data supporting the different types of proof of address ownerships, e.g., redeem script. (See Proof of Address Ownership Spec doc for auxiliary data required for all of the supported proof types) |  [optional] |
+
+
+

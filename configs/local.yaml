@@ -1,0 +1,5 @@
+database:
+  URL: "postgres://postgres:password@172.17.0.1:5432/my_postgres_db?sslmode=disable&connect_timeout=5"
+
+secret-manager:
+  region: us-east-1

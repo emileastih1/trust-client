@@ -1,0 +1,117 @@
+run:
+  go: "1.20"
+  tests: true
+  timeout: 5m
+
+issues:
+  exclude-files:
+    - ".*.pb.go"
+    - ".*._gen.go"
+    - ".*_test.go"
+  exclude-dirs:
+    - gen
+    - vendor
+    - tmp
+    - scripts
+    - tests
+    - proto
+    - configs
+    - gen_clients
+
+linters:
+  disable-all: true
+  fast: false
+  enable:
+    # Simple linter to check that your code does not contain non-ASCII identifiers
+    - asciicheck
+    # Checks assignments with too many blank identifiers (e.g. x, , , _, := f())
+    - dogsled
+    # Tool for code clone detection
+    - dupl
+    # check for two durations multiplied together
+    - durationcheck
+    # Errcheck is a program for checking for unchecked errors in go programs. These unchecked errors can be critical bugs in some cases
+    - errcheck
+    # errorlint is a linter for that can be used to find code that will cause problems with the error wrapping scheme introduced in Go 1.13.
+    - errorlint
+    # check exhaustiveness of enum switch statements
+    - exhaustive
+    # checks for pointers to enclosing loop variables
+    - copyloopvar
+    # Forbids identifiers
+    - forbidigo
+    # finds forced type assertions
+    - forcetypeassert
+    # Checks that no init functions are present in Go code
+    - gochecknoinits
+    # Finds repeated strings that could be replaced by a constant
+    - goconst
+    #  Provides many diagnostics that check for bugs, performance and style issues. Extensible without recompilation through dynamic rules. Dynamic rules are written declaratively with AST patterns, filters, report message and optional suggestion.
+    - gocritic
+    # Check if comments end in a period
+    - godot
+    # Golang linter to check the errors handling expressions
+    - err113
+    # Checks that printf-like functions are named with f at the end
+    - goprintffuncname
+    # Inspects source code for security problems
+    - gosec
+    # Linter for Go source code that specializes in simplifying a code
+    - gosimple
+    # Vet examines Go source code and reports suspicious constructs, such as Printf calls whose arguments do not align with the format string
+    - govet
+    # Enforces consistent import aliases
+    - importas
+    # Detects when assignments to existing variables are not used
+    - ineffassign
+    # Finds slice declarations with non-zero initial length
+    - makezero
+    # Finds commonly misspelled English words in comments
+    - misspell
+    # Finds naked returns in functions greater than a specified function length
+    - nakedret
+    # Reports deeply nested if statements
+    - nestif
+    # Finds the code that returns nil even if it checks that the error is not nil.
+    - nilerr
+    # Reports ill-formed or insufficient nolint directives
+    - nolintlint
+    # Finds slice declarations that could potentially be preallocated
+    - prealloc
+    # find code that shadows one of Go's predeclared identifiers
+    - predeclared
+    # Fast, configurable, extensible, flexible, and beautiful linter for Go. Drop-in replacement of golint.
+    - revive
+    # Staticcheck is a go vet on steroids, applying a ton of static analysis checks
+    - staticcheck
+    # linter that makes you use a separate _test package
+    - testpackage
+    # thelper detects golang tests helpers without t.Helper() call and checks the consistency of tests helpers
+    - thelper
+    # tparallel detects inappropriate usage of t.Parallel() method in your Go tests codes
+    - tparallel
+    # Like the front-end of a Go compiler, parses and type-checks Go code
+    - typecheck
+    # Remove unnecessary type conversions
+    - unconvert
+    # Reports unused function parameters
+    - unparam
+    # Checks Go code for unused constants, variables, functions and types
+    - unused
+    # Tool for detection of leading and trailing whitespace
+    - whitespace
+
+#  presets:
+#    - bugs
+#    - unused
+#    - format
+linters-settings:
+  dupl:
+    threshold: 200
+  gofumpt:
+    # Choose whether to use the extra rules.
+    # Default: false
+    extra-rules: false
+
+output:
+  sort-results: true

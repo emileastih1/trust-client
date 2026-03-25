@@ -1,0 +1,28 @@
+name: Go
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths-ignore:
+      - '**.md'
+
+jobs:
+  unit-test:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Go
+        uses: actions/setup-go@v3
+        with:
+          go-version: '1.20'
+      - name: Checkout Client Libraries
+        uses: actions/checkout@v3
+        with:
+          path: bulletin-board-api
+      - name: Build
+        working-directory: bulletin-board-api
+        run: |
+          go build -ldflags "-s -w" ./main.go
+      - name: Run Unit Test
+        working-directory: bulletin-board-api
+        run: go test ./internal/... ./cmd/...

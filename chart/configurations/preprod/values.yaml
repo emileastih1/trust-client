@@ -1,0 +1,60 @@
+services:
+  bbapisvc:
+    containers:
+      bbapi_dbmigrate:
+        resources:
+          limits:
+            memory: 333.33M
+          requests:
+            cpu: 122.67m
+            memory: 316.51M
+        image: travel-rule/bulletin-board-api/bbapisvc
+      bbapisvc:
+        resources:
+          limits:
+            memory: 333.33M
+          requests:
+            cpu: 122.67m
+            memory: 316.51M
+        image: travel-rule/bulletin-board-api/bbapisvc
+      nginx_sidecar:
+        resources:
+          limits:
+            memory: 333.33M
+          requests:
+            cpu: 122.67m
+            memory: 316.51M
+        image: 652969937640.dkr.ecr.us-east-1.amazonaws.com/travel-rule/nginx-sidecar@sha256:8fcd580a1ad856d05541a907653405c82b67c62b3c7bfe93299bae4f411a13b0
+    target_group_bindings:
+      api: api-api-k8s-preprod-travel-rule
+    scaling:
+      min: 3
+      max: 3
+      targetcpu: 80
+shared_env:
+  BBAPI_ADDRESS_SECRET: config_service_secret://travel-rule/bulletin-board-api-preprod/bbapi-address-secret
+  BBAPI_DB_URL: config_service_secret://travel-rule/bulletin-board-api-preprod/bbapi-db-url
+  BBAPI_DB_READ_URL: config_service_secret://travel-rule/bulletin-board-api-preprod/bbapi-db-read-url
+  BBAPI_KMS_KEY_ID: config_service_secret://travel-rule/bulletin-board-api-preprod/bbapi-kms-key-id
+  BBAPI_STAGE: config_service_text://travel-rule/bulletin-board-api-preprod/bbapi-stage
+  BBAPI_CERT_BUNDLE: config_service_secret://travel-rule/bulletin-board-api-preprod/ottr-certificate-api-preprod-trust-global-2025-07-31t16_48_15z
+  BURST: config_service_text://travel-rule/bulletin-board-api-preprod/burst
+  CA_CERT: config_service_secret://travel-rule/bulletin-board-api-preprod/ca-cert
+  CLIENT_OCSP: config_service_text://travel-rule/bulletin-board-api-preprod/client-ocsp
+  DB_HOST: config_service_secret://travel-rule/bulletin-board-api-preprod/db-host
+  DB_IDENTIFIER: config_service_secret://travel-rule/bulletin-board-api-preprod/db-identifier
+  DELAY: config_service_text://travel-rule/bulletin-board-api-preprod/delay
+  HEALTH_CHECK_LISTEN_PORT: config_service_text://travel-rule/bulletin-board-api-preprod/health-check-listen-port
+  HEALTH_CHECK_TARGET_PORT: config_service_text://travel-rule/bulletin-board-api-preprod/health-check-target-port
+  LIMITING_RATE_PER_SECOND: config_service_text://travel-rule/bulletin-board-api-preprod/limiting-rate-per-second
+  NGINX_LOG_LEVEL: config_service_text://travel-rule/bulletin-board-api-preprod/nginx-log-level
+  SERVER_CERT: config_service_secret://travel-rule/bulletin-board-api-preprod/server-cert
+  SERVER_KEY: config_service_secret://travel-rule/bulletin-board-api-preprod/server-key
+  SERVER_OCSP_STAPLING: config_service_text://travel-rule/bulletin-board-api-preprod/server-ocsp-stapling
+  SERVICE_ENV: config_service_text://travel-rule/bulletin-board-api-preprod/service-env
+  SSL_LISTEN_PORT: config_service_text://travel-rule/bulletin-board-api-preprod/ssl-listen-port
+  TARGET_HOSTNAME: config_service_text://travel-rule/bulletin-board-api-preprod/target-hostname
+  TARGET_PORT: config_service_text://travel-rule/bulletin-board-api-preprod/target-port
+  TARGET_PROTOCOL: config_service_text://travel-rule/bulletin-board-api-preprod/target-protocol
+  TOOLKIT_PASS: config_service_secret://travel-rule/bulletin-board-api-preprod/toolkit-pass
+  TOOLKIT_USER: config_service_text://travel-rule/bulletin-board-api-preprod/toolkit-user

@@ -1,0 +1,13 @@
+/client-libs/
+/gen_clients/
+test/__pycache__/
+test/integration_test/__pycache__/
+/test/integration_test/env/
+/coverage/
+/build/
+/logs/
+/tmp/
+/vendor/
+.idea
+.vscode
+__debug_bin

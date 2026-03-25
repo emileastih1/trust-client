@@ -1,0 +1,490 @@
+openapi: 3.0.0
+info:
+  title: TRUST VASP P2P API
+  description: P2P APIs for a VASP to be contacted by other VASPs in the TRUST network.
+  version: 1.0.0
+paths:
+  # P2P
+  /pii:
+    post:
+      summary: "Transmit PII related to a blockchain transaction to the other VASP. The path (/pii) is not enforced, but the other API specs should be strictly followed in the implementation of each VASP. The pii_endpoint in the VASP config on the Bulletin Board is a full URL (host + path), and each VASP is free to choose any path they want to use. The generated API client tied to the /pii path is not usable. Each VASP should build a custom HTTP client."
+      tags:
+        - P2P
+      requestBody:
+        required: true
+        content:
+          'application/json':
+            schema:
+              $ref: '#/components/schemas/PiiRequest'
+      responses:
+        '200':
+          description: The VASP received the PII successfully.
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/PiiResponse'
+        '400':
+          description: Bad request. Invalid request payload, or the PII data after decryption does not follow the TRUST IVMS schema.
+          content:
+            'application/json':
+              schema:
+                type: string
+        '403':
+          description: Unauthorized.
+          content:
+            'application/json':
+              schema:
+                type: string
+        '409':
+          description: Conflicts. A VASP could reject a PII at their discretion if they consider it violates their internal records.
+          content:
+            'application/json':
+              schema:
+                type: string
+        '429':
+          description: TooManyRequests. Requests may be rate-limited and rejected.
+          content:
+            'application/json':
+              schema:
+                type: string
+        '500':
+          description: Internal Server Error. VASPs could decide to put more details in the response message.
+          content:
+            'application/json':
+              schema:
+                type: string
+        '503':
+          description: Service Unavailable.
+          content:
+            'application/json':
+              schema:
+                type: string
+
+  /request-pii:
+    post:
+      summary: "Request Pii information from other VASP. The path (/request-pii) is not enforced, but the other API specs should be strictly followed in the implementation of each VASP. The pii_request_endpoint in the VASP config on the Bulletin Board is a full URL (host + path), and each VASP is free to choose any path they want to use. The generated API client tied to the /request-pii path is not usable. Each VASP should build a custom HTTP client."
+      tags:
+        - P2P
+      requestBody:
+        required: true
+        content:
+          'application/json':
+            schema:
+              $ref: '#/components/schemas/TransactionPiiRequest'
+      responses:
+        '200':
+          description: The VASP acknowledged the request and agreed to send over the PII data.
+          content:
+            'application/json':
+              schema:
+                type: string
+                example: "Acknowledged"
+        '400':
+          description: Bad request. Invalid request payload.
+          content:
+            'application/json':
+              schema:
+                type: string
+                example: "Invalid request payload"
+        '403':
+          description: Unauthorized.
+          content:
+            'application/json':
+              schema:
+                type: string
+                example: "Unauthorized"
+        '404':
+          description: Transaction not found.
+          content:
+            'application/json':
+              schema:
+                type: string
+                example: "Transaction not found"
+        '429':
+          description: TooManyRequests. Requests may be rate-limited and rejected.
+          content:
+            'application/json':
+              schema:
+                type: string
+                example: "Too many requests"
+        '451':
+          description: Information will not be sent.
+          content:
+            'application/json':
+              schema:
+                type: string
+                description: the reason why the information will not be sent
+                enum: [ "PROOF_VALIDATION_ERROR", "TRANSACTION_NOT_ELIGIBLE" ]
+                example: "PROOF_VALIDATION_ERROR"
+        '500':
+          description: Internal Server Error. VASPs could decide to put more details in the response message.
+          content:
+            'application/json':
+              schema:
+                type: string
+                example: "Internal Server Error"
+        '503':
+          description: Service Unavailable.
+          content:
+            'application/json':
+              schema:
+                type: string
+                example: "Service Unavailable"
+
+  /return-address:
+    post:
+      summary: "Request the return address from the other VASP. The path (/return-address) is not enforced, but the other API specs should be strictly followed in the implementation of each VASP. The return_address_endpoint in the VASP config on the Bulletin Board is a full URL (host + path), and each VASP is free to choose any path they want to use. The generated API client tied to the /return-address path is not usable. Each VASP should build a custom HTTP client."
+      tags:
+        - P2P
+      requestBody:
+        required: true
+        content:
+          'application/json':
+            schema:
+              $ref: '#/components/schemas/ReturnAddressRequest'
+      responses:
+        '200':
+          description: The VASP acknowledged the request and agreed to send over the return address and a token.
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/ReturnAddressResponse'
+        '400':
+          description: Bad request. Invalid request payload.
+          content:
+            'application/json':
+              schema:
+                type: string
+                example: "Invalid request payload"
+        '403':
+          description: Unauthorized.
+          content:
+            'application/json':
+              schema:
+                type: string
+                example: "Unauthorized"
+        '404':
+          description: Transaction not found.
+          content:
+            'application/json':
+              schema:
+                type: string
+                example: "Transaction not found"
+        '429':
+          description: TooManyRequests. Requests may be rate-limited and rejected.
+          content:
+            'application/json':
+              schema:
+                type: string
+                example: "Too many requests"
+        '451':
+          description: Information will not be sent.
+          content:
+            'application/json':
+              schema:
+                type: string
+                description: the reason why the information will not be sent
+                enum: [ "PROOF_VALIDATION_ERROR", "TRANSACTION_NOT_ELIGIBLE" ]
+                example: "PROOF_VALIDATION_ERROR"
+        '500':
+          description: Internal Server Error. VASPs could decide to put more details in the response message.
+          content:
+            'application/json':
+              schema:
+                type: string
+                example: "Internal Server Error"
+        '503':
+          description: Service Unavailable.
+          content:
+            'application/json':
+              schema:
+                type: string
+                example: "Service Unavailable"
+
+  /return-fund-confirmation:
+    post:
+      summary: ""
+      tags:
+        - P2P
+      requestBody:
+        required: true
+        content:
+          'application/json':
+            schema:
+              $ref: '#/components/schemas/ReturnFundConfirmationRequest'
+      responses:
+        '200':
+          description: The VASP acknowledged the request.
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/ReturnFundConfirmationResponse'
+        '400':
+          description: Bad request. Invalid request payload.
+          content:
+            'application/json':
+              schema:
+                type: string
+                example: "Invalid request payload"
+        '403':
+          description: Unauthorized.
+          content:
+            'application/json':
+              schema:
+                type: string
+                example: "Unauthorized"
+        '404':
+          description: Transaction not found.
+          content:
+            'application/json':
+              schema:
+                type: string
+                example: "Transaction not found"
+        '429':
+          description: TooManyRequests. Requests may be rate-limited and rejected.
+          content:
+            'application/json':
+              schema:
+                type: string
+                example: "Too many requests"
+        '451':
+          description: Information will not be sent.
+          content:
+            'application/json':
+              schema:
+                type: string
+                description: the reason why the information will not be sent
+                enum: [ "PROOF_VALIDATION_ERROR", "TRANSACTION_NOT_ELIGIBLE" ]
+                example: "PROOF_VALIDATION_ERROR"
+        '500':
+          description: Internal Server Error. VASPs could decide to put more details in the response message.
+          content:
+            'application/json':
+              schema:
+                type: string
+                example: "Internal Server Error"
+        '503':
+          description: Service Unavailable.
+          content:
+            'application/json':
+              schema:
+                type: string
+                example: "Service Unavailable"
+
+components:
+  schemas:
+    PiiRequest:
+      title: "PII Post Request"
+      description: "PII related to a blockchain transaction"
+      type: object
+      properties:
+        encrypted_data:
+          description: Encrypted data in the TRUST-specific IVMS101 schema (see the IVMS101 P2P Payload document for detail schema). Data is encrypted by the sending VASP with the receiving VASP's public key listed on the Bulletin Board using the JWE (JOSE) spec (alg=RSA-OAEP/enc=A256GCM).
+          type: string
+        public_key_version:
+          description: The version of public key that the sending VASP uses to encrypt the payload. This version number is retrieved from the Bulletin Board VASP API along with the public key of the receiving VASP.
+          type: integer
+        for_test:
+          description: Indicate that this data is for testing only and not related to real customer data. The receiver of this data can decide whether to take action or not on their discretion.
+          type: boolean
+          default: false
+        value_transfer:
+          $ref: '#/components/schemas/ValueTransfer'
+      required:
+        - encrypted_data
+        - public_key_version
+    PiiResponse:
+      title: "PII Post Response"
+      description: "Response from a PII post"
+      type: object
+      properties:
+        message:
+          description: Details of the post pii results
+          type: string
+      required:
+        - message
+    TransactionPiiRequest:
+      title: "PII Request Post Request"
+      description: "Transaction information to request PII from other VASP"
+      type: object
+      properties:
+        transaction_hash:
+          description: The transaction hash
+          type: string
+          example: "d5675e6ed6b91c05753f9a444746b39dfa08442ce7f41ad5f3e9a496888b9e8e"
+        destination_address:
+          description: The wallet address that has received the funds in the transaction
+          type: string
+          example: "0xA0b869e1c6218b36c1d19D4a2e92b0cE3606eA48"
+        amount:
+          description: The transaction amount
+          type: string
+          example: "3.2324"
+        cryptocurrency_symbol:
+          description: The cryptocurrency symbol, e.g. ETH, BTC, LTC, XRP
+          type: string
+          example: "BTC"
+        blockchain_network:
+          description: The blockchain of the address, e.g., BITCOIN, ETHEREUM
+          type: string
+          example: "BITCOIN"
+        vout_index:
+          description: bitcoin only
+          type: number
+          example: 0
+        request_fields:
+          description: (Optional) The list of fields of PII that the VASP is requesting
+          type: array
+          items:
+            type: string
+            example: "originator.originatorPersons.legalPerson.geographicAddress"
+      required:
+        - transaction_hash
+        - destination_address
+        - amount
+        - cryptocurrency_symbol
+        - blockchain_network
+    ReturnAddressRequest:
+      title: "Return Address endpoint request"
+      description: ""
+      type: object
+      properties:
+        transaction_hash:
+          description: The transaction hash
+          type: string
+          example: "d5675e6ed6b91c05753f9a444746b39dfa08442ce7f41ad5f3e9a496888b9e8e"
+        destination_address:
+          description: The wallet address that has received the funds in the transaction
+          type: string
+          example: "0xA0b869e1c6218b36c1d19D4a2e92b0cE3606eA48"
+        amount:
+          description: The transaction amount
+          type: string
+          example: "3.2324"
+        cryptocurrency_symbol:
+          description: The cryptocurrency symbol, e.g. ETH, BTC, LTC, XRP
+          type: string
+          example: "BTC"
+        blockchain_network:
+          description: The blockchain of the address, e.g., BITCOIN, ETHEREUM
+          type: string
+          example: "BITCOIN"
+        vout_index:
+          description: bitcoin only
+          type: number
+          example: 0
+      required:
+        - transaction_hash
+        - destination_address
+        - amount
+        - cryptocurrency_symbol
+        - blockchain_network
+    ReturnAddressResponse:
+      title: "Return Address endpoint response"
+      description: ""
+      type: object
+      properties:
+        address:
+          description: Address to send the funds back.
+          type: string
+        token:
+          description: Token for verification.
+          type: string
+      required:
+        - address
+        - token
+    
+    ReturnFundConfirmationRequest:
+      title: "Return Address endpoint request"
+      description: ""
+      type: object
+      properties:
+        transaction_hash:
+          description: The transaction hash
+          type: string
+          example: "d5675e6ed6b91c05753f9a444746b39dfa08442ce7f41ad5f3e9a496888b9e8e"
+        destination_address:
+          description: The wallet address that has received the funds in the transaction
+          type: string
+          example: "0xA0b869e1c6218b36c1d19D4a2e92b0cE3606eA48"
+        amount:
+          description: The transaction amount
+          type: string
+          example: "3.2324"
+        cryptocurrency_symbol:
+          description: The cryptocurrency symbol, e.g. ETH, BTC, LTC, XRP
+          type: string
+          example: "BTC"
+        blockchain_network:
+          description: The blockchain of the address, e.g., BITCOIN, ETHEREUM
+          type: string
+          example: "BITCOIN"
+        vout_index:
+          description: bitcoin only
+          type: number
+          example: 0
+        token:
+          description: The token received from the other VASP.
+          type: string
+          example: "0cb0d2f2-2545-4611-9450-2081b8d7fa4b"
+      required:
+        - transaction_hash
+        - destination_address
+        - amount
+        - cryptocurrency_symbol
+        - blockchain_network
+        - token
+    ReturnFundConfirmationResponse:
+      title: "Return Address endpoint response"
+      description: ""
+      type: object
+      properties:
+        message:
+          type: string
+          example: "success"
+      required:
+        - message
+    ValueTransfer:
+      title: "Value Transfer"
+      description: "Optional value transfer information for transactions"
+      type: object
+      properties:
+        tx_id:
+          description: The transaction ID
+          type: string
+          example: "d5675e6ed6b91c05753f9a444746b39dfa08442ce7f41ad5f3e9a496888b9e8e"
+        address:
+          description: The wallet address
+          type: string
+          example: "0xA0b869e1c6218b36c1d19D4a2e92b0cE3606eA48"
+        memo:
+          description: Additional memo information, for networks that support like XRP, ...
+          type: string
+          example: "12345678"
+        vout_index:
+          description: Bitcoin output index
+          type: number
+          example: 0
+        amount:
+          description: The transaction amount
+          type: string
+          example: "3.2324"
+        symbol:
+          description: The cryptocurrency symbol
+          type: string
+          example: "BTC"
+        chain:
+          description: Chain is required for cases dealing with pretransactions
+          type: string
+          example: "BITCOIN"
+        deposit_id:
+          description: The deposit identifier
+          type: string
+          example: "deposit-12345"
+      required:
+        - address
+        - amount
+        - symbol
+        - deposit_id
+      additionalProperties: false
+    

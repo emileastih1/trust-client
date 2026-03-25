@@ -1,0 +1,10 @@
+scanner_configs:
+  Gosec:
+    exclude-dir:
+      - cmd # contain generated files, e.g., wire_gen.go
+enforced_scanners:
+  - PatternSearch
+  - RepoNotEmpty
+  - Semgrep
+  - Gosec
+  - ReportGoDep

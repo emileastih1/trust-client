@@ -1,0 +1,117 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: bbapisvc
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/component: bbapisvc
+      app.kubernetes.io/name: travel-rule-bulletin-board-api
+  strategy:
+    {{- if $.Values.services.bbapisvc.trafficCanary }}
+    canary: {{- include "infra.common.trafficCanary" $.Values.services.bbapisvc.trafficCanary | indent 6 }}
+    {{- else }}
+    blueGreen:
+      activeService: bbapisvc
+    {{- end }}
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/component: bbapisvc
+        app.kubernetes.io/name: travel-rule-bulletin-board-api
+    spec:
+      containers:
+        - name: bbapisvc
+          env: {{- include "infra.common.all-env" (merge (deepCopy $.Values.shared_env)) | indent 12 }}
+            - name: DD_AGENT_HOST
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.hostIP
+          image: {{ $.Values.services.bbapisvc.containers.bbapisvc.image }}
+          command: ["bash","-c","source /envmapper/mapping.env; /build/server"]
+          lifecycle:
+            preStop:
+              exec:
+                command:
+                  - sh
+                  - -c
+                  - sleep 120
+          resources:
+            limits:
+              memory: {{ $.Values.services.bbapisvc.containers.bbapisvc.resources.limits.memory }}
+            requests:
+              cpu: {{ $.Values.services.bbapisvc.containers.bbapisvc.resources.requests.cpu }}
+              memory: {{ $.Values.services.bbapisvc.containers.bbapisvc.resources.requests.memory }}
+          volumeMounts:
+            - name: envmapper
+              mountPath: /envmapper
+        - name: nginx-sidecar
+          env: {{- include "infra.common.all-env" (merge (deepCopy $.Values.shared_env)) | indent 12 }}
+          image: {{ $.Values.services.bbapisvc.containers.nginx_sidecar.image }}
+          command: [ "bash", "-c", "source /envmapper/mapping.env && /usr/local/bin/travelrule-nginx-gateway.sh" ]
+          lifecycle:
+            preStop:
+              exec:
+                command:
+                  - sh
+                  - -c
+                  - sleep 120
+          livenessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /health
+              port: 8091
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 3
+          ports:
+            - containerPort: 443
+            - containerPort: 8091
+          readinessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /health
+              port: 8091
+            periodSeconds: 10
+            successThreshold: 3
+            timeoutSeconds: 3
+          resources:
+            limits:
+              memory: {{ $.Values.services.bbapisvc.containers.nginx_sidecar.resources.limits.memory }}
+            requests:
+              cpu: {{ $.Values.services.bbapisvc.containers.nginx_sidecar.resources.requests.cpu }}
+              memory: {{ $.Values.services.bbapisvc.containers.nginx_sidecar.resources.requests.memory }}
+          startupProbe:
+            failureThreshold: 10
+            httpGet:
+              path: /health
+              port: 8091
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 3
+          volumeMounts:
+            - name: envmapper
+              mountPath: /envmapper
+      initContainers:
+        {{- include "infra.common.secret-init" (merge (deepCopy $.Values.shared_env)) | indent 8 }}
+        - name: bbapi-dbmigrate
+          command: ["bash","-c","source /envmapper/mapping.env; go run cmd/db/main.go up"]
+          env: {{- include "infra.common.all-env" (merge (deepCopy $.Values.shared_env)) | indent 12 }}
+          image: {{ $.Values.services.bbapisvc.containers.bbapi_dbmigrate.image }}
+          resources:
+            limits:
+              memory: {{ $.Values.services.bbapisvc.containers.bbapi_dbmigrate.resources.limits.memory }}
+            requests:
+              cpu: {{ $.Values.services.bbapisvc.containers.bbapi_dbmigrate.resources.requests.cpu }}
+              memory: {{ $.Values.services.bbapisvc.containers.bbapi_dbmigrate.resources.requests.memory }}
+          volumeMounts:
+            - name: envmapper
+              mountPath: /envmapper
+      restartPolicy: Always
+      terminationGracePeriodSeconds: 150
+      volumes:
+        - name: envmapper
+          emptyDir:
+            medium: Memory
+            sizeLimit: 10Mi

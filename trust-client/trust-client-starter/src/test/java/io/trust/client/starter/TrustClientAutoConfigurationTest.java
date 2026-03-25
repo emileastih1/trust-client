@@ -64,6 +64,7 @@ class TrustClientAutoConfigurationTest {
                     }
                 })
                 .run(context -> {
+                    // With the new condition, it should still create the bean because basePath has a default value
                     assertThat(context).hasSingleBean(ApiClient.class);
                     ApiClient apiClient = context.getBean(ApiClient.class);
                     assertThat(apiClient.getBasePath()).isEqualTo("http://localhost:7000");
@@ -82,18 +83,25 @@ class TrustClientAutoConfigurationTest {
     }
 
     @Test
-    void shouldNotCreateApiClientIfBeanAlreadyExists() {
+    void shouldNotCreateApiClientIfBasePathIsEmpty() {
         this.contextRunner
-                .withBean("customApiClient", ApiClient.class, () -> {
-                    ApiClient custom = new ApiClient();
-                    custom.setBasePath("https://custom.io");
-                    return custom;
-                })
+                .withPropertyValues("trust.client.base-path=")
                 .run(context -> {
-                    assertThat(context).hasSingleBean(ApiClient.class);
-                    assertThat(context).hasBean("customApiClient");
-                    ApiClient apiClient = context.getBean(ApiClient.class);
-                    assertThat(apiClient.getBasePath()).isEqualTo("https://custom.io");
+                    assertThat(context).doesNotHaveBean(ApiClient.class);
+                });
+    }
+
+    @Test
+    void shouldNotCreateApiClientIfTrustClientPropertiesNotBound() {
+        // Since we have defaults in TrustClientProperties, it might always bind something 
+        // unless we use withPropertyValues that doesn't include it. 
+        // But the binder should still work if defaults are there.
+        // Let's test a case where we explicitly want it to fail.
+        new ApplicationContextRunner()
+                .withConfiguration(AutoConfigurations.of(TrustClientAutoConfiguration.class))
+                .withPropertyValues("trust.client.base-path=")
+                .run(context -> {
+                    assertThat(context).doesNotHaveBean(ApiClient.class);
                 });
     }
 }

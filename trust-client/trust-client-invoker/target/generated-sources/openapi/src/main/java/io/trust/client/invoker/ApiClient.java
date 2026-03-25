@@ -56,7 +56,7 @@ import io.trust.client.invoker.auth.HttpBasicAuth;
 import io.trust.client.invoker.auth.HttpBearerAuth;
 import io.trust.client.invoker.auth.ApiKeyAuth;
 
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-25T10:05:30.633882700+01:00[Europe/Paris]", comments = "Generator version: 7.9.0")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-25T10:18:58.077824500+01:00[Europe/Paris]", comments = "Generator version: 7.9.0")
 public class ApiClient extends JavaTimeFormatter {
     public enum CollectionFormat {
         CSV(","), TSV("\t"), SSV(" "), PIPES("|"), MULTI(null);

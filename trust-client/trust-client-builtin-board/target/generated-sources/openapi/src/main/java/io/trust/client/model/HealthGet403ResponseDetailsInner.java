@@ -30,7 +30,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   HealthGet403ResponseDetailsInner.JSON_PROPERTY_AT_TYPE
 })
 @JsonTypeName("_health_get_403_response_details_inner")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-25T10:05:33.471345300+01:00[Europe/Paris]", comments = "Generator version: 7.9.0")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-25T10:19:00.496410100+01:00[Europe/Paris]", comments = "Generator version: 7.9.0")
 public class HealthGet403ResponseDetailsInner {
   public static final String JSON_PROPERTY_AT_TYPE = "@type";
   private String atType;

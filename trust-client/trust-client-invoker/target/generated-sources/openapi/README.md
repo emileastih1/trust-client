@@ -4,7 +4,7 @@ The Bulletin Board for TRUST
 
 - API version: 1.0.0
 
-- Build date: 2026-03-25T10:05:30.633882700+01:00[Europe/Paris]
+- Build date: 2026-03-25T10:18:58.077824500+01:00[Europe/Paris]
 
 - Generator version: 7.9.0
 

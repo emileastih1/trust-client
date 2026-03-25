@@ -41,7 +41,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AddressOwnershipProofResponseObject.JSON_PROPERTY_AUX_PROOF_DATA
 })
 @JsonTypeName("Address_Ownership_Proof_Response_Object")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-25T10:05:33.471345300+01:00[Europe/Paris]", comments = "Generator version: 7.9.0")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-25T10:19:00.496410100+01:00[Europe/Paris]", comments = "Generator version: 7.9.0")
 public class AddressOwnershipProofResponseObject {
   public static final String JSON_PROPERTY_ID = "id";
   private String id;

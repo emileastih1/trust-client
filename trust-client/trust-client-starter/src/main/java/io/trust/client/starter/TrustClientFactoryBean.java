@@ -5,10 +5,12 @@ import io.trust.client.invoker.ApiClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.config.AbstractFactoryBean;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.client.RestClient;
 
 @RequiredArgsConstructor
+@ConditionalOnMissingBean(ApiClient.class)
 public class TrustClientFactoryBean extends AbstractFactoryBean<ApiClient> {
 
     private final TrustClientProperties properties;

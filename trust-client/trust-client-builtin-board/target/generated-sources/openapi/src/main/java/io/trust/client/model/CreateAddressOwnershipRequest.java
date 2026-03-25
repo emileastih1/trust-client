@@ -30,7 +30,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   CreateAddressOwnershipRequest.JSON_PROPERTY_CHAIN
 })
 @JsonTypeName("Create_Address_Ownership_Request")
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-25T10:05:33.471345300+01:00[Europe/Paris]", comments = "Generator version: 7.9.0")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-25T10:19:00.496410100+01:00[Europe/Paris]", comments = "Generator version: 7.9.0")
 public class CreateAddressOwnershipRequest {
   public static final String JSON_PROPERTY_CHAIN = "chain";
   private String chain;

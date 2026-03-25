@@ -1,6 +1,0 @@
-trust:
-  client:
-    base-path: https://api.trust-complete.io
-    dns-name: testvasp1.com
-    additional-headers:
-      X-Custom-Header: "CustomValue"
